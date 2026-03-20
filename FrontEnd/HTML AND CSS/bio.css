@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgba(53, 48, 48, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 80%;
+    margin: 40px auto;
+    background-color: rgb(243, 247, 251);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header,
+#para {
+    background-color: rgb(53, 47, 47);
+    color: white;
+    padding: 15px;
+}
+img {
+    height: 250px;
+    width: 200px;
+    margin: 20px 0;
+    display: block;
+}
+
+.Bio {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.Bio h2 {
+    margin-bottom: 10px;
+}
+
+.Bio p {
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 20px;
+    
+
+}

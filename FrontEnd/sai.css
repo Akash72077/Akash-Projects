@@ -1,0 +1,9 @@
+div{
+    background-color: blue;
+}
+p{
+    background-color: yellow;
+}
+input{
+    background-color: inherit;
+}

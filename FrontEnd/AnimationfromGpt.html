@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Animation Demos</title>
+  <style>
+    :root{
+      --bg: #0f172a;         /* slate-900 */
+      --card: #111827;       /* gray-900 */
+      --accent: #22d3ee;     /* cyan-400 */
+      --accent-2: #a78bfa;   /* violet-400 */
+      --text: #e5e7eb;       /* gray-200 */
+      --muted: #94a3b8;      /* slate-400 */
+      --radius: 1.25rem;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 10% 10%, rgba(34,211,238,.08), transparent 60%),
+                  radial-gradient(1200px 700px at 90% 20%, rgba(167,139,250,.08), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    .container {
+      width: min(1100px, 100%);
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding: 18px 18px 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: .4px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .stage {
+      height: 220px;
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.15));
+      border-radius: calc(var(--radius) - 6px);
+      border: 1px dashed rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 1) BOUNCING BALL --------------------------------------------------- */
+    .ball {
+      --size: 46px;          /* change size here */
+      --duration: .9s;       /* change speed here */
+      width: var(--size);
+      height: var(--size);
+      background: radial-gradient(circle at 30% 30%, #ffffff 0 14%, #93c5fd 15% 35%, #2563eb 36% 100%);
+      border-radius: 50%;
+      position: absolute;
+      left: 30px;
+      bottom: 100px;
+      animation: bounce var(--duration) cubic-bezier(.3,.8,.5,1) infinite alternate;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, .5);
+    }
+
+    .shadow {
+      position: absolute;
+      left: 30px;
+      bottom: 22px;
+      width: 90px;
+      height: 18px;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,.45), rgba(0,0,0,0) 70%);
+      filter: blur(2px);
+      animation: squish .9s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0) scale(1,1); }
+      85%  { transform: translateY(140px) scale(1,1); }
+      100% { transform: translateY(160px) scale(1.08,.92); }
+    }
+
+    @keyframes squish {
+      0%   { transform: translateY(0) scale(1,.9); opacity: .55; }
+      100% { transform: translateY(0) scale(1.3,.5); opacity: .85; }
+    }
+
+    /* 2) ORBITING DOTS ---------------------------------------------------- */
+    .orbit {
+      --d: 2.2s;            /* orbit speed */
+      --size: 140px;        /* system size */
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      border: 1px dashed rgba(255,255,255,.15);
+    }
+    .planet {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 50%;
+      transform-origin: calc(var(--size) / 2) center;
+      animation: spin var(--d) linear infinite;
+      box-shadow: 0 0 14px var(--accent);
+    }
+    .planet:nth-child(2){
+      width: 10px; height: 10px; background: var(--accent-2);
+      transform-origin: calc(var(--size) / 3) center;
+      animation-duration: 1.4s;
+      box-shadow: 0 0 10px var(--accent-2);
+    }
+    .planet:nth-child(3){
+      width: 8px; height: 8px; background: #34d399; /* emerald */
+      transform-origin: calc(var(--size) / 4.5) center;
+      animation-duration: 1s;
+      box-shadow: 0 0 8px #34d399;
+    }
+    @keyframes spin { to { transform: rotate(1turn); } }
+
+    /* 3) TYPEWRITER ------------------------------------------------------- */
+    .typewrap {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+    }
+
+    .typewriter {
+      --ch: 28;            /* number of characters to reveal */
+      --speed: 3.5s;       /* typing speed */
+      font: 600 18px/1.4 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      color: #e2e8f0;
+      position: relative;
+      width: max-content;
+      white-space: nowrap;
+      border-right: 2px solid rgba(255,255,255,.9);
+      overflow: hidden;
+      animation: typing var(--speed) steps(var(--ch)) 1 both,
+                 caret .9s steps(1) infinite;
+      letter-spacing: .4px;
+      background: linear-gradient(90deg, rgba(34,211,238,.35), rgba(167,139,250,.35));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @keyframes typing { to { width: 100%; } }
+    @keyframes caret { 50% { border-right-color: transparent; } }
+
+    /* Helper: header */
+    .header {
+      grid-column: 1/-1;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .header h1{
+      margin: 0 0 6px;
+      font-size: clamp(22px, 3.5vw, 32px);
+    }
+    .header span{
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Small footer note */
+    .note {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+      opacity: .8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Pure CSS Animation Pack</h1>
+      <span>Edit sizes, speeds, and colors in <code>:root</code> or per block.</span>
+    </div>
+
+    <!-- Card 1: Bouncing Ball -->
+    <section class="card">
+      <h2>1) Bouncing Ball</h2>
+      <p>Modify <code>--size</code> and <code>--duration</code> on <code>.ball</code> to tweak behavior.</p>
+      <div class="stage">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+      </div>
+    </section>
+
+    <!-- Card 2: Orbiting Dots -->
+    <section class="card">
+      <h2>2) Orbiting Dots</h2>
+      <p>Change <code>--size</code> (system size) and <code>--d</code> (speed) on <code>.orbit</code>.</p>
+      <div class="stage">
+        <div class="orbit">
+          <div class="planet"></div>
+          <div class="planet"></div>
+          <div class="planet"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 3: Typewriter Text -->
+    <section class="card">
+      <h2>Typewriter</h2>
+      <p>Set <code>--ch</code> to the character count and <code>--speed</code> for typing speed.</p>
+      <div class="stage">
+        <div class="typewrap">
+          <div class="typewriter" style="--ch: 28; --speed: 3.8s;">Hello Akash — CSS animations 🚀</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="note">Copy any card into your project. Works in plain HTML/CSS, no JS required.</div>
+  </div>
+</body>
+</html>

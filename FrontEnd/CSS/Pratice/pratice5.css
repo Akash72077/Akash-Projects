@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    border: 2px solid lightseagreen;
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 900px;
+    background-color: lightpink;
+    border-radius: 10px;
+    align-items: center;
+    
+
+}
+.inner{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-left: 5px;
+    line-height: 50px;
+
+}

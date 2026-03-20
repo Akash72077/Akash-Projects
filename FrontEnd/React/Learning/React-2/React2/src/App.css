@@ -1,0 +1,16 @@
+.card{
+  border: 2px solid black;
+  width: 500px;
+ /* text-align: center; */
+ padding: 40px;
+ border-radius: 20px;
+ background-color: rgb(246, 232, 207);
+ 
+  
+}
+
+.btn{
+  background-color: aqua;
+  color: rebeccapurple;
+  margin-left: 400px;
+}

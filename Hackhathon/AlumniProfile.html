@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alumni Profile - Home</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="ter">
+    <div class="logo">
+      <img src="https://via.placeholder.com/56x56.png?text=Logo" alt="Logo" />
+      <span>Profile</span>
+    </div>
+
+    <nav class="menu" aria-label="Main menu">
+      <a href="#home" class="menu-item active">
+        <img src="house-solid-full.svg" alt="Home icon" />
+        <span>Home</span>
+      </a>
+      <a href="#batches" class="menu-item">
+        <img src="people-group-solid-full.svg" alt="Batches icon" />
+        <span>Batches</span>
+      </a>
+      <a href="#events" class="menu-item">
+        <img src="https://via.placeholder.com/48?text=E" alt="Events icon" />
+        <span>Events</span>
+      </a>
+      <a href="#placements" class="menu-item">
+        <img src="https://via.placeholder.com/48?text=P" alt="Placements icon" />
+        <span>Placements</span>
+      </a>
+      <a href="#donations" class="menu-item">
+        <img src="hand-holding-dollar-solid-full.svg" alt="Donations icon" />
+        <span>Donations</span>
+      </a>
+      <a href="#profile" class="menu-item">
+        <img src="https://via.placeholder.com/48?text=👤" alt="Profile icon" />
+        <span>My Profile</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <!-- PROFILE / HOME -->
+    <section id="home" class="profile-overview card" aria-labelledby="profile-title">
+      <div class="profile-left">
+        <!-- Replace the src with user's profile pic URL -->
+        <img class="profile-pic" id="profileImg" src="istockphoto-1469197622-612x612.jpg" alt="Profile picture" />
+        <div class="quick-stats">
+          <div><strong>Batch:</strong> <span id="batchText">2021-2025</span></div>
+          <div><strong>Education:</strong> <span id="eduText">B.Tech - CSE</span></div>
+          <div><strong>Location:</strong> <span id="locText">Hyderabad, India</span></div>
+        </div>
+      </div>
+
+      <div class="profile-right">
+        <h2 id="profile-title" class="name">Geetha</h2>
+        <p class="role">Aspiring Full-stack Developer · Startup enthusiast</p>
+
+        <div class="info-grid">
+          <div><strong>Email:</strong> <a href="mailto:roman@example.com" id="emailText">geetha@example.com</a></div>
+          <!-- <div><strong>Password:</strong> <span id="pwdText">••••••••</span></div> -->
+          <div><strong>Profile Pic URL:</strong> <a href="#" id="picUrl">https://via.placeholder.com/260</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://linkedin.com" id="linkedinText" target="_blank" rel="noopener">linkedin.com/in/username</a></div>
+
+          <div><strong>GitHub:</strong> <a href="https://github.com" id="githubText" target="_blank" rel="noopener">github.com/username</a></div>
+          <div><strong>Twitter:</strong> <a href="https://twitter.com" id="twitterText" target="_blank" rel="noopener">@username</a></div>
+          <div><strong>Instagram:</strong> <a href="https://instagram.com" id="instagramText" target="_blank" rel="noopener">@username</a></div>
+
+          <div class="full-bio"><strong>Bio:</strong>
+            <p id="bioText">
+              Passionate about building products that solve real problems. Interested in web technologies, data structures and startup product design.
+            </p>
+          </div>
+        </div>
+
+        <div class="chips-row">
+          <div class="chips-block">
+            <h4>Skills</h4>
+            <div id="skillsChips" class="chips">
+              <!-- sample chips -->
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+
+          <div class="chips-block">
+            <h4>Interests</h4>
+            <div id="interestsChips" class="chips">
+              <span class="chip">Web Dev</span>
+              <span class="chip">Startups</span>
+              <span class="chip">Open Source</span>
+              <span class="chip">Finance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn primary" id="editBtn">Edit Profile</button>
+          <button class="btn" id="msgBtn">Message</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder sections for other menu items -->
+    <!-- <section id="batches" class="card small-section">
+      <h3>Batches</h3>
+      <p>Batch lists, batch events and batch mentors will appear here.</p>
+    </section>
+
+    <section id="events" class="card small-section">
+      <h3>Events</h3>
+      <p>Upcoming events will appear here.</p>
+    </section>
+
+    <section id="placements" class="card small-section">
+      <h3>Placements</h3>
+      <p>Placement stats, company listings and job posts.</p>
+    </section>
+
+    <section id="donations" class="card small-section">
+      <h3>Donations</h3>
+      <p>Donate to scholarships and campus projects.</p>
+    </section>
+
+    <section id="profile" class="card small-section">
+      <h3>My Profile</h3>
+      <p>Detailed editable profile page (form).</p>
+    </section> -->
+  </main>
+
+  <!-- <footer class="site-footer">
+    <p>© <span id="year"></span> Oranox Alumni • Built with ❤️</p>
+  </footer> -->
+
+  <script>
+    // small helper for footer year and nav active highlight
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    const items = document.querySelectorAll('.menu .menu-item');
+    function updateActive() {
+      items.forEach(i => i.classList.remove('active'));
+      const hash = window.location.hash || '#home';
+      const active = document.querySelector('.menu a[href="' + hash + '"]');
+      if (active) active.classList.add('active');
+    }
+    window.addEventListener('hashchange', updateActive);
+    updateActive();
+
+    // Example: Replace placeholders with dynamic values (if you want)
+    // const sampleData = { name: "Roman Vamshi", email: "roman@example.com", batch: "2021-2025", education: "B.Tech - CSE", profilePic: "https://via.placeholder.com/260" };
+    // document.getElementById('profile-title').innerText = sampleData.name;
+    // document.getElementById('emailText').innerText = sampleData.email;
+    // document.getElementById('batchText').innerText = sampleData.batch;
+    // document.getElementById('eduText').innerText = sampleData.education;
+    // document.getElementById('profileImg').src = sampleData.profilePic;
+    // document.getElementById('picUrl').innerText = sampleData.profilePic;
+    // document.getElementById('picUrl').href = sampleData.profilePic;
+  </script>
+</body>
+</html>

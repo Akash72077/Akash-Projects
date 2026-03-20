@@ -1,0 +1,18 @@
+body {
+  background: #f8f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.btn {
+  border-radius: 30px;
+}

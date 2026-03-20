@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(37, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: black;
+    
+}
+
+/* Card */
+.first {
+    background-color: rgb(74, 74, 74);
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    transition: transform 0.3s ease;
+}
+
+.first:hover {
+    transform: scale(1.1);
+    border-color: rgb(48, 180, 180) ;
+            box-shadow: 0 4px 8px aqua;
+
+}
+img{
+    border-radius: 1rem;
+}
+/* Content spacing */
+.content h3,
+.content h4,
+.content a{
+    margin-top: 1rem;
+    color: white;
+}
+
+/* Button */
+a {
+    color: white;
+}
+
+

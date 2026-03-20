@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .form-container{
+    margin: 0 auto;
+  }
+  
+  /* Form container */
+  .form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  /* Heading */
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Inputs & Textarea */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  /* Input hover/focus */
+  input:focus, textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Button hover */
+  button:hover {
+    background: #1a5ed8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }

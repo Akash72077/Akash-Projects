@@ -1,0 +1,83 @@
+/* 
+*{
+*->Asterisk
+//This is called as universal selector
+}
+ */
+/* *{
+    
+} */
+ /* Id selector
+ syntax:
+ #myid{
+ property: value;
+ }
+  */
+  /* h3{
+    background-color: antiquewhite !important;
+  } */
+  .a{
+    color: #b92b27;
+  }
+  #login{
+    background-color: white;
+  }
+  #signup{
+    background-color: #b92b27;
+  }
+  /* Class selector :
+  selects an element based on their class attribute
+  syntax:
+  .myclass{
+property value
+
+ }
+   */
+   p+h3{
+    text-decoration: underline;
+   }
+   .upvote+button{
+    background-color: cornflowerblue;
+   }
+   /* div>input{
+    background-color: rgb(13, 255, 0);
+   } */
+ input[type="text"]{
+  color: #e71009;
+ }
+  input[type="password"]{
+  color: #124cc1;
+ }
+button:hover{
+  background-color: black;
+  color: antiquewhite;
+}
+h3:hover{
+  text-decoration:none;
+}
+p:active{
+  font-weight: bold;
+  color: green;
+}
+input[type="radio"]:checked+label{
+  color: rgb(255, 0, 0);
+  font-size: bold;
+}
+/* div:nth-of-type(3n){
+  background-color: burlywood;
+} */
+/* h1::first-letter {
+  color: rgb(0, 195, 255);
+} */
+p::first-line {
+  color: red;
+}
+p::selection{
+  background-color: pink
+}
+/* h3{
+  background-color: yellow;
+}
+h3{
+  background-color: blue;
+} */

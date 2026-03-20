@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "Mysql local",
+            "database": "Akash",
+            "username": "root",
+            "password": "Akash@12345",
+            "connectionTimeout": 30
+        }
+    ]
+}

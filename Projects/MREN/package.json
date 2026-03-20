@@ -1,0 +1,22 @@
+{
+  "name": "mren",
+  "version": "1.0.0",
+  "description": "developer hub application",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server",
+    "server":"nodemon server"
+  },
+  "author": "Akash",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14"
+  }
+}

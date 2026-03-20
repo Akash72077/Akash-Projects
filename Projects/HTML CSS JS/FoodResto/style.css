@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(/images/Background2.png);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px 0px 50px;
+  height: 70px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-right: 20%;
+}
+
+.logo {
+  color: orange;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.nav-1 {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.links li {
+  font-size: 19px;
+  color: orange;
+}
+
+.icons {
+  display: flex;
+  gap: 35px;
+}
+
+.icons i {
+  color: #000;
+  font-size: 25px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 240px;
+  align-items: start;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+.left1 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.left2 {
+  font-size: 85px;
+  font-weight: 600;
+}
+
+.left3 {
+  font-size: 27px;
+  font-style: italic;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.left4 {
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.food {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#food {
+  background: url(/images/food.png);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+.items {
+  display: flex;
+  padding-left: 150px;
+  margin-top: -50px;
+  gap: 20px;
+}
+
+#food1,
+#food2,
+#food3,
+#food4 {
+  border: 2px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+
+#food1 {
+  background: url(/images/food1.png);
+  background-size: cover;
+}
+
+#food2 {
+  background: url(/images/food2.png);
+  background-size: cover;
+}
+
+#food3 {
+  background: url(/images/food3.png);
+  background-size: cover;
+}
+
+#food4 {
+  background: url(/images/food4.png);
+  background-size: cover;
+}
+
+#food1:hover,
+#food2:hover,
+#food3:hover,
+#food4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.links li {
+  font-size: 19px;
+  color: orange;
+  transition: all 0.3s ease;
+}
+
+.links li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: white;
+}

@@ -1,0 +1,68 @@
+
+.main{
+    display: flex;
+
+
+
+}
+.Green{
+   
+
+    border: 2px solid green;
+   border-radius: 1px ;
+    padding: 15px 45px;
+    margin: 10px;
+}
+.Blue{
+    border: 2px solid rgb(0, 149, 255);
+    
+    border-radius: 1px ;
+    padding: 15px 45px;
+    margin: 10px;
+    
+
+}
+.Red{
+   
+    border: 2px solid red;
+    border-radius: 1px ;
+    padding: 15px 45px;
+    margin: 10px;
+
+}
+.Gray{
+     
+    border: 2px solid gray;
+   border-radius: 1px ;
+    padding: 15px 45px;
+    margin: 10px;
+}
+.Black{
+    
+    border: 2px solid black;
+   border-radius: 1px ;
+    padding: 15px 45px;
+    margin: 10px;
+}
+.Green:hover{
+    background-color: green;
+    color: white;
+}
+.Blue:hover{
+    background-color: rgb(0, 149, 255);
+    color: white;
+}
+
+.Red:hover{
+    background-color: red;
+    color: white;
+}
+.Gray:hover{
+    background-color: gray;
+    color: white;
+}
+.Black:hover{
+    background-color: black;
+    color: white;
+}
+

@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.text {
+    background-image: url("https://t3.ftcdn.net/jpg/09/52/94/34/360_F_952943414_9CnPtITLZcDnISgw4PETA7A8vxOl4o8y.jpg");
+    background-size: cover;
+    height: 250px;
+    width: 90%;
+    padding: 200px 100px;
+    font-size: 20px;
+    color: white;
+}
+.cntr {
+    text-align: center;
+}
+.img1 {
+    height: 200px;
+    width: 200px;
+}
+.img1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.img1 > div {
+    width: 20%;
+    height: 40px;
+}
+.text1 {
+    padding-right: 30px;
+}
+.text2 {
+    padding-left: 30px;
+}
+.video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-top: 20px;
+    width: 100%;
+}
+.text3 {
+    text-align: center;
+}
+.text4 {
+    display: flex;
+    justify-content: space-around;
+}
+.img2 {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+.text5 p, h2 {
+    text-align: center;
+    font-size: 13px;
+}
+.text5 {
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-photo/beautiful-shot-trees-near-forested-mountains-clouds-with-light-pink-sky_181624-16013.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.text5 h2 {
+    padding-top: 50px;
+    font-size: 30px;
+}
+.iconsmain {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    color: black;
+}
+.head1 {
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+.mainflex1 {
+    display: flex;
+    justify-content: space-around;
+}
+.mainflex2 {
+    display: flex;
+    justify-content: space-around;
+}
+.percent {
+    text-align: center;
+    background-image: url("http://cruisemiss.com/wp-content/uploads/2012/04/bow-at-night.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: white;
+}
+.percent p {
+    padding-top: 60px;
+    padding-left: 80px;
+}
+.head {
+    text-align: center;
+    margin-top: 20px;
+}
+.bimg1 {
+    text-align: center;
+    background-image: url("https://wallpapers.com/images/hd/blue-anime-snowy-night-road-aesthetic-zuy9jnsb1gsvcy84.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    color: white;
+    padding-top: 30px;
+}
+.part2 {
+    text-align: center;
+}
+.allimages {
+    display: grid;
+    height: 40vh;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas:
+    'imgg1 imgg2 imgg3'
+    'imgg4 imgg5 imgg6'
+    'imgg7 imgg8 imgg9';
+}
+.gridimg {
+    width: 100%;
+    height: 100%;
+}
+.gridimg > img {
+    width: 100%;
+    height: 100%;
+}
+.bimgblack {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.bimgblack h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.bimgblack p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.bimgblack button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.team-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+.team-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.team-section p {
+    color: gray;
+    margin-bottom: 40px;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.team-member {
+    text-align: center;
+    width: 180px;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightgray;
+    object-fit: cover;
+    
+}
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.team-member p {
+    color: gray;
+    font-size: 14px;
+}

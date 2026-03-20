@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-weight:bolder
+    
+}
+h3{
+    text-align: left;
+}
+p{
+    font-weight: 50000;
+    /* text-decoration:dotted underline; */
+    /* line-height: 1.7; */
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}

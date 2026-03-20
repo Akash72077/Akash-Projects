@@ -1,0 +1,15 @@
+package com.learnJDBC;
+
+public class CodeOpt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			String URL="jdbc:mysql://localhost:3306/JDBCMySQL";
+	
+	
+			
+	}
+	
+	
+
+}

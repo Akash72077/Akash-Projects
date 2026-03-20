@@ -1,0 +1,35 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+    width: 100vw;
+
+     height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg");
+}
+.body{
+    padding: 4%;
+    border-radius:10%;
+     border: 1px solid black;
+     background-color: rgba(255, 255, 255, 0.5);
+}
+.body h3, .body h4,.body a{
+    margin-top: 1rem;
+    color: white;
+   
+}
+img{
+    border-radius: 50%;
+}
+a{     
+    margin-right: 10px;
+     color: white;
+   display: inline-block; margin-top: 1rem;
+     text-decoration: none;
+}

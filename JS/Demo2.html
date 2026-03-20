@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Demo2.css">
+</head>
+<body>
+    <h2>Enter your name: </h2>
+    <input type="text" id="nameBox" placeholder="Type your name ">
+<br><br>
+<button onclick="showName()" >Show name </button>
+<p id="output"></p>
+ <h2>Enter a number: </h2>
+    <input type="text" id="number" placeholder="input...... ">
+<br><br>
+<button onclick="Check()" >Check </button>
+<p id="out"></p>
+
+<h2>Enter age: </h2>
+    <input type="text" id="age" placeholder="input...... ">
+<br><br>
+<button onclick="ticketPrice()" >Calculate price </button>
+<p id="price"></p>
+
+
+<h2>Enter number of rounds: </h2>
+    <input type="text" id="rounds" placeholder="input...... ">
+<br><br>
+<button onclick="Roll()" >Sum of rounds </button>
+<p id="ans"></p>
+<div class="box">
+
+<div class="container">
+    <h1>Simple Calculator</h1>
+    <input type="text" id="first" placeholder="first number">
+    <input type="text" id="second" placeholder="second number">
+    <br>
+    <select name="action" id="action">
+        <option value="add">addition (+)</option>
+        <option value="sub">substration(-)</option>
+        <option value="mul">multiplication (*)</option>
+        <option value="div">divison (/)</option>
+        
+    </select>
+    <button id="button" onclick="Calculate()" >Calculate</button>
+    <br>
+    <p id="result"></p>
+    
+
+
+</div>
+</div>
+
+
+
+    <script src="name.js"></script>
+</body>
+</html>

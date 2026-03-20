@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+
+}
+.img{
+    height: 150px;
+    width: 250px;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.5s ease;
+    margin-top: 10px;
+
+
+}
+img:hover{
+    transform: scale(1.1);
+    
+}
+.container{
+    display: flex;
+    gap: 20px;
+
+}
