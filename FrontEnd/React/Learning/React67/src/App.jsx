@@ -59,6 +59,15 @@ import "./App.css";
 //   );
 // };
 // export default App;
+
+/*
+controller components lecture-7
+What are controlled components :
+A Controlled Components is an input filed whose value is fully controlled by react using state
+Without React-> the browser controls the input
+With React-> You control the input using useState
+*/
+
 import React from "react";
 
 export const App = () => {
