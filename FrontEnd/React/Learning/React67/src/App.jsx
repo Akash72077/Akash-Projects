@@ -1,6 +1,6 @@
 //on click events
 // import React from "react";
-// import "./App.css";
+import "./App.css";
 // const App = () => {
 //   function clickButton(name) {
 //     alert(`Hello ${name}`);
@@ -16,7 +16,6 @@
 
 //On change event for input
 // import React, { useState } from "react";
-// import "./App.css";
 // const App = () => {
 //   const [text, setText] = useState("");
 //   return (
@@ -34,7 +33,6 @@
 // export default App;
 
 // On submit events for forms
-// import React from "react";
 // import { useState } from "react";
 // const App = () => {
 //   const [name, setName] = useState("");
@@ -61,3 +59,8 @@
 //   );
 // };
 // export default App;
+import React from "react";
+
+export const App = () => {
+  return <div>App</div>;
+};
