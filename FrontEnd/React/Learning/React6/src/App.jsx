@@ -1,11 +1,14 @@
-import React from 'react'
-import "./App.css"
+import React from "react";
+import "./App.css";
 const App = () => {
+  function clickButton() {
+    alert("button clicked!");
+  }
   return (
     <div>
-      <button></button>
+      <button onClick={clickButton}>Click</button>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
