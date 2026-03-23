@@ -38,9 +38,10 @@ import React from "react";
 import { useState } from "react";
 const App = () => {
   const [name, setName] = useState("");
+  const [submittedName, setSubmittedName]=useState();
   function handleSumbit() {
     event.preventDefault();
-    console.log(`Submitted:${name}`);
+    setSubmittedName(name);
   }
   return (
     <div>
@@ -54,6 +55,8 @@ const App = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      {/*  displaying input data after submit */}
+      <h1>{submittedName}</h1>
     </div>
   );
 };
