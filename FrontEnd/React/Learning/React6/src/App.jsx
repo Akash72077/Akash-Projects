@@ -39,7 +39,7 @@ import { useState } from "react";
 const App = () => {
   const [name, setName] = useState("");
   function handleSumbit() {
-  
+    event.preventDefault();
     console.log(`Submitted:${name}`);
   }
   return (
