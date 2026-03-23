@@ -1,4 +1,4 @@
-//
+//on click events
 // import React from "react";
 // import "./App.css";
 // const App = () => {
@@ -13,6 +13,7 @@
 // };
 
 // export default App;
+
 //On change event for input
 // import React, { useState } from "react";
 // import "./App.css";
@@ -31,3 +32,29 @@
 //   );
 // };
 // export default App;
+
+// On submit events for forms
+import React from "react";
+import { useState } from "react";
+const App = () => {
+  const [name, setName] = useState("");
+  function handleSumbit() {
+  
+    console.log(`Submitted:${name}`);
+  }
+  return (
+    <div>
+      {/* when we submit form in react the page will refreshes automatically To avoid this refresh we have to perform another event that is event.preventDefault();
+       */}
+      <form onSubmit={handleSumbit}>
+        <input
+          type="text"
+          placeholder="Enter Your name:"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+};
+export default App;
