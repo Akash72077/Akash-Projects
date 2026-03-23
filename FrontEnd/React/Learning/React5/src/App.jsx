@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 const App = () => {
   //example-1
@@ -8,8 +8,7 @@ const App = () => {
   //   display="Welcome to Hyderabad";
   // }
   // example-2
-  const isLoggedIN = true;
-
+  // const isLoggedIN = true;
   // let display;
   // if(isLoggedIN==true){ // example for conditional rendering
   //   display="Logout";
@@ -28,8 +27,24 @@ const App = () => {
   // );
   // example-4
   // rendering using and operator it will be used to render when the condition or value of the variable is true
- // for this example the prarical example will be example 1
-  return <div>{isLoggedIN && <button>Logout</button>}</div>;
+  // for this example the prarical example will be example 1
+  // return <div>{isLoggedIN && <button>Logout</button>}
+  // </div>;
+// project-1
+  const [show, setShow] = useState(false);
+  // const handleButton = () => {
+    // if (show === true) {
+    //   setShow(false);
+    // } else {
+    //   setShow(true);
+    // }
+    // setShow(!show); // insted of using if and else we can use (!show) if the input is true then it will become false if false it will become true
+  // };
+  return (
+    <div>
+      <button onClick={()=>setShow(!show)}>{show ? "Hide" : "Show"}</button>
+      {show && <p>This is a Secret Message!</p>}
+    </div>
+  );
 };
-
 export default App;
