@@ -156,7 +156,7 @@ export const App = () => {
   const [submittedForm, setSubmittedForm] = useState(null);
   function handleChange(event) {
     setFormData({
-      ...formData,
+      ...formData, // spread operator inserts the values into varuables 
       [event.target.name]: event.target.value,
     });
   }
