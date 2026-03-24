@@ -15,7 +15,18 @@ function Pricing() {
           </a>
         </div>
         <div className="col-2"></div>
-        <div className="col-4"></div>
+        <div className="col-6">
+          <div className="row text-center">
+            <div className="col">
+                <h1>₹0</h1>
+                <p>Free equity delivery and direct mutual funds</p>
+            </div>
+            <div className="col">
+                <h1>₹20</h1>
+                <p>Intraday and F&O</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
