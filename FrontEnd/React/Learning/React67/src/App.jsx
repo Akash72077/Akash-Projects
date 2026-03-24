@@ -145,3 +145,56 @@ With React-> You control the input using useState
 //   );
 // };
 // export default App;
+//handling mutliple inputs using one object state
+import React, { useState } from "react";
+import "./App.css";
+export const App = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [submittedForm, setSubmittedForm] = useState(null);
+  function handleChange(event) {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  }
+  function handleForm(event) {
+    event.preventDefault();
+    setSubmittedForm(formData);
+  }
+  return (
+    <div>
+      <form onSubmit={handleForm}>
+        <input
+          type="email"
+          placeholder="Enter Your Email:"
+          onChange={handleChange}
+          name="email"
+          value={formData.email}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Enter Your Password:"
+          onChange={handleChange}
+          name="password"
+          value={formData.password}
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <div>
+        {submittedForm && (
+          <div>
+            <h2>Form Submitted</h2>
+            <p>Email: {submittedForm.email}</p>
+            <p>Password: {submittedForm.password}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+export default App;
