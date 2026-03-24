@@ -1,9 +1,15 @@
-import React from 'react'
-
-const Pricing = () => {
+import React from "react";
+function Pricing() {
   return (
-    <div>Pricing</div>
-  )
+    <div className="container">
+      <div className="row">
+        <div className="col-4">
+            
+        </div>
+        <div className="col-2"></div>
+        <div className="col-4"></div>
+      </div>
+    </div>
+  );
 }
-
-export default Pricing
+export default Pricing;
