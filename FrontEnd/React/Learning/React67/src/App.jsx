@@ -198,6 +198,7 @@ export const App = () => {
         {submittedForm && (
           <div>
             <h2>Form Submitted</h2>
+            <p>Name: {submittedForm.name}</p>
             <p>Email: {submittedForm.email}</p>
             <p>Password: {submittedForm.password}</p>
           </div>
