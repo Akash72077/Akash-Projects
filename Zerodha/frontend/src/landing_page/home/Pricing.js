@@ -18,12 +18,14 @@ function Pricing() {
         <div className="col-6">
           <div className="row text-center">
             <div className="col p-3 border">
-                <h1 className="m-3">₹0</h1>
-                <p>Free equity delivery and <br></br> direct mutual funds</p>
+              <h1 className="m-3">₹0</h1>
+              <p>
+                Free equity delivery and <br></br> direct mutual funds
+              </p>
             </div>
             <div className="col p-3 border">
-                <h1 className="m-3" >₹20</h1>
-                <p>Intraday and F&O</p>
+              <h1 className="m-3">₹20</h1>
+              <p>Intraday and F&O</p>
             </div>
           </div>
         </div>
