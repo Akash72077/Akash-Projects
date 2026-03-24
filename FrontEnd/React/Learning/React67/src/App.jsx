@@ -150,13 +150,14 @@ import React, { useState } from "react";
 import "./App.css";
 export const App = () => {
   const [formData, setFormData] = useState({
+    Name:"",
     email: "",
     password: "",
   });
   const [submittedForm, setSubmittedForm] = useState(null);
   function handleChange(event) {
     setFormData({
-      ...formData, // spread operator inserts the values into varuables 
+      ...formData, // spread operator inserts the values into varuables
       [event.target.name]: event.target.value,
     });
   }
@@ -167,6 +168,14 @@ export const App = () => {
   return (
     <div>
       <form onSubmit={handleForm}>
+        <input
+          type="text"
+          placeholder="Enter Your Name:"
+          onChange={handleChange}
+          name="name"
+          value={formData.email}
+          required
+        />
         <input
           type="email"
           placeholder="Enter Your Email:"
