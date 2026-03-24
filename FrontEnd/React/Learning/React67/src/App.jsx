@@ -150,7 +150,7 @@ import React, { useState } from "react";
 import "./App.css";
 export const App = () => {
   const [formData, setFormData] = useState({
-    Name:"",
+    name: "",
     email: "",
     password: "",
   });
@@ -164,6 +164,11 @@ export const App = () => {
   function handleForm(event) {
     event.preventDefault();
     setSubmittedForm(formData);
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+    });
   }
   return (
     <div>
@@ -173,7 +178,7 @@ export const App = () => {
           placeholder="Enter Your Name:"
           onChange={handleChange}
           name="name"
-          value={formData.email}
+          value={formData.name}
           required
         />
         <input
