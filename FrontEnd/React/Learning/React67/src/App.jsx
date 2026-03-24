@@ -1,6 +1,6 @@
 //on click events
 // import React from "react";
-import "./App.css";
+// import "./App.css";
 // const App = () => {
 //   function clickButton(name) {
 //     alert(`Hello ${name}`);
@@ -67,9 +67,38 @@ A Controlled Components is an input filed whose value is fully controlled by rea
 Without React-> the browser controls the input
 With React-> You control the input using useState
 */
-
-import React from "react";
-
+// handling mutliple inputs with multiple states
+import React, { useState } from "react";
+import "./App.css";
 export const App = () => {
-  return <div>App</div>;
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [submittedEmail,setSubmittedEmail]=useState("");
+   const [submittedPassword,setSubmittedPassword]=useState("");
+  function handleForm(e) {
+    e.preventDefault();
+    setSubmittedEmail(email);
+    setSubmittedPassword(password);
+  }
+  return (
+    <div>
+      <form onSubmit={handleForm}>
+        <input
+          type="email"
+          placeholder="Enter Your Email:"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Enter Your Password:"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <div>
+        <h2>{submittedEmail} -  {submittedPassword}</h2>
+      </div>
+    </div>
+  );
 };
+export default App;
