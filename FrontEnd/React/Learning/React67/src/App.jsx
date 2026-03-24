@@ -105,43 +105,43 @@ With React-> You control the input using useState
 // };
 // export default App;
 //conditonal rendering
-import React, { useState } from "react";
-import "./App.css";
-export const App = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [submittedEmail, setSubmittedEmail] = useState("");
-  const [submittedPassword, setSubmittedPassword] = useState("");
-  function handleForm(e) {
-    e.preventDefault();
-    setSubmittedEmail(email);
-    setSubmittedPassword(password);
-  }
-  return (
-    <div>
-      <form onSubmit={handleForm}>
-        <input
-          type="email"
-          placeholder="Enter Your Email:"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Enter Your Password:"
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
-      <div>
-        {submittedEmail && (
-          <h2>
-            {submittedEmail} - {submittedPassword}
-          </h2>
-        )}
-      </div>
-    </div>
-  );
-};
-export default App;
+// import React, { useState } from "react";
+// import "./App.css";
+// export const App = () => {
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [submittedEmail, setSubmittedEmail] = useState("");
+//   const [submittedPassword, setSubmittedPassword] = useState("");
+//   function handleForm(e) {
+//     e.preventDefault();
+//     setSubmittedEmail(email);
+//     setSubmittedPassword(password);
+//   }
+//   return (
+//     <div>
+//       <form onSubmit={handleForm}>
+//         <input
+//           type="email"
+//           placeholder="Enter Your Email:"
+//           onChange={(e) => setEmail(e.target.value)}
+//           required
+//         />
+//         <input
+//           type="password"
+//           placeholder="Enter Your Password:"
+//           onChange={(e) => setPassword(e.target.value)}
+//           required
+//         />
+//         <button type="submit">Submit</button>
+//       </form>
+//       <div>
+//         {submittedEmail && (
+//           <h2>
+//             {submittedEmail} - {submittedPassword}
+//           </h2>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+// export default App;
