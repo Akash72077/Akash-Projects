@@ -73,8 +73,8 @@ import "./App.css";
 export const App = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [submittedEmail,setSubmittedEmail]=useState("");
-   const [submittedPassword,setSubmittedPassword]=useState("");
+  const [submittedEmail, setSubmittedEmail] = useState("");
+  const [submittedPassword, setSubmittedPassword] = useState("");
   function handleForm(e) {
     e.preventDefault();
     setSubmittedEmail(email);
@@ -96,7 +96,9 @@ export const App = () => {
         <button type="submit">Submit</button>
       </form>
       <div>
-        <h2>{submittedEmail} -  {submittedPassword}</h2>
+        <h2>
+          {submittedEmail} - {submittedPassword}
+        </h2>
       </div>
     </div>
   );
