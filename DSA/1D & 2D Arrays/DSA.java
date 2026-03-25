@@ -2,7 +2,24 @@ import java.util.Scanner;
 
 public class DSA {
     
+    static int tripletSum(int arr[], int target){
+        //program to count the total number of triplets whouse sum is equal to the given value of X
+        int ans=0;
+        int n=arr.length;
+         for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                for(int k=j+1; k<n; k++){
+                    if(arr[i]+arr[j]+arr[k]==target){
+                    ans++;
+                }
+                }
+            }
+        }
+
+        return ans;
+    }
     static int pairSum(int arr[], int target){
+        //program to find the total number of pairs in the arrays whose sum is equal to given target
         int n=arr.length;
         int ans=0;
         for(int i=0; i<n; i++){
@@ -26,7 +43,8 @@ public class DSA {
         System.out.println("Enter target sum: ");
         int target=sc.nextInt();
 
-        System.out.println("The no of Possible ways is: "+pairSum(arr, target));
+        System.out.println("The no of Possible ways for pair sum is: "+pairSum(arr, target));
+        System.out.println("The no of Possible ways for Triplet sum is: "+tripletSum(arr, target));
         sc.close();
     }
 }
