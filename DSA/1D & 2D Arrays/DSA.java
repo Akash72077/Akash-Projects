@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class DSA {
+    
     static int tripletSum(int arr[], int target){
         //program to count the total number of triplets whouse sum is equal to the given value of X
         int ans=0;
@@ -42,7 +43,6 @@ public class DSA {
             return ans;
 
         }
-
         static int unique(int arr[]){
             // unique element is finded using two loops to make this code efficent we have to use bitwise XOR
             int ans=-1;
@@ -63,6 +63,27 @@ public class DSA {
             }
             return ans;
         }
+        static int findMax(int arr[]){
+             int n=arr.length;
+            int ans=Integer.MIN_VALUE;
+                for(int i=0; i<n; i++){
+                if(arr[i]>ans){
+                    ans=arr[i];
+                }
+            }
+            return ans;
+        }
+        static int SecondLargest(int arr[]){
+            int n=arr.length;
+            int max=findMax(arr);// finds the maximum element from an array
+             for(int i=0; i<n; i++){
+                if(arr[i]==max){// then make as -infinity where we have found maximum number
+                    arr[i]=Integer.MIN_VALUE;
+                }
+            }
+             int sMax=findMax(arr);// now the maximum numbers will become -infinity now again find the max number it will be the second largest number
+            return sMax;
+        }
         public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the size of arr: ");
@@ -77,7 +98,8 @@ public class DSA {
        // System.out.println("The no of Possible ways for pair sum is: "+pairSum(arr, target));
       //  System.out.println("The no of Possible ways for Triplet sum is: "+tripletSum(arr, target));
      // System.out.println(UniqueBitWise(arr));
-      System.out.println(unique(arr));
+    //   System.out.println(unique(arr));
+        System.out.println(SecondLargest(arr));
         sc.close();
     }
 }
