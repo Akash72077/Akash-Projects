@@ -84,6 +84,18 @@ public class DSA {
              int sMax=findMax(arr);// now the maximum numbers will become -infinity now again find the max number it will be the second largest number
             return sMax;
         }
+        static int firstRepeatingNumber(int arr[]){
+            // Given an array consisting of integers. Return the first value that is repeating in this array. If no value is being repeated , return -1.
+             int n=arr.length;
+            for(int i=0; i<n; i++){
+                for(int j=i+1; j<n; j++){
+                    if(arr[i]==arr[j]){
+                        return arr[i];
+                    }
+                }
+            }
+            return -1;         
+        }
         public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the size of arr: ");
@@ -99,7 +111,9 @@ public class DSA {
       //  System.out.println("The no of Possible ways for Triplet sum is: "+tripletSum(arr, target));
      // System.out.println(UniqueBitWise(arr));
     //   System.out.println(unique(arr));
-        System.out.println(SecondLargest(arr));
+        // System.out.println(SecondLargest(arr));
+        // System.out.println(findMax(arr));
+        System.out.println("First Repeating Number: "+firstRepeatingNumber(arr));
         sc.close();
     }
 }
