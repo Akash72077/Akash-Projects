@@ -122,6 +122,6 @@ public class DSA {
         // System.out.println(SecondLargest(arr));
         // System.out.println(findMax(arr));
         System.out.println("First Repeating Number: "+firstRepeatingNumber(arr));
-        sc.close();
+        sc.close();// closed statement
     }
 }
