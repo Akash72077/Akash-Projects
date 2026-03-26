@@ -105,7 +105,7 @@ public class DSA {
             System.out.println("b: "+b);
         }    
         public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in); //scanner class
         System.out.println("Enter the size of arr: ");
         int n=sc.nextInt();//input
         int arr[]=new int[n]; //declaring array
