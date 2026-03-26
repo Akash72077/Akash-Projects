@@ -96,7 +96,7 @@ public class DSA {
             }
             return -1;         
         }
-        static void swap(int a, int b){
+        static void swap(int a, int b){//program to swap the numbers
             System.out.println("Original values before swap: ");
             System.out.println("a: "+a);
             System.out.println("b: "+b);
