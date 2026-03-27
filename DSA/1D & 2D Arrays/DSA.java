@@ -100,9 +100,15 @@ public class DSA {
             System.out.println("Original values before swap: ");
             System.out.println("a: "+a);
             System.out.println("b: "+b);
-            int temp=a;
-            a=b;
-            b=temp;// swaping numbers with using temp 
+            // int temp=a;
+            // a=b;
+            // b=temp;// swaping numbers with using temp 
+           // swaping without temp
+             // let a =5, b=8 we have to get a=8 and b=5 as a result
+               a=a+b; // now a=5+8 =13
+             b=a-b; // b=13-8=5 so b stores 5 but a contains 13 
+             a=a-b;//13-5=8 
+
             System.out.println("After swaping values: ");
             System.out.println("a: "+a);
             System.out.println("b: "+b);
