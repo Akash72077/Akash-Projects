@@ -16,6 +16,19 @@ public class rotate {
         System.out.print(ans[i]+" ");
     }
    }
+   static void swap(int arr[] ,int i,int j){
+
+   }
+   static void reverse(int arr[]){
+    int n=arr.length;
+    int i=0, j=n-1;
+    while (i<j) {
+        swap(arr,i,j);
+        i++;
+        j--;
+        
+    }
+   }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter size:");
