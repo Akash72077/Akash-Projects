@@ -1,6 +1,7 @@
 import java.util.*;
 public class rotate {
    static void rotateExtraSpace(int arr[], int k){
+    // rotate an array using extra array
     int n=arr.length;
     k=k%n;
     int j=0;
@@ -15,7 +16,6 @@ public class rotate {
         System.out.print(ans[i]+" ");
     }
    }
-
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter size:");
