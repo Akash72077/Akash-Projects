@@ -100,6 +100,9 @@ public class DSA {
             System.out.println("Original values before swap: ");
             System.out.println("a: "+a);
             System.out.println("b: "+b);
+            int temp=a;
+            a=b;
+            b=temp;// swaping numbers with using temp 
             System.out.println("After swaping values: ");
             System.out.println("a: "+a);
             System.out.println("b: "+b);
@@ -121,7 +124,8 @@ public class DSA {
     //System.out.println(unique(arr));
         // System.out.println(SecondLargest(arr));
         // System.out.println(findMax(arr));
-        System.out.println("First Repeating Number: "+firstRepeatingNumber(arr));
+        // System.out.println("First Repeating Number: "+firstRepeatingNumber(arr));
+        swap(1,2);
         sc.close();// closed statement
     }
 }
