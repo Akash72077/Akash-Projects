@@ -30,7 +30,6 @@ public class rotate {
         swap(arr,i,j);
         i++;
         j--;
-        
     }
    }
    static void rotateWithOutExtraSpace(int arr[] , int k){
