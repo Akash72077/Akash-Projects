@@ -50,6 +50,28 @@ public class twoPointer {
          }
          printArr(arr);
     }
+    //problem-1
+    // statement: Given an array of integers 'a', move all the even integers at the begining of the array followed by all the odd integers.The relative order of odd or even intergers does not matter return any array that satisfies the condition
+    static void sortByParity(int arr[]){
+        int n=arr.length;
+         int i=0;
+         int j=n-1;
+         while(i<j){
+            if(arr[i]%2==1&&arr[j]%2==0){
+                swap(arr, i, j);
+                i++;
+                j--;
+            }
+            if(arr[i]%2==0){
+                i++;
+            }
+            if(arr[j]%2==1){
+                j--;
+            }
+         }
+         printArr(arr);
+    }
+    
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the Size of an Array: ");
@@ -60,7 +82,8 @@ public class twoPointer {
             arr[i]=sc.nextInt();
         }
         // sortArrayZerosOnes(arr);
-        sortArrayZerosOnesEfficient(arr);
+        // sortArrayZerosOnesEfficient(arr);
+        sortByParity(arr); // parity means checking is it odd or even
         sc.close();
     }
 }
