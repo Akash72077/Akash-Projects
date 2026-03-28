@@ -1,5 +1,11 @@
 import java.util.Scanner;
 public class twoPointer {
+    // function to swap elements in an array
+    static void swap(int arr[], int i, int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
     // function to print an array
     static void printArr(int arr[]){
         int n=arr.length;
