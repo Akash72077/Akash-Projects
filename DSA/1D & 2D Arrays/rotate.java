@@ -6,7 +6,6 @@ public class rotate {
         System.out.print(arr[i]+" ");
     }
     }
-
 //    static void rotateExtraSpace(int arr[], int k){
 //     // rotate an array using extra array
 //     int n=arr.length;
