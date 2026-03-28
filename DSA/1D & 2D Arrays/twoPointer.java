@@ -1,11 +1,13 @@
 import java.util.Scanner;
 public class twoPointer {
+    // function to print an array
     static void printArr(int arr[]){
         int n=arr.length;
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+" ");
         }
     }
+    // inefficient appraoch
     static void sortArrayZerosOnes(int arr[]){
         int n=arr.length;
         int countZero=0;
