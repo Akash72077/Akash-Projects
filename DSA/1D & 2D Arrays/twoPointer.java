@@ -59,7 +59,7 @@ public class twoPointer {
          while(i<j){
             if(arr[i]%2==1&&arr[j]%2==0){
                 swap(arr, i, j);
-                i++;
+                i++;// increases left
                 j--;
             }
             if(arr[i]%2==0){
