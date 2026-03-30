@@ -53,7 +53,7 @@ public class twoPointer {
     //problem-1
     // statement: Given an array of integers 'a', move all the even integers at the begining of the array followed by all the odd integers.The relative order of odd or even intergers does not matter return any array that satisfies the condition
     static void sortByParity(int arr[]){
-        int n=arr.length;
+        int n=arr.length;// calculating length
          int i=0;
          int j=n-1;
          while(i<j){
