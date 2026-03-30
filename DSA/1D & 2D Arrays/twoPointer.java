@@ -56,7 +56,7 @@ public class twoPointer {
         int n=arr.length;// calculating length
          int i=0;
          int j=n-1;
-         while(i<j){
+         while(i<j){// base case
             if(arr[i]%2==1&&arr[j]%2==0){
                 swap(arr, i, j);
                 i++;// increases left pointer
