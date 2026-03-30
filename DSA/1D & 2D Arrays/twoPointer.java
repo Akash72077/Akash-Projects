@@ -63,7 +63,7 @@ public class twoPointer {
                 j--;// decreases right pointer
             }
             if(arr[i]%2==0){
-                i++; 
+                i++; // if element is even then increase left pointer
             }
             if(arr[j]%2==1){
                 j--;
