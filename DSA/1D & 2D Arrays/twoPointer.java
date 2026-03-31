@@ -6,6 +6,13 @@ public class twoPointer {
         arr[i]=arr[j];
         arr[j]=temp;
     }
+    static void reverse(int arr[],int i,int j){    
+    while (i<j) {
+        swap(arr,i,j);
+        i++;
+        j--;
+    }
+   }
     // function to print an array
     static void printArr(int arr[]){
         int n=arr.length;
@@ -71,6 +78,22 @@ public class twoPointer {
          }
          printArr(arr);
     }
+    static void sortSquares(int arr[]){
+        int n=arr.length;// calculating length
+        int[] ans = new int[n];
+        int left=0,right=n-1,k=n-1;
+        while(left<=right){
+            if(Math.abs(arr[left])>Math.abs(arr[right])){
+                ans[k--]=arr[left]*arr[left]; 
+                left++;
+            }else{
+                ans[k--]=arr[right]*arr[right];
+                right--;
+            }
+        }
+        
+       printArr(ans);
+    }
     
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -83,8 +106,9 @@ public class twoPointer {
         }
         // sortArrayZerosOnes(arr);
         // sortArrayZerosOnesEfficient(arr);
-        sortByParity(arr); // parity means checking is it odd or even
+        // sortByParity(arr); // parity means checking is it odd or even
         // the main difference between increasing and non decreasing order is the values can repeat in non decreasing where the values can repeat 
+        sortSquares(arr);
         sc.close();
     }
 }
