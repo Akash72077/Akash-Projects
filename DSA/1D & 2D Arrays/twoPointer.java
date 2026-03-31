@@ -84,6 +84,7 @@ public class twoPointer {
         // sortArrayZerosOnes(arr);
         // sortArrayZerosOnesEfficient(arr);
         sortByParity(arr); // parity means checking is it odd or even
+        // the main difference between increasing and non decreasing order is the values can repeat in non decreasing where the values can repeat 
         sc.close();
     }
 }
