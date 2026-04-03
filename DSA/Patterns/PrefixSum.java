@@ -28,7 +28,7 @@ public class PrefixSum {
        for(int i=2; i<=n; i++){
                arr[i]=arr[i]+arr[i-1];
         }
-        printArr(arr,n);
+        printArr(arr,n);//printing array
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
