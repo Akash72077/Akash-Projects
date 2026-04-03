@@ -45,6 +45,6 @@ public class PrefixSum {
         }
         // prefixSum(arr1,n);
         checkSum(arr, n);
-        sc.close();
+        sc.close();//scanner class closed
     }
 }
