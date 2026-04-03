@@ -14,7 +14,7 @@ public class PrefixSum {
         }
         printArr(arr, n);
         printArr(prefix, n);// code for prefix sum
-        printArr(suffix, n);
+        printArr(suffix, n);//code for suffix sum
     }
     // given an array of 'a', return the prefix sum/running sum in the same array
     static void printArr(int arr[], int n){
