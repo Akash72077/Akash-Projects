@@ -33,7 +33,7 @@ public class PrefixSum {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the size of an array: ");
-        int n=sc.nextInt();
+        int n=sc.nextInt();// size of an array
         int arr[]= new int[n];// for 0 based indexing
         //  int arr1[]= new int[n+1];// for 1 based indexing
         System.out.println("Enter "+n+" Elements: ");
