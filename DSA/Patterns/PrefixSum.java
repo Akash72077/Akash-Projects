@@ -17,7 +17,7 @@ public class PrefixSum {
         printArr(suffix, n);//code for suffix sum
     }
     // given an array of 'a', return the prefix sum/running sum in the same array
-    static void printArr(int arr[], int n){
+    static void printArr(int arr[], int n){// function to print elements in array
          for(int i=0; i<n; i++){
               System.out.print(arr[i]+" ");
         }
