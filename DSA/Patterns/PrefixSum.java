@@ -21,7 +21,7 @@ public class PrefixSum {
          for(int i=0; i<n; i++){
               System.out.print(arr[i]+" ");
         }
-        System.out.println();
+        System.out.println();// new line
     }
     static void prefixSum(int arr[], int n){
         // For a given array of integers of size n, answer q queries to print the sum of values in a given range of indices from l to r
