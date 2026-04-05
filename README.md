@@ -23,5 +23,3 @@ I will continue adding more projects as I learn new technologies.
 * Email: (optional)
 
 ---
-
-⭐ Feel free to explore and give feedback!
