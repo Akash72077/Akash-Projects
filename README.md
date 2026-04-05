@@ -3,11 +3,6 @@
 Welcome to my project repository!
 This repo contains all the projects I’ve built during my B.Tech in Computer Science.
 
-## 📂 Projects Included
-
-* 🔹 Project 1 – Short description
-* 🔹 Project 2 – Short description
-* 🔹 Project 3 – Short description
 
 ## 🛠️ Tech Stack
 
