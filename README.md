@@ -6,7 +6,7 @@ This repo contains all the projects I’ve built during my B.Tech in Computer Sc
 ## 🛠️ Tech Stack
 
 * Languages: C, C++, Java, Python.
-* Web: HTML, CSS, JavaScript
+* Web: HTML, CSS, JavaScript.
 * Tools: Git, GitHub, VS Code
 
 ## 🎯 Purpose
