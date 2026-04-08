@@ -1,5 +1,12 @@
 import java.util.Scanner;
 public class PrefixSum {
+    static int ArrSum(int arr[], int n){
+        int totalSum=0;
+        for(int i=0; i<n; i++){
+            totalSum+=arr[i];
+        }
+        return totalSum;
+    }
     static void checkSum(int arr[], int n){
 // Check if we can partition the array into two subarrays with equal sum. More formally, check that the perifx sum of parts of the arrays is equal to the suffix sum of rest of the array.
         int prefix[]= new int[n];
@@ -44,7 +51,8 @@ public class PrefixSum {
             arr[i]=sc.nextInt();// taking input
         }
         // prefixSum(arr1,n);
-        checkSum(arr, n);
+        // checkSum(arr, n);
+        ArrSum(arr, n);
         sc.close();//scanner class closed
     }
 }
