@@ -13,6 +13,3 @@ This repo contains all the projects I’ve built during my B.Tech in Computer Sc
 
 This repository showcases my learning, skills, and hands-on experience in software development.
 
-## 📌 Future Updates
-
-I will continue adding more projects as I learn new technologies.
