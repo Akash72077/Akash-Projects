@@ -9,7 +9,5 @@ This repo contains all the projects I’ve built during my B.Tech in Computer Sc
 * Web: HTML, CSS, JavaScript.
 * Tools: Git, GitHub, VS Code.
 
-## 🎯Purpose
 
-This repository showcases my learning, skills, and hands-on experience in software development.
 
