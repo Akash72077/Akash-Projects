@@ -9,6 +9,7 @@ public class Matrix {
         int n=sc.nextInt();
         int mat1[][]= new int[m][n];
         int mat2[][]= new int[m][n];
+        int result[][]= new int[m][n];
         System.out.println("Enter the values for Matrix-1: ");
         for(int i=0; i<m;i++){
             for(int j=0; j<n; j++){
@@ -19,6 +20,12 @@ public class Matrix {
         for(int i=0; i<m;i++){
             for(int j=0; j<n; j++){
                 mat2[i][j]=sc.nextInt();
+            }
+        }
+        // code to calculate and store in result array
+        for(int i=0; i<m;i++){
+            for(int j=0; j<n; j++){
+                result[i][j]=mat1[i][j]+mat2[i][j];
             }
         }
     }
