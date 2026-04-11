@@ -8,6 +8,9 @@ public class Matrix {
             System.out.println();
         }
     }
+    static void multiplication(int mat1[][], int mat2[][]){
+
+    }
     static void addition(int mat1[][], int mat2[][], int m , int n){
         int result[][]= new int[m][n];
         for(int i=0; i<m;i++){
