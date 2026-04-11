@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Matrix {
     static void printArr(int arr[][]){
         for(int i=0; i<arr.length;i++){
@@ -27,7 +26,6 @@ public class Matrix {
         int n=sc.nextInt();
         int mat1[][]= new int[m][n];
         int mat2[][]= new int[m][n];
-        
         System.out.println("Enter the values for Matrix-1: ");
         for(int i=0; i<m;i++){
             for(int j=0; j<n; j++){
