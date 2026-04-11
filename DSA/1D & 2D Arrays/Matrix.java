@@ -28,6 +28,7 @@ public class Matrix {
                 result[i][j]=mat1[i][j]+mat2[i][j];
             }
         }
+        //code to print the matrix 
         System.out.println("The addition matrix: ");
          for(int i=0; i<m;i++){
             for(int j=0; j<n; j++){
@@ -35,5 +36,6 @@ public class Matrix {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
