@@ -1,5 +1,4 @@
 import tkinter as tk
-
 # Create main window
 window = tk.Tk()
 window.title("Login Page")
