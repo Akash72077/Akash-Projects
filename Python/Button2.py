@@ -1,5 +1,6 @@
-import tkinter
+import tkinter # step 1
 from tkinter import messagebox
+# Created GUI window
 window = tkinter.Tk()
 window.title("GUI")
 def callback():
