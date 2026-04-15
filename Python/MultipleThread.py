@@ -14,9 +14,7 @@
 # # Wait for threads to finish
 # t1.join()
 # t2.join()
-
 # print("Main program finished")
-
 import threading
 
 # Function to print even numbers
