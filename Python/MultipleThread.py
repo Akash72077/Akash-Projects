@@ -1,5 +1,4 @@
 # import threading
-
 # def task():
 #     print("Thread is running")
 
@@ -10,7 +9,6 @@
 # # Start threads
 # t1.start()
 # t2.start()
-
 # # Wait for threads to finish
 # t1.join()
 # t2.join()
