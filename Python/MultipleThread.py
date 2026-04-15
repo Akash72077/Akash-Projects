@@ -38,9 +38,7 @@ t2 = threading.Thread(target=print_odd)
 # Start threads
 t1.start()
 t2.start()
-
 # Wait for both threads to finish
 t1.join()
 t2.join()
-
 print("Program finished")
