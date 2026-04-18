@@ -31,7 +31,6 @@
 //   );
 // };
 // export default App;
-
 // On submit events for forms
 // import { useState } from "react";
 // const App = () => {
