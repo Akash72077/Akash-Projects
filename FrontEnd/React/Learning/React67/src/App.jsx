@@ -13,7 +13,6 @@
 // };
 
 // export default App;
-
 //On change event for input
 // import React, { useState } from "react";
 // const App = () => {
