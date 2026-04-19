@@ -1,4 +1,3 @@
-
 n= int(input("Enter the value of n: "))
 # m=int (input("Enter the value of m: "))
 for i in range(n):
