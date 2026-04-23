@@ -9,9 +9,7 @@
     justify-content:flex-start; 
      flex-wrap: wrap;
     /* align-items: baseline;  */
-    align-content:space-evenly;
-     
-      
+    align-content:space-evenly;     
 }
 h1{
     text-align: center;
