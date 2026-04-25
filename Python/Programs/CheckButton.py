@@ -1,4 +1,4 @@
-import tkinter
+import tkinter #
 from tkinter import * 
 window=tkinter.Tk()
 cb1=tkinter.Checkbutton(window,text="dance")
