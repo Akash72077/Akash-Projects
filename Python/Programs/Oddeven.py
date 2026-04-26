@@ -1,4 +1,3 @@
-
 import threading
 # Function to print even numbers
 def print_even():
@@ -13,7 +12,6 @@ def print_odd():
 # Create threads
 t1 = threading.Thread(target=print_even)
 t2 = threading.Thread(target=print_odd)
-
 # Start threads
 t1.start()
 t2.start()
