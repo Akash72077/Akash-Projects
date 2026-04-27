@@ -14,3 +14,7 @@
 # a="my name is Akash, My age is 19"
 # b=re.split("my",a)
 # print(b)
+import re
+a="my name is Akash, My age is 19"
+b=re.sub("Akash","Sai",a)
+print(b)
