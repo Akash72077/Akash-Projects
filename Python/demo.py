@@ -32,3 +32,4 @@
 # print(type(a))
 # a=10
 # print(type(a))
+y = 5.6; print(type(y))
