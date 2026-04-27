@@ -28,5 +28,7 @@
 # print(type(Str3))
 # Str3[0]='C'
 # print(Str3)
-a=2+3j
+# a=2+3j
+# print(type(a))
+a=10
 print(type(a))
