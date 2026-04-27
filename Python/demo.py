@@ -40,6 +40,8 @@
 # print(b)
 # print(type(b))
 #byte array: it is similar to byte datatype but it is muttable we can change the values 
-# ba=bytearray(b"Sai")
-# print(ba)
-# print(type(ba))
+ba=bytearray(b"Sai")
+print(ba)
+print(type(ba))
+ba[0]=68
+print(ba)
