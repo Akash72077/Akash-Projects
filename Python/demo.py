@@ -38,6 +38,6 @@
 # b=b"Akash"
 # print(b)
 # print(type(b))
-ba=bytearray(b"Sai")
-print(ba)
-print(type(ba))
+# ba=bytearray(b"Sai")
+# print(ba)
+# print(type(ba))
