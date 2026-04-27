@@ -6,6 +6,7 @@ window= tkinter.Tk()
 text =tkinter.Text(window)
 text.insert(INSERT, "Hello......\n")
 text.insert(END, "Bye Bye......\n")
+
 #configure tags
 text.tag_config("tag1" , background="gray", foreground="yellow")
 text.tag_config("tag2" , background="lightblue", foreground="orange")
