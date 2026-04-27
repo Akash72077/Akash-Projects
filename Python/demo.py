@@ -32,5 +32,5 @@
 # print(type(a))
 # a=10
 # print(type(a))
-y = 5.6; print(type(y))
-# ; is used to continue with another line code in same line
+# y = 5.6; print(type(y))
+# # ; is used to continue with another line code in same line
