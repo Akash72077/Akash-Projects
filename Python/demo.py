@@ -34,3 +34,7 @@
 # print(type(a))
 # y = 5.6; print(type(y))
 # # ; is used to continue with another line code in same line
+#boolean data types 
+b=b"Akash"
+print(b)
+print(type(b))
