@@ -30,5 +30,5 @@
 # print(Str3)
 # a=2+3j
 # print(type(a))
-a=10
-print(type(a))
+# a=10
+# print(type(a))
