@@ -1,4 +1,4 @@
-fo=open("file.txt", "r")
+# fo=open("file.txt", "r")
 # print(fo.name)
 # print(fo.mode)
 # print(fo.closed)
@@ -8,8 +8,11 @@ fo=open("file.txt", "r")
 # data1=fo.read()
 # print(data1)
 #if size not given reads a single line 
-rd=fo.readline()
-print(rd)
-#if size given read size number of characters 
-rd=fo.readline(5)
-print(rd)
+# rd=fo.readline()
+# print(rd)
+# #if size given read size number of characters 
+# rd=fo.readline(5)
+# print(rd)
+# #readlines 
+readlines=fo.readlines()
+print(readlines)
