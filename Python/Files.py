@@ -14,5 +14,11 @@
 # rd=fo.readline(5)
 # print(rd)
 # #readlines 
-readlines=fo.readlines()
-print(readlines)
+# readlines=fo.readlines()
+# print(readlines)
+fo = open("sample.txt", "w+")
+fo.write("Hello Python\n")
+fo.seek(0)  # Moves the file pointer back to the beginning
+data=fo.read()
+print(data)
+fo.close()
