@@ -35,6 +35,7 @@
 # y = 5.6; print(type(y))
 # # ; is used to continue with another line code in same line
 #boolean data types 
+#byte data type is immutable sequnece of data it cannot be modified
 # b=b"Akash"
 # print(b)
 # print(type(b))
