@@ -8,6 +8,7 @@ public class nthNodeFromEnd {
                 temp=temp.next;   
             }
             temp=head;
+            //moves the head untill main target finds
             for(int i=1; i<size-n+1; i++){
                  temp=temp.next;
             }
@@ -40,7 +41,6 @@ public class nthNodeFromEnd {
         }
     }
     public static void main(String[] args) {  
-
         //Creating a nodes
             Node a= new Node(5);
             Node b= new Node(10);
@@ -59,8 +59,8 @@ public class nthNodeFromEnd {
             f.next=g;
             g.next=h;
             //5 10 15 20 30 24 50 90
-            //Node q=nthNode(a,4);
-           // System.out.println(q.data);       
-            System.out.println(nthNodeTwoPointer(2, a).data);
+            Node q=nthNode(a,4);
+            System.out.println(q.data);       
+           // System.out.println(nthNodeTwoPointer(2, a).data);
     }
 }
