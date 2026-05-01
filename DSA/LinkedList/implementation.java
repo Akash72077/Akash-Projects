@@ -1,13 +1,11 @@
 public class implementation {  //implementation of linked lsist
         public static class Node{//defining linked list
-                // testing line
         int data;
         Node next;
         public Node(int data){
             this.data=data;
         }
 }
-
 public static class linkedlist{ 
         Node head=null; // intially both head and tail are empty
         Node tail=null;
