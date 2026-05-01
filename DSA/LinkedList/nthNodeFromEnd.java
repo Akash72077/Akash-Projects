@@ -23,16 +23,13 @@ public class nthNodeFromEnd {
             for(int i=1; i<=n; i++){
                 fast=fast.next;
             }
-
             // then move both Nodes untill fast becomes null then slow will point it from nth of second
             while(fast!=null){
                 slow=slow.next;
                 fast=fast.next;
             }
-
         return slow;
     }
-
     public static class Node{  // defining nodes
         int data;
         Node next;
