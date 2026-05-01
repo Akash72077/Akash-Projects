@@ -1,6 +1,6 @@
 public class nthNodeFromEnd {
         // Code to find nth node using temp varible
-    public static Node nthNode(Node head, int n){
+    public static Node nthNode(Node head, int n){// this approach the loop is applying for twice to reduce it we have to use two pointer 
             int size=0;
             Node temp=head;
             while (temp!=null) {
