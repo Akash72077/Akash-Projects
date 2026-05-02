@@ -5,7 +5,6 @@ public class implementation {  //implementation of linked lsist
         public Node(int data){
             this.data=data;
         }
-                //demo
 }
 public static class linkedlist{ 
         Node head=null; // intially both head and tail are empty
@@ -27,7 +26,6 @@ public static class linkedlist{
             temp.next=temp.next.next; // link the node with next next element the next element is removed
             tail=temp;
             size--; // decrease the size after removing an element
-
         }
             void insertAtEnd(int value){
                 Node temp=new Node(value);
@@ -57,8 +55,7 @@ public static class linkedlist{
                 // }
                 // return count;
                 return size; // instead of traversing eaach and every list we have to increase the size value when ever the insert places at any condition then simply return the size
-        }
-        
+        }        
         void insertAtBeginning(int value){
             Node temp=new Node(value);
                 if(head==null ){ // empty list
