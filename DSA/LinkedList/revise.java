@@ -11,7 +11,19 @@ public class revise {
                 System.out.print(head.data+" -> ");
                 head=head.next;
             }
-        System.out.print("null");
+        System.out.println("null");
+    }
+    static int nthNodeFromEnd(Node head, int n){
+        Node fast =head;
+        Node slow = head;
+        for(int i=1; i<=n; i++){
+            fast=fast.next;
+        }
+        while(fast!=null){
+            slow=slow.next;
+            fast=fast.next;
+        }
+        return slow.data;
     }
     public static void main(String[] args) {
         Node a= new Node(0);
@@ -27,5 +39,6 @@ public class revise {
         e.next=f;
         f.next=null;
         display(a);
+        System.out.println(nthNodeFromEnd(a, 2));
     }
 }
