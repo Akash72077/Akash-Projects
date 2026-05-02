@@ -58,7 +58,7 @@ public static class linkedlist{
                 // return count;
                 return size; // instead of traversing eaach and every list we have to increase the size value when ever the insert places at any condition then simply return the size
         }
-
+        
         void insertAtBeginning(int value){
             Node temp=new Node(value);
                 if(head==null ){ // empty list
@@ -68,9 +68,7 @@ public static class linkedlist{
                     temp.next=head;
                     head=temp;
                 }
-
                 size++;// increase the size when ever an element is inserted
-
         }
         void insertAt(int idx,int value){
             if(idx==size()){  // if index postion is last then head will be not updated so we have to insert using insert at end function 
@@ -95,7 +93,6 @@ public static class linkedlist{
         temp.next=t;
         size++;
     }
-
         int getAt(int idx){
             if(idx<0 || idx>size()){
                 System.out.println("Wrong index");
@@ -130,7 +127,5 @@ public static class linkedlist{
        //System.out.println(ll.getAt(2));  
        ll.deleteAtIndex(4);
        ll.display();
-       
-       
     }
 }
