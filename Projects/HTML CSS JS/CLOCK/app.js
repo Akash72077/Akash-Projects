@@ -1,7 +1,6 @@
 const hourEl= document.querySelector(".hour");
 const minuteEl= document.querySelector(".minutes");
 const secondEl= document.querySelector(".seconds");
-
 function updateClock(){
     const currentDate= new Date();
     setTimeout(updateClock, 1000);
@@ -16,5 +15,4 @@ const secondDeg= (seconds/60)* 360;
 secondEl.style.transform= `rotate(${secondDeg}deg)`;
     
 }
-
 updateClock();
