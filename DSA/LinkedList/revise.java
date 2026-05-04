@@ -19,17 +19,22 @@ public class revise {
         for(int i=1; i<=n; i++){
             fast=fast.next;
         }
+       
         while(fast!=null){
             slow=slow.next;
             fast=fast.next;
         }
         return slow.data;
     }
-    static void deleteNthFromEnd(Node head, int n){
+    static Node deleteNthFromEnd(Node head, int n){
          Node fast =head;
         Node slow = head;
         for(int i=1; i<=n; i++){
             fast=fast.next;
+        }
+         if(fast==null){
+            head=head.next;
+            return head;
         }
         while(fast.next!=null){
             slow=slow.next;
@@ -37,7 +42,7 @@ public class revise {
         }
         slow.next=slow.next.next;
         display(head);
-       
+       return head;
     }
     public static void main(String[] args) {
         Node a= new Node(0);
@@ -55,7 +60,7 @@ public class revise {
         display(a);
         System.out.println(nthNodeFromEnd(a, 2));
         System.out.println("After removing node: ");
-        deleteNthFromEnd(a, 4);
+        a=deleteNthFromEnd(a, 4);
         
     }
 }
