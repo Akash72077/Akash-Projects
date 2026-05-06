@@ -1,5 +1,18 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class MergeSortedArray {
+    static void bruteForce(int nums1[], int nums2[] ){
+        int m =nums1.length-nums2.length;
+        int size=nums1.length;
+        int j=0;
+        for(int i=m; i<size; i++){
+            nums1[i]=nums2[j];
+            j++;
+        }
+        Arrays.sort(nums1);
+        System.out.println(Arrays.toString(nums1));
+        //display(nums1, nums2);
+    }
     static void display(int nums1[], int nums2[]){
         int m=nums1.length;
         System.out.println("Elements in nums 1: ");
@@ -30,7 +43,9 @@ public class MergeSortedArray {
         for(int i=0; i<n; i++){
             nums2[i]=sc.nextInt();
         }
-        display(nums1 , nums2);
+        // display(nums1 , nums2);
+        bruteForce(nums1, nums2);
+
         sc.close();
     }
 }
