@@ -44,6 +44,15 @@ public class revise {
         display(head);
        return head;
     }
+    static Node middleNode(Node head){
+        Node slow=head;
+        Node fast= head;
+        while(){
+            slow=slow.next;
+        fast=fast.next.next;
+        }
+        return slow;
+    }
     public static void main(String[] args) {
         Node a= new Node(0);
         Node b= new Node(5);
@@ -62,7 +71,8 @@ public class revise {
         display(a);
         // System.out.println(nthNodeFromEnd(a, 2));
         // System.out.println("After removing node: ");
-        // a=deleteNthFromEnd(a, 4);
-        
+        // a=deleteNthFromEnd(a, 4);       
+        Node middle=middleNode(a);
+        System.out.println(middle.data); 
     }
 }
