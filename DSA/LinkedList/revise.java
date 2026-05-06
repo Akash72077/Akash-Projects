@@ -51,16 +51,18 @@ public class revise {
         Node d= new Node(9);
         Node e= new Node(12);
         Node f= new Node(24);
+        Node g= new Node(29);
         a.next=b;
         b.next=c;
         c.next=d;
         d.next=e;
         e.next=f;
-        f.next=null;
+        f.next=g;
+        g.next=null;
         display(a);
-        System.out.println(nthNodeFromEnd(a, 2));
-        System.out.println("After removing node: ");
-        a=deleteNthFromEnd(a, 4);
+        // System.out.println(nthNodeFromEnd(a, 2));
+        // System.out.println("After removing node: ");
+        // a=deleteNthFromEnd(a, 4);
         
     }
 }
