@@ -7,7 +7,6 @@ public class Get_ith_bit {
         int n=sc.nextInt();
         System.out.println("Enter the i value (Position): ");
         int i=sc.nextInt();
-        
         int bitmask=1<<i;
         int result=n&bitmask;
         if(result!=0){
