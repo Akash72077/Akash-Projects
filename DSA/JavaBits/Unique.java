@@ -3,8 +3,6 @@ problem statement : In an given array elements will repat twice and
 one element does is unique find the element 
 arr is [2, 3, 4, 1, 2,1,3, 6, 4]
  */
-
-import java.util.Arrays;
 public class Unique {
     public static void main(String[] args) {
        // int arr[]= {2, 3, 4, 1, 2,1,3, 6, 4};
