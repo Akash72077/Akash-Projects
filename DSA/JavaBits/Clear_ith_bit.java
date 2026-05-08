@@ -9,5 +9,6 @@ public class Clear_ith_bit {
         int bitmask=1<<i;
         int result=n&~bitmask;
         System.out.println(result);
+        sc.close();
     }
 }
