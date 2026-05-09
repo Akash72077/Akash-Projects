@@ -24,6 +24,6 @@ public class update_ith_bit {
         int i=sc.nextInt();
         System.out.println(Update_ith_bit(n, i, 0));//reset to 0 clear bit
         System.out.println(Update_ith_bit(n, i, 1));// set to 1 
-        sc.close();        
+        sc.close(); // scanner close       
     }
 }
