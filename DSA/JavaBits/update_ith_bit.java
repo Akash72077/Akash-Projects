@@ -16,6 +16,7 @@ public class update_ith_bit {
             return set_ith_bit(n, i);
         }
     }
+    
     public static void main(String[] args) {
           Scanner sc= new Scanner(System.in);
         System.out.println("Enter a number: ");
