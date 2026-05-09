@@ -8,7 +8,7 @@ public class update_ith_bit {
        int bitmask=1<<i;
         return ~bitmask & n;
     }
-    static int Update_ith_bit(int n, int i, int newBit){
+    static int Update_ith_bit(int n, int i, int newBit){// function to update ith bit 
         if(newBit==0){
             return Clear_ith_bit(n, i);
         }
