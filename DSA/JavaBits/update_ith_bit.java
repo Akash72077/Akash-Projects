@@ -23,7 +23,7 @@ public class update_ith_bit {
         System.out.println("Enter postion : ");
         int i=sc.nextInt();
         System.out.println(Update_ith_bit(n, i, 0));//reset to 0 clear bit
-        System.out.println(Update_ith_bit(n, i, 1));
+        System.out.println(Update_ith_bit(n, i, 1));// update to 1 
         sc.close();        
     }
 }
