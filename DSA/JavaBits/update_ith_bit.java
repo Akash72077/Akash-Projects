@@ -9,12 +9,17 @@ public class update_ith_bit {
         return ~bitmask & n;
     }
     static int Update_ith_bit(int n, int i, int newBit){// function to update ith bit 
-        if(newBit==0){
-            return Clear_ith_bit(n, i);
-        }
-        else{
-            return set_ith_bit(n, i);
-        }
+        // if(newBit==0){
+        //     return Clear_ith_bit(n, i);
+        // }
+        // else{
+        //     return set_ith_bit(n, i);
+        // }
+        //another approch to update ith bit
+         n=Clear_ith_bit(n, i);
+         int Bitmask=newBit<<i;
+         return Bitmask|n;
+
     }
     public static void main(String[] args) {
           Scanner sc= new Scanner(System.in);
