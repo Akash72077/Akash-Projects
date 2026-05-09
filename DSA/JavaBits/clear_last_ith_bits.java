@@ -6,7 +6,7 @@ public class clear_last_ith_bits {
         // example 1111 is << 2 it becomes 1100 
         return bitmask&n; // when 1100 did  & operation then that last two digits become 0 
     }
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         // to clear ith bits we have to make and & operation with bit mask
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a number: ");
