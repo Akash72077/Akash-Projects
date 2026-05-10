@@ -9,7 +9,10 @@ public class stackLinkedList {
     }
     static class Stack{
         static Node head= null;
-      
+        public static boolean isEmpty(){
+            return head==null;
+        }
+        
         }
     
     public static void main(String[] args) {
