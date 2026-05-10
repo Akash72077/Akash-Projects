@@ -2,6 +2,7 @@ import java.util.*;
 public class stackArrayList {
    public static class Stack{
         static ArrayList<Integer> list = new ArrayList<>();
+        // we cannot implement stack using arrays because of its limitations like fixed size 
         public boolean isEmpty(){
             return list.size()==0;
         }
