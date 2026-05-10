@@ -15,6 +15,10 @@ public class stack {
             list.remove(list.size()-1);
             return top;
         }
+        //peek
+        public static int peek(){
+            return list.get(list.size()-1);
+        }
     }
     public static void main(String[] args) {
          //operations of stack :
