@@ -29,6 +29,12 @@ public class stackLinkedList {
             head=head.next;
             return top;
         }
+        public static int peak(){
+            if(isEmpty()){
+                return -1;
+            }
+            return  head.data;
+        }
         }
     
     public static void main(String[] args) {
