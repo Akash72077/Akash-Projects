@@ -20,6 +20,9 @@ public class stack {
         }
         //peek
         public  int peek(){
+             if(isEmpty()){
+                return -1;
+            }
             return list.get(list.size()-1);
         }
     }
