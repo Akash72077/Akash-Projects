@@ -60,8 +60,8 @@ import java.util.Scanner;
      int  idx1= sc.nextInt();
      int idx2= sc.nextInt();
     
-        swap(list2, idx1, idx2);
+
      System.out.println("The Array list after swapping: "+list2);
-        sc.close();
+
     }
 }
