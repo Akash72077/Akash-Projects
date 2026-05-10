@@ -1,5 +1,5 @@
 import java.util.*;
-public class stack {
+public class stackArrayList {
    public static class Stack{
         static ArrayList<Integer> list = new ArrayList<>();
         public boolean isEmpty(){
