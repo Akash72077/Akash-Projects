@@ -5,6 +5,10 @@ public class stack {
         public static boolean isEmpty(){
             return list.size()==0;
         }
+        // push
+        public static void  push(int data){
+            list.add(data);
+        }
     }
     public static void main(String[] args) {
          //operations of stack :
