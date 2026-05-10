@@ -1,28 +1,41 @@
 import java.util.*;
 public class stack {
-    static class Stack{
+   public static class Stack{
         static ArrayList<Integer> list = new ArrayList<>();
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return list.size()==0;
         }
         // push
-        public static void  push(int data){
+        public  void  push(int data){
             list.add(data);
         }
         //pop
-        public static int pop(){
+        public  int pop(){
             int top=list.get(list.size()-1);
             list.remove(list.size()-1);
             return top;
         }
         //peek
-        public static int peek(){
+        public  int peek(){
             return list.get(list.size()-1);
         }
     }
     public static void main(String[] args) {
          //operations of stack :
         // push pop and peek these all are time complexity of O(1)
-       
+       Stack s = new Stack();
+       s.push(1);
+       s.push(2);
+       s.push(4);
+       s.push(5);
+       s.push(7);
+       s.push(9);
+       s.push(11);
+       s.push(13);
+       while(!s.isEmpty()){
+        System.out.println(s.peek());
+        s.pop();
+       }
+
     }
 }
