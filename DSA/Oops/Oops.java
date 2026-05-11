@@ -28,7 +28,6 @@ public class Oops {
       //  System.out.println(p1.colour);
         p1.setTop(5);
         //System.out.println(p1.tip);
-
        // Bankaccount myAcc= new Bankaccount();
         // myAcc.username="Akash";
         // myAcc.setPassword("Akash@12345");
@@ -58,7 +57,6 @@ class Student{
     int roll;
     String password;
     int marks[];
-
     //copy constructor
     Student(Student s1){
         marks=new int[3];
@@ -74,7 +72,6 @@ class Student{
     float percentage;
     void calcPercentage(int phy ,int chem, int math){
         percentage=(phy+chem+math)/3;
-
     }
 }
 /*Usally there are two types of functions in OOPS :
