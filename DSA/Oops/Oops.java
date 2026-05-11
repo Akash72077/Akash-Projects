@@ -45,8 +45,7 @@ public class Oops {
             System.out.print(s2.marks[i]+" ");
         }
         
-    }
-    
+    }    
 }
 /*There are four types for access specifiers
  * Private
@@ -54,7 +53,6 @@ public class Oops {
  * Protected
  * Public
 */
-
 class Student{
     String name;
     int roll;
@@ -71,8 +69,6 @@ class Student{
     }   
      Student(){
        // System.out.println("Constructor is called");
-
-
     }
     int age;
     float percentage;
@@ -81,7 +77,6 @@ class Student{
 
     }
 }
-
 /*Usally there are two types of functions in OOPS :
 * Getters: to return the value
 * Setters : to modify the value
@@ -101,7 +96,6 @@ class Pen{
         tip=newTip;
 
     }
-
 }
 // class Bankaccount{
 //    public String username;
