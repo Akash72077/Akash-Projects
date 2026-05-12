@@ -18,7 +18,9 @@ public class pratice {
         d=c^d;
         c=c^d;
         System.out.println(c+" "+d);
-
-      
+        //question 3
+        // add 1 to an integer using bit manipulation 
+        // Hint using bitwise not opeartor      
+        
     }
 }
