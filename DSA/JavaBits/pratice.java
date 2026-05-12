@@ -24,6 +24,5 @@ public class pratice {
         int p=10;
         int ans=~(~p)+1;
         System.out.println(ans);
-        
     }
 }
