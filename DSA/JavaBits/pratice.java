@@ -20,7 +20,10 @@ public class pratice {
         System.out.println(c+" "+d);
         //question 3
         // add 1 to an integer using bit manipulation 
-        // Hint using bitwise not opeartor      
+        // Hint using bitwise not opeartor
+        int p=10;
+        int ans=~(~p)+1;
+        System.out.println(ans);
         
     }
 }
