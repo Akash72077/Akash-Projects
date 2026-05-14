@@ -1,8 +1,14 @@
 public class pratice {
-    public static char LowertoUpper(char ch){
+    public static char LowerToUpper(char ch){
         int n=(int)ch;
         int bitMask=1<<5;
         int res= ~bitMask&n;
+        return (char)res;
+    }
+    public static char UpperToLower(char ch){
+        int n=(int)ch;
+        int bitMask=1<<5;
+        int res= bitMask|n;
         return (char)res;
     }
     public static void main(String[] args) {
@@ -33,6 +39,7 @@ public class pratice {
         //question-4
         //The question is based on a trick : Convert uppercase characteres into lowercase using bits 
         //example : A-> a 
-        System.out.println(LowertoUpper('a'));
+        System.out.println(LowerToUpper('a'));
+        System.out.println(UpperToLower('A'));
     }
 }
