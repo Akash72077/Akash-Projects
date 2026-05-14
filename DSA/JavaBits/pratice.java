@@ -1,4 +1,10 @@
 public class pratice {
+    public static char LowertoUpper(char ch){
+        int n=(int)ch;
+        int bitMask=1<<5;
+        int res= ~bitMask&n;
+        return (char)res;
+    }
     public static void main(String[] args) {
         //What is the value of x^x for any value of x
         int x=10;
@@ -27,5 +33,6 @@ public class pratice {
         //question-4
         //The question is based on a trick : Convert uppercase characteres into lowercase using bits 
         //example : A-> a 
+        System.out.println(LowertoUpper('a'));
     }
 }
