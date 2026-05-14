@@ -26,6 +26,6 @@ public class pratice {
         System.out.println(ans);
         //question-4
         //The question is based on a trick : Convert uppercase characteres into lowercase using bits 
-        
+        //example : A-> a 
     }
 }
