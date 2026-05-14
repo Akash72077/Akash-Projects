@@ -24,5 +24,8 @@ public class pratice {
         int p=10;
         int ans=~(~p)+1;
         System.out.println(ans);
+        //question-4
+        //The question is based on a trick : Convert uppercase characteres into lowercase using bits 
+        
     }
 }
