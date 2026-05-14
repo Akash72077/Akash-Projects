@@ -8,6 +8,7 @@
     margin-bottom: 40px;
     margin-left: 2em;
     padding: 1em;
+    
 }
 .two{
     height: 100px;
@@ -16,7 +17,6 @@
     border: 2px solid black;
     border-radius: 50%;
     display: inline-block;
-
 }
 li{
     display: inline;
