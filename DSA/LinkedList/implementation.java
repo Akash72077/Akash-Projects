@@ -88,7 +88,7 @@ public static class linkedlist{
         }
         t.next=temp.next;
         temp.next=t;
-        size++;
+        size++;// increase the size
     }
         int getAt(int idx){
             if(idx<0 || idx>size()){
