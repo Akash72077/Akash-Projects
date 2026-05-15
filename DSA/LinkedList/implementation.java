@@ -4,6 +4,7 @@ public class implementation {  //implementation of linked lsist
         Node next;
         public Node(int data){
             this.data=data;
+            
         }
 }
 public static class linkedlist{ 
@@ -117,12 +118,12 @@ public static class linkedlist{
       //   ll.display(); 
          //System.out.println();
        //  System.out.println("Size of the LinkedList is: "+ll.size());
-       ll.insertAt(2,10); //3 2 10 1 6 5 7 8
-       System.out.println();
-       ll.display();
-       System.out.println();
+    //    ll.insertAt(2,10); //3 2 10 1 6 5 7 8
+    //    System.out.println();
+    //    ll.display();
+    //    System.out.println();
        //System.out.println(ll.getAt(2));  
-       ll.deleteAtIndex(4);
-       ll.display();
+    //    ll.deleteAtIndex(4);
+    //    ll.display();
     }
 }
