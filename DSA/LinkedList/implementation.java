@@ -65,7 +65,7 @@ public static class linkedlist{
                     temp.next=head;
                     head=temp;
                 }
-                size++;// increase the size when ever an element is inserted
+                size++;// increase the size when ever an element is inserted no need to create function
         }
         void insertAt(int idx,int value){
             if(idx==size()){  // if index postion is last then head will be not updated so we have to insert using insert at end function 
