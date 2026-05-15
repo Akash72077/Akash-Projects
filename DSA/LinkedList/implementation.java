@@ -4,7 +4,6 @@ public class implementation {  //implementation of linked lsist
         Node next;
         public Node(int data){
             this.data=data;
-            
         }
 }
 public static class linkedlist{ 
