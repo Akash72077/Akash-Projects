@@ -46,7 +46,7 @@ public static class linkedlist{
                 temp=temp.next; 
             }
         }
-            int size(){///    O(n)
+            int size(){///    O(n) Time complexity
                 // int count=0;
                 //  Node temp= head;
                 // while(temp!=null){
