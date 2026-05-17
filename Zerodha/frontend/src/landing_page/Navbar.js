@@ -25,12 +25,27 @@ function Navbar() {
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  SignUp
+                  Signup
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link active" href="#">
                   About
+                </a>
+              </li>  
+               <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Product
+                </a>
+              </li>  
+               <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Pricing
+                </a>
+              </li>  
+               <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Support
                 </a>
               </li>  
             </ul>
