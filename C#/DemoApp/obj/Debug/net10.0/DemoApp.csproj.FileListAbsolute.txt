@@ -1,0 +1,15 @@
+C:\Akash\DSA\C#\DemoApp\bin\Debug\net10.0\DemoApp.exe
+C:\Akash\DSA\C#\DemoApp\bin\Debug\net10.0\DemoApp.deps.json
+C:\Akash\DSA\C#\DemoApp\bin\Debug\net10.0\DemoApp.runtimeconfig.json
+C:\Akash\DSA\C#\DemoApp\bin\Debug\net10.0\DemoApp.dll
+C:\Akash\DSA\C#\DemoApp\bin\Debug\net10.0\DemoApp.pdb
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.AssemblyInfoInputs.cache
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.AssemblyInfo.cs
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.sourcelink.json
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.dll
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\refint\DemoApp.dll
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.pdb
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\DemoApp.genruntimeconfig.cache
+C:\Akash\DSA\C#\DemoApp\obj\Debug\net10.0\ref\DemoApp.dll
