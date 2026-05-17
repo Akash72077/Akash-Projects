@@ -1,37 +1,51 @@
 import React from 'react';
 function Footer() {
     return ( 
-      <div className='container'>
-        <div className='row'>
+        <footer
+         style={{backgroundColor:"#fbfbfb"}}>
+      <div className='container border-top mt-5'
+      style={{backgroundColor:"#fbfbfb"}}>
+        <div className='row mt-5'>
             <div className='col'>
             <img src="media/images/logo.svg" style={{width:"50%"}} alt="Logo"/>
             <p> &copy; 2010-2014, Not Zerodha Broking Ltd.<br/> All rights reserved.</p>
             </div>
-            <div className='col'>
-                <p>Company</p>
-                <a href=''>About</a><br/>
-                <a href=''>Products</a><br/>
-                <a href=''>Pricing</a><br/>
-                <a href=''>Referral Programs</a><br/>
-                <a href=''>Careers</a><br/>
-                <a href=''>Zerodha.tech</a><br/>
-                <a href=''>Press & media</a><br/>
-                <a href=''>Zerodha cares(CSR)</a><br/>
+             <div className='col'>
+                <p  className='fw-bold fs-5' >Account</p>
+                <a href='' className='footer-link'>Open an account</a>
+                <a href='' className='footer-link'>Fund transfer</a>
+                <a href='' className='footer-link'>60 day challenge</a>
             </div>
             <div className='col'>
-                <p>Support</p>
-                <a href=''>Contact</a><br/>
-                <a href=''>Support portal</a><br/>
-                <a href=''>Z-connect blog</a><br/>
-                <a href=''>List of charges</a><br/>
-                <a href=''>Download & resources</a><br/>
+                <p  className='fw-bold fs-5'>Support</p>
+                <a href='' className='footer-link'>Contact</a>
+                <a href='' className='footer-link'>Support portal</a>
+                <a href='' className='footer-link'>Z-connect blog</a>
+                <a href='' className='footer-link'>List of charges</a>
+                <a href='' className='footer-link'>Download & resources</a>
                 
             </div>
             <div className='col'>
-                <p>Account</p>
-                <a href=''>Open an account</a><br/>
-                <a href=''>Fund transfer</a><br/>
-                <a href=''>60 day challenge</a><br/>
+                <p  className='fw-bold fs-5'>Company</p>
+                <a href='' className='footer-link'>About</a>
+                <a href='' className='footer-link'>Products</a>
+                <a href='' className='footer-link'>Pricing</a>
+                <a href='' className='footer-link'>Referral Programs</a>
+                <a href='' className='footer-link'>Careers</a>
+                <a href='' className='footer-link'>Zerodha.tech</a>
+                <a href='' className='footer-link'>Press & media</a>
+                <a href='' className='footer-link'>Zerodha cares(CSR)</a>             
+            </div>
+             <div className='col'>
+                <p  className='fw-bold fs-5'>Quick links</p>
+                <a href='' className='footer-link'>Upcoming IPOs</a>
+                <a href='' className='footer-link'>Brokerage charges</a>
+                <a href='' className='footer-link'>Market holidays</a>
+                 <a href='' className='footer-link'>Economic calendar</a>
+                  <a href='' className='footer-link'>Calculators</a>
+                  <a href='' className='footer-link'>Markets</a>
+                  <a href='' className='footer-link'>Sectors</a>
+                  <a href='' className='footer-link'>Gift Nifty</a>
             </div>
         </div>
         <div className='mt-5 text-small text-muted ' style={{ fontSize: '11px' }}>
@@ -62,6 +76,7 @@ function Footer() {
         </p>
         </div>
       </div>
+      </footer>
      );
 }
 
