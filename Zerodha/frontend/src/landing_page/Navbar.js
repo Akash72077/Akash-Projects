@@ -4,7 +4,7 @@ function Navbar() {
   return (
    
        <nav class="navbar navbar-expand-lg border-bottom " style={{backgroundColor:"#FFF"}}>
-        <div class="container-fluid">
+        <div class="container p-2">
           <a class="navbar-brand" href="#">
           <img src="media/images/logo.svg" style={{width:"30%"}} alt="Logo"/>
           </a>
