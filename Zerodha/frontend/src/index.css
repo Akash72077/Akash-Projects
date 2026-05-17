@@ -14,3 +14,10 @@ code {
 .nav-link{
   margin-left: 40px;
 }
+.footer-link{
+  text-decoration: none;
+  color: #666;
+  display: block;
+  margin-bottom:10px ;
+  
+}
