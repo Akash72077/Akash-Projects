@@ -21,3 +21,14 @@ code {
   margin-bottom:10px ;
   
 }
+.footer-para{
+text-decoration: none;
+}
+.footer-last{
+  text-decoration: none;
+  color: #9b9b9b;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
