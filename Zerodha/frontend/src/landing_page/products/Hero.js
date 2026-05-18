@@ -1,8 +1,8 @@
 import React from "react";
 function Hero() {
   return (
-    <div className="border-bottom">
-      <div className="container text-center " style={{ padding: "100px 20px" }}>
+    <div>
+      <div className="container text-center border-bottom" style={{ padding: "100px 20px" }}>
         <h1
           className="mt-2"
           style={{
