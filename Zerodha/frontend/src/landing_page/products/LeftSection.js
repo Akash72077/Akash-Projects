@@ -1,5 +1,5 @@
 import React from "react";
-function LeftSection(
+function LeftSection({
   imageURL,
   productName,
   productDescription,
@@ -7,7 +7,7 @@ function LeftSection(
   learnMore,
   googlePlay,
   appStore,
-) {
+}) {
   return (
     <div className="container">
       <div className="row">
@@ -36,20 +36,24 @@ function LeftSection(
           >
             {productDescription}
           </p>
-          <a href={tryDemo} style={{ }}>
-            Try demo
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </a>
-          <a href={learnMore} style={{ textDecoration: "none" }}>
-            Learn more
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </a>
-          <a href={googlePlay} style={{ textDecoration: "none" }}>
-            <img src="media\images\googlePlayBadge.svg" />
-          </a>
-          <a href={appStore} style={{ textDecoration: "none" }}>
-            <img src="media\images\appstoreBadge.svg" />
-          </a>
+          <div>
+            <a href={tryDemo} style={{}}>
+              Try demo
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href={learnMore} style={{ textDecoration: "none" }}>
+              Learn more
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div>
+            <a href={googlePlay} style={{ textDecoration: "none" }}>
+              <img src="media/images/googlePlayBadge.svg" />
+            </a>
+            <a href={appStore} style={{ textDecoration: "none" }}>
+              <img src="media/images/appstoreBadge.svg" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
