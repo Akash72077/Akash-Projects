@@ -9,7 +9,7 @@ function PricingPage() {
         <Hero/>
          {/* start of the signup */}
         <div className="container p-5">
-      <div className="row text-center">
+      <div className="row text-center border-bottom">
         <h1 className="mt-5">Open a Zerodha account</h1>
         <p className="p-2 text-muted">
           Modern platforms and apps, ₹0 investments, and flat
