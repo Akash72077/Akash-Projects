@@ -19,8 +19,10 @@ function Hero() {
           </p>
         </div>
         <div className="col-4 p-5 text-center">
-          <img src="media/images/intradayTrades.svg" style={{ width: "70%", }} />
-          <h2 className="text-center text-muted fs-3">Intraday and F&O trades</h2>
+          <img src="media/images/intradayTrades.svg" style={{ width: "70%" }} />
+          <h2 className="text-center text-muted fs-3">
+            Intraday and F&O trades
+          </h2>
           <p className="text-muted text-center mt-4">
             Flat ₹ 20 or 0.03% (whichever is lower) per executed order on
             intraday trades across equity, currency, and commodity trades. Flat
