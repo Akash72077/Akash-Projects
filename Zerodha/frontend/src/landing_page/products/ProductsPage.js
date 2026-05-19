@@ -26,9 +26,14 @@ function PricingPage() {
         coinLink={false}
       />
 
-      <RightSection />
+      <RightSection
+      imageURL="media/images/console.png"
+  productName="Console"
+  productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+  anchorName=" Learn more"
+       />
 
-      {/* Coin */}
+      
       <LeftSection
         imageURL="media/images/coin.png"
         productName="Coin"
@@ -37,10 +42,13 @@ function PricingPage() {
         appStore=""
         coinLink={true}
       />
+      <RightSection 
+       imageURL="media/images/console.png"
+  productName="Kite Connect API"
+  productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+  anchorName="Kite Connect"
 
-      <RightSection />
-
-      {/* Varsity */}
+  />
       <LeftSection
         imageURL="media/images/varsity.png"
         productName="Varsity mobile"
