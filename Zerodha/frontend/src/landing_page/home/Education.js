@@ -1,5 +1,4 @@
 import React from "react";
-
 function Education() {
   return (
     <div className="container mt-5">
@@ -28,5 +27,4 @@ function Education() {
     </div>
   );
 }
-
 export default Education;
