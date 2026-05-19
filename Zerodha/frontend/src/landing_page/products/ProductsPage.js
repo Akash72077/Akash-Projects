@@ -57,7 +57,9 @@ function PricingPage() {
         appStore=""
         coinLink={false}
       />
-
+      <div style={{textAlign:"center", padding:"30px 0px "}} className="">
+      <p style={{ fontSize:"20px", fontFamily:"sans-serif", margin: "0" }}>Want to know more about our technology stack? Check out the <a href="" style={{textDecoration:"none"}}>Zerodha.tech</a> blog.</p>
+      </div>
       <Universe />
     </>
   );
