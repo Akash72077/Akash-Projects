@@ -4,13 +4,11 @@ function OpenAccount() {
        //p-5 is a class in bootstrap which provides padding of 5%
     <div className="container p-5">
       <div className="row text-center">
-        {/* //mb-5 is a class in bootstrap which provides margin buttom of 5% */}
-        <img
+         <img
           src="media/images/homeHero.png"
           alt="Hero image"
           className="mb-5"
         />
-
         <h1 className="mt-5">Open a Zerodha account</h1>
         <p className="p-2 text-muted">
           Modern platforms and apps, ₹0 investments, and flat
