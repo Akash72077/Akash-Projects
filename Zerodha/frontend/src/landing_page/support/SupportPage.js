@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import CreateTicket from "./CreateTicket";
 const SupportPage = () => {
   return (<>
-    <hero/>
+    <Hero/>
     <CreateTicket/>
     </>
   )
