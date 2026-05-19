@@ -113,11 +113,7 @@ function Universe() {
             more.
           </p>
         </div>
-        <button  className="signup-btn"
-         
-        >
-          Sign up for free
-        </button>
+        <button className="signup-btn">Sign up for free</button>
       </div>
     </div>
   );

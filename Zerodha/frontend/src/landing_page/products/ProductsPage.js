@@ -12,7 +12,6 @@ function PricingPage() {
   return (
     <>
       <Hero />
-
       {/* Kite */}
       <LeftSection
         imageURL="media/images/kite.png"
@@ -27,13 +26,12 @@ function PricingPage() {
       />
 
       <RightSection
-      imageURL="media/images/console.png"
-  productName="Console"
-  productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
-  anchorName=" Learn more"
-       />
+        imageURL="media/images/console.png"
+        productName="Console"
+        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        anchorName=" Learn more"
+      />
 
-      
       <LeftSection
         imageURL="media/images/coin.png"
         productName="Coin"
@@ -42,13 +40,12 @@ function PricingPage() {
         appStore=""
         coinLink={true}
       />
-      <RightSection 
-       imageURL="media/images/console.png"
-  productName="Kite Connect API"
-  productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
-  anchorName="Kite Connect"
-
-  />
+      <RightSection
+        imageURL="media/images/console.png"
+        productName="Kite Connect API"
+        productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+        anchorName="Kite Connect"
+      />
       <LeftSection
         imageURL="media/images/varsity.png"
         productName="Varsity mobile"
@@ -57,8 +54,14 @@ function PricingPage() {
         appStore=""
         coinLink={false}
       />
-      <div style={{textAlign:"center", padding:"30px 0px "}} className="">
-      <p style={{ fontSize:"20px", fontFamily:"sans-serif", margin: "0" }}>Want to know more about our technology stack? Check out the <a href="" style={{textDecoration:"none"}}>Zerodha.tech</a> blog.</p>
+      <div style={{ textAlign: "center", padding: "30px 0px " }} className="">
+        <p style={{ fontSize: "20px", fontFamily: "sans-serif", margin: "0" }}>
+          Want to know more about our technology stack? Check out the{" "}
+          <a href="" style={{ textDecoration: "none" }}>
+            Zerodha.tech
+          </a>{" "}
+          blog.
+        </p>
       </div>
       <Universe />
     </>
