@@ -1,5 +1,4 @@
 import React from "react";
-
 const CreateTicket = () => {
   const linkStyle = {
     textDecoration: "none",
@@ -217,7 +216,6 @@ const CreateTicket = () => {
             </p>
           </div>
         </div>
-
         {/* Column 3 */}
         <div className="col-lg-4 col-md-12 col-12">
           <div className="border rounded p-4 h-100 shadow-sm">
@@ -269,5 +267,4 @@ const CreateTicket = () => {
     </div>
   );
 };
-
 export default CreateTicket;
