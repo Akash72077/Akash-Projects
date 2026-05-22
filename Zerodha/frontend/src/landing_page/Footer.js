@@ -242,6 +242,7 @@ function Footer() {
             (RBI).
           </p>
         </div>
+              
         <div className="text-center mt-4 py-3">
           <a href="" className="footer-last">
             NSE
