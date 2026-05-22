@@ -1,6 +1,7 @@
 import React from "react";
 function Footer() {
   return (
+    
     <footer style={{ backgroundColor: "#fbfbfb" }}>
       <div
         className="container border-top mt-5"
