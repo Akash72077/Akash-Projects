@@ -18,6 +18,8 @@ function Footer() {
               &copy; 2010-2014, Not Zerodha Broking Ltd.
               <br /> All rights reserved.
             </p>
+
+                
           </div>
           <div className="col">
             <p className="fw-bold fs-5">Account</p>
