@@ -8,6 +8,8 @@ const url = process.env.MONGO_URL;
 
 const app = express();
 
-app.listen(3002, () => {
+app.listen(PORT, () => {
   console.log("App started!");
+  mongoose.connect(url);
+  console.log("DB Connected!");
 });
