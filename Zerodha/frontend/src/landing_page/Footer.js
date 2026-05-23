@@ -1,6 +1,7 @@
 import React from "react";
 function Footer() {
   return (
+    
     <footer style={{ backgroundColor: "#fbfbfb" }}>
       <div
         className="container border-top mt-5"
@@ -18,6 +19,8 @@ function Footer() {
               &copy; 2010-2014, Not Zerodha Broking Ltd.
               <br /> All rights reserved.
             </p>
+
+                
           </div>
           <div className="col">
             <p className="fw-bold fs-5">Account</p>
@@ -242,6 +245,7 @@ function Footer() {
             (RBI).
           </p>
         </div>
+              
         <div className="text-center mt-4 py-3">
           <a href="" className="footer-last">
             NSE
