@@ -133,7 +133,7 @@ app.get("/addHoldings", async (req, res) => {
     });
     newHolding.save();//saves the data 
   });
-  res.send("Done") //sends msg as done 
+  res.send("Done!") //sends msg as done 
 });
 
 app.listen(PORT, () => {
