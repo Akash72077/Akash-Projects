@@ -136,6 +136,8 @@ const app = express();
 //   });
 //   res.send("Done!") //sends msg as done
 // });
+
+
 // app.get("/addPositions", async (req, res) => {
 //   let tempPositions = [
 //     {
@@ -172,6 +174,7 @@ const app = express();
 //     newPosition.save(); //saves the data
 //   });
 //   res.send("Done!"); //sends msg as done
+
 // });
 app.listen(PORT, () => {
   console.log("App started!");
