@@ -131,7 +131,7 @@ app.get("/addHoldings", async (req, res) => {
       net: item.net,
       day: item.day,
     });
-    newHolding.save();
+    newHolding.save();//saves the data 
   });
   res.send("Done") //sends msg as done 
 });
