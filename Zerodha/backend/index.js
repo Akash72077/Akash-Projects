@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const { HoldingsModel } = require("./model/HoldingsModel");
+const { PositionsModel } = require("./model/PositionsModel");
 
 const PORT = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
@@ -123,7 +124,7 @@ const app = express();
 //     },
 //   ];
 //   tempHoldings.forEach((item) => {
-//     let newHolding = new HoldingsModel({
+// let newHolding = new HoldingsModel({
 //       name: item.name,
 //       qty: item.qty,
 //       avg: item.avg,
