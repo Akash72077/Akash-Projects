@@ -19,7 +19,6 @@ public class CenterPyramid {
             System.out.print(" ");
           } 
           System.out.println();
-
         }
 
     }
