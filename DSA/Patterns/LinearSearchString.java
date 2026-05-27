@@ -1,6 +1,5 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
-
 public class LinearSearchString {
     public static void main(String[] args) {
         String name = "Dudigam Venkata Sai Akash";
@@ -21,8 +20,7 @@ public class LinearSearchString {
         for(char ch: str.toCharArray() ){
             if(ch==target){
                 return true;
-            }
-           
+            }  
         }
          return false;
     }
