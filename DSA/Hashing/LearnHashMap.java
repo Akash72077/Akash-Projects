@@ -23,5 +23,18 @@ public class LearnHashMap {
         // mapping
         // occurrence
 
+        //important methods of hashmap
+
+    // put(key,value)= insert or update data 
+    // get(key)= retrive value using key
+    // remove(key)= Delete entry 
+    // containsKey(key)=check if key exists
+    // containsValue(value)=checks if value exists
+    // getOrDefault(key, default)= return default value if key not found 
+    // size()--> Return number of entires 
+    // clear()--> Remove all entires
+    // keySet()--> get all keys
+    // values()--> get all values
+    // entrySet()--> Get all key-value pairs
     }
 }
