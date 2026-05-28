@@ -35,5 +35,7 @@ public class LearnMap2 {
         for(int i:arr){
             System.out.println(i);
         }
+        // we can directly print hashmap
+        System.out.println(hm);
     }
 }
