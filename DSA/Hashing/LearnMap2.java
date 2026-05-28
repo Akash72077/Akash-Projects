@@ -2,8 +2,10 @@ import java.util.HashMap;
 public class LearnMap2 {
     public static void main(String[] args) {
         HashMap<Integer, Integer> hm =new HashMap<>();
+        // put has time complexity O(1)
         hm.put(1,100);
         hm.put(1,1000);
+        // get has time complexity O(1)
         int temp=hm.get(1);
         hm.put(1,1000/10);
         System.out.println(temp);
@@ -15,6 +17,7 @@ public class LearnMap2 {
         System.out.println(temp2);
         // using containsKey()
 
+        // contians has time complexity O(1)
         if(hm.containsKey(3)){
             System.out.println("True");
         }else{
@@ -22,6 +25,7 @@ public class LearnMap2 {
         }
 
         // using contains value 
+        // get has time complexity O(1)
         if(hm.containsValue(100)){
             System.out.println("False");
         }else{
