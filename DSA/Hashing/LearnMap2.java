@@ -35,9 +35,17 @@ public class LearnMap2 {
         for(int i:arr){
             System.out.println(i);
         }
+
+
         // we can directly print hashmap
         System.out.println(hm);
+
+
         //implementation of size
         System.out.println(hm.size());
+
+
+        //implementation of IsEmpty
+        System.out.println(hm.isEmpty());// returns true if hashmap is emptty
     }
 }
