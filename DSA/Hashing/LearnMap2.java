@@ -50,7 +50,6 @@ public class LearnMap2 {
 
         //implementation if clear 
         // hm.clear();
-        // System.out.println(hm.isEmpty());      
-
+        // System.out.println(hm.isEmpty());   
     }
 }
