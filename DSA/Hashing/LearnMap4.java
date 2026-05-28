@@ -8,5 +8,9 @@ public class LearnMap4 {
         fruitCount.put("Orange",15); 
         fruitCount.put("Banana",20);
         fruitCount.put("Mango",11);
+        // iterating values using for each
+        for(String i:fruitCount.keySet()){
+            System.out.println("Key: "+i+" & Value: "+fruitCount.get(i));
+        }
     }
 }
