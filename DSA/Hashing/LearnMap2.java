@@ -10,8 +10,16 @@ public class LearnMap2 {
 
         // using containsKey
         System.out.println(hm.get(4));// returns null if not found
-        int temp3=hm.get(6);// int cannot store null  so it will get error
+        // int temp3=hm.get(6);// int cannot store null  so it will get error
         Integer temp2=hm.get(6);//Integer wrapper class can store the value of null
         System.out.println(temp2);
+        // using containsKey()
+
+        if(hm.containsKey(3)){
+            System.out.println("Yes");
+        }else{
+            System.out.println("False");
+        }
+
     }
 }
