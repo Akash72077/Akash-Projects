@@ -27,6 +27,9 @@ public class LearnMap2 {
         }else{
             System.out.println("False");
         }
-
+        int arr[]={1,2,3};
+        for(int i:arr){
+            System.out.println(i);
+        }
     }
 }
