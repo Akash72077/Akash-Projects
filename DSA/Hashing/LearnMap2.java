@@ -37,5 +37,7 @@ public class LearnMap2 {
         }
         // we can directly print hashmap
         System.out.println(hm);
+        //implementation of size
+        System.out.println(hm.size());
     }
 }
