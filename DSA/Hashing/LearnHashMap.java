@@ -39,5 +39,7 @@ public class LearnHashMap {
 
     //hashmap put values
     hm.put(1,100);
+    //hashmap get values
+    System.out.println(hm.get(1));
     }
 }
