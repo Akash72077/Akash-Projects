@@ -36,5 +36,8 @@ public class LearnHashMap {
     // keySet()--> get all keys
     // values()--> get all values
     // entrySet()--> Get all key-value pairs
+
+    //hashmap put values
+    hm.put(1,100);
     }
 }
