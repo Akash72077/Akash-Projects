@@ -46,6 +46,10 @@ public class LearnMap2 {
 
 
         //implementation of IsEmpty
-        System.out.println(hm.isEmpty());// returns true if hashmap is emptty
+        System.out.println(hm.isEmpty());// returns true if hashmap is empty
+
+        //implementation if clear 
+        hm.clear();
+        System.out.println(hm.isEmpty());        
     }
 }
