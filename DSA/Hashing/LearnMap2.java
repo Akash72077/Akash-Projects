@@ -16,7 +16,14 @@ public class LearnMap2 {
         // using containsKey()
 
         if(hm.containsKey(3)){
-            System.out.println("Yes");
+            System.out.println("True");
+        }else{
+            System.out.println("False");
+        }
+
+        // using contains value 
+        if(hm.containsValue(100)){
+            System.out.println("False");
         }else{
             System.out.println("False");
         }
