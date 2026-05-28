@@ -7,5 +7,11 @@ public class LearnMap2 {
         int temp=hm.get(1);
         hm.put(1,1000/10);
         System.out.println(temp);
+
+        // using containsKey
+        System.out.println(hm.get(4));// returns null if not found
+        int temp3=hm.get(6);// int cannot store null  so it will get error
+        Integer temp2=hm.get(6);//Integer wrapper class can store the value of null
+        System.out.println(temp2);
     }
 }
