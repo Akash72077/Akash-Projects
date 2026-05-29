@@ -5,8 +5,6 @@ public class LearnHashMap {
         // here hm is the name of hashmap 
         // in <Integer(1), Integer(2)> : here 1 is the data type of key and 2 is the data type for value  
 
-
-
         // Hashmap is used when they ask for:
         // fast searching or lookup
         // store key-value pairs 
