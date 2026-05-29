@@ -19,7 +19,6 @@ public class LearnHashMap {
         // pair/sum
         // mapping
         // occurrence
-
         //important methods of hashmap
 
     // put(key,value)= insert or update data 
