@@ -19,7 +19,6 @@ public class LearnHashMap {
         // mapping
         // occurrence
         //important methods of hashmap
-
     // put(key,value)= insert or update data 
     // get(key)= retrive value using key
     // remove(key)= Delete entry 
