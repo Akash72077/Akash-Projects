@@ -5,9 +5,15 @@ public class Inheritance {
         // System.out.println(cal.add(1, 6));
         // System.out.println(cal.sub(100, 6));
         // now we cannot access the operations of calculator 
-         AdvCal cal= new AdvCal(); 
-        System.out.println(cal.mul(1, 6));
-        System.out.println(cal.div(100, 6));
+        //  AdvCal cal= new AdvCal(); 
+        // System.out.println(cal.mul(1, 6));
+        // System.out.println(cal.div(100, 6));
         //afte Advance class  extending  to calculator we can access the properties of Caluclator with help of adv cal
+        ScientificCal cal= new ScientificCal(); 
+        System.out.println(cal.power(5,2));
+         System.out.println(cal.mul(1, 6));
+        System.out.println(cal.div(100, 6));
+        System.out.println(cal.add(1, 6));
+        System.out.println(cal.sub(100, 6));
     }
 }
