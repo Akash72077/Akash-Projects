@@ -14,10 +14,8 @@ class Human{
     }
     public String getName(){
         return name;
-    }
-    
+    }   
 }
-
 public class Encapsulation {
     public static void main(String[] args) {
         Human Akash = new Human();
