@@ -8,5 +8,6 @@ public class Inheritance {
          AdvCal cal= new AdvCal(); 
         System.out.println(cal.mul(1, 6));
         System.out.println(cal.div(100, 6));
+        //afte Advance class  extending  to calculator we can access the properties of Caluclator with help of adv cal
     }
 }
