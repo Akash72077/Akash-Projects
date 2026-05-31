@@ -14,7 +14,7 @@ int main(){
     case 'I':
     case 'O':
     case 'U':
-//ch3cks conditon if found it will return oytpit 
+//ch3cks conditon if found it will return ouput  
    printf("The input is vowel");
    break;
    default:
