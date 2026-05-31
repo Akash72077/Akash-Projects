@@ -17,7 +17,7 @@ int main(){
 //ch3cks conditon if found it will return ouput  
    printf("The input is vowel");
    break;
-   default:
+   default: // else peint deafult statement 
     printf("Character");
     break;
     }
