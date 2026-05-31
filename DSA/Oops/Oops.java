@@ -77,6 +77,8 @@ class Student{
         percentage=(phy+chem+math)/3;
     }
 }
+
+
 /*Usally there are two types of functions in OOPS :
 * Getters: to return the value
 * Setters : to modify the value
