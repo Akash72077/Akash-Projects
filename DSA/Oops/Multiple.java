@@ -1,3 +1,8 @@
+// does java supports mutliple inheritance :
+//A) No, It does not supports multiple inheritance
+//  but we can implement multiple inheritance by 
+// using interfaces concept
+
 // === EXAMPLE 1: STANDARD INTERFACES ===
 interface Walkable {
     void walk();
