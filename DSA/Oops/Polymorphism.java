@@ -13,9 +13,12 @@ class B extends A {
 }
 public class Polymorphism {
     public static void main(String[] args) {
-
         B obj1= new B();// as per method overriding concept the output will be from class B
         obj1.show();
+        A obj2= new B();
+        obj2.show();
+        A obj3= new A();
+         obj3.show();
         
     }
 }
