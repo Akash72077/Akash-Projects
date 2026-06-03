@@ -36,7 +36,7 @@ public class LearnHashMap {
     //hashmap get values
     System.out.println(hm.get(1));
     // creating hashmap as a String data type key
-    // hms=hashmap string
+     // hms=hashmap string
     HashMap<String, Integer> hms=new HashMap<>();
     hms.put("Apple", 90);
     hms.put("Orange", 150);
