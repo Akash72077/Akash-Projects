@@ -9,6 +9,7 @@ public class LearnMap3 {
         hm.put(6,50);
         hm.put(4,60);
         hm.put(9,90);
+        hm.put(10,100);
         //key set makes all the keys in a hashmap as a set
         for(int i:hm.keySet()){
             System.out.println("Key: "+i+"->"+"Value: "+hm.get(i));
