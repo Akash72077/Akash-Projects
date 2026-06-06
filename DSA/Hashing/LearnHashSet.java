@@ -20,5 +20,9 @@ public static void main(String[] args) {
     st.remove("SAo");// the value does not exixst id does not throws error
     st.remove("akash");// removes the elements 
     System.out.println(st);
+    // traversing set
+    for(String s:st){
+        System.out.println(s);
+    }
 }
 }
