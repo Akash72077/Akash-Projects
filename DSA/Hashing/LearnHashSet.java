@@ -15,6 +15,10 @@ public static void main(String[] args) {
     st.add("akash");
     //added repeated values
     System.out.println(st);
-   
+    System.out.println(st.contains("sai"));// returns true if it contains the value   
+    System.out.println(st.size());// returns size
+    st.remove("SAo");// the value does not exixst id does not throws error
+    st.remove("akash");// removes the elements 
+    System.out.println(st);
 }
 }
