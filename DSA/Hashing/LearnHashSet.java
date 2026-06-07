@@ -1,6 +1,7 @@
 import java.util.HashSet;
 public class LearnHashSet {
 public static void main(String[] args) {
+    //declaration of hashset
     HashSet<String> st= new HashSet<>();
     st.add("sai");
     st.add("akash");
