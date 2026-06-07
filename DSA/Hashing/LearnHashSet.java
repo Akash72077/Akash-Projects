@@ -6,6 +6,7 @@ public static void main(String[] args) {
     st.add("akash");
     st.add("ramesh");
     st.add("ganesh");
+    //print statement
     System.out.println(st);
     // we use put for hashmap and we will pass 2 
     // arguments there but in hashset we have to
