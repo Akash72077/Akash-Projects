@@ -3,7 +3,7 @@ public class LearnHashSet {
 public static void main(String[] args) {
     //declaration of hashset
     HashSet<String> st= new HashSet<>();
-    st.add("sai");
+    st.add("sai");// adding elements 
     st.add("akash");
     st.add("ramesh");
     st.add("ganesh");
