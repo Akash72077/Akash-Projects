@@ -23,7 +23,7 @@ public static void main(String[] args) {
     st.remove("akash");// removes the elements 
     System.out.println(st);
     // traversing set
-    for(String s:st){
+    for(String s:st){// from i=0 to n
         System.out.println(s);
     }
 }
