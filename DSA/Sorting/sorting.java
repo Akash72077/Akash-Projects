@@ -11,6 +11,7 @@ public static void bubble(int arr[]){
         }
     }
 }
+// idea: pick smallest element(from unsorted) and put it at the begining
 public static void seletion(int arr[]){
     for(int i=0; i<arr.length-1;i++ ){
         int minPos=i; 
