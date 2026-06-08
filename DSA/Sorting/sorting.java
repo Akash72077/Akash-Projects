@@ -1,5 +1,7 @@
 public class sorting {
-    
+
+    //large elements come tp the end of array by swapping with adjacent elements 
+
 public static void bubble(int arr[]){
     for(int turn =0; turn <arr.length-1; turn ++){
         for(int j=0; j<arr.length-1-turn; j++){
