@@ -15,10 +15,10 @@ public static void bubble(int arr[]){
 public static void seletion(int arr[]){
     for(int i=0; i<arr.length-1;i++ ){
         int minPos=i; 
-        for(int j=i+1; j<arr.length-1;j++){
+        for(int j=i+1; j<arr.length;j++){
             if(arr[minPos]>arr[j]){
                 minPos=j;
-            }
+            } 
         }
         int temp= arr[minPos];
         arr[minPos]=arr[i];
@@ -31,7 +31,7 @@ public static void printArray(int arr[]){
     }
 }
     public static void main(String[] args) {
-    int array[]={5,4,6,3,2,8,67,45};
+    int array[]={5,4,1,3,2};
     //bubble(array);
     seletion(array);
     printArray(array);
