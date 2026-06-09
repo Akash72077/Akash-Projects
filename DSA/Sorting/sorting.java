@@ -33,7 +33,7 @@ public static void printArray(int arr[]){
     public static void main(String[] args) {
     int array[]={5,4,1,3,2};
     //bubble(array);
-    seletion(array);
+    // seletion(array);
     printArray(array);
     }
 }
