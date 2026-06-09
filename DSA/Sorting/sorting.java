@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class sorting {
     //large elements come tp the end of array by swapping with adjacent elements 
 public static void bubble(int arr[]){
@@ -34,6 +35,8 @@ public static void printArray(int arr[]){
     int array[]={5,4,1,3,2};
     //bubble(array);
     // seletion(array);
-    printArray(array);
+    // built in sort
+    Arrays.sort(array);
+     printArray(array);
     }
 }
