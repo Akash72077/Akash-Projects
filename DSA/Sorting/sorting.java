@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 public class sorting {
     //large elements come tp the end of array by swapping with adjacent elements 
 public static void bubble(int arr[]){
@@ -26,20 +28,21 @@ public static void seletion(int arr[]){
         arr[i]=temp;
     }
 }
-public static void printArray(int arr[]){
+public static void printArray(Integer arr[]){
     for(int i=0; i<arr.length; i++){
      System.out.print(arr[i]+" ");
     }
     System.out.println();
 }
     public static void main(String[] args) {
-    int array[]={5,4,1,3,2};
+    Integer array[]={5,4,1,3,2};
     //bubble(array);
     // seletion(array);
     // built in sort
     //Arrays.sort(array);
      //printArray(array);
-     Arrays.sort(array,2,5);
+    //  Arrays.sort(array,2,5);
+    Arrays.sort(array,0,2,Collections.reverseOrder());
     printArray(array);
     }
 }
