@@ -30,13 +30,16 @@ public static void printArray(int arr[]){
     for(int i=0; i<arr.length; i++){
      System.out.print(arr[i]+" ");
     }
+    System.out.println();
 }
     public static void main(String[] args) {
     int array[]={5,4,1,3,2};
     //bubble(array);
     // seletion(array);
     // built in sort
-    Arrays.sort(array);
-     printArray(array);
+    //Arrays.sort(array);
+     //printArray(array);
+     Arrays.sort(array,2,5);
+    printArray(array);
     }
 }
