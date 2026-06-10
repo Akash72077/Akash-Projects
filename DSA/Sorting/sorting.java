@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.Collections;
 public class sorting {
     //large elements come tp the end of array by swapping with adjacent elements 
 public static void bubble(int arr[]){
@@ -7,7 +5,7 @@ public static void bubble(int arr[]){
         for(int j=0; j<arr.length-1-turn; j++){
             if(arr[j]>arr[j+1]){
                 int temp=arr[j];
-                arr[j]=arr[j+1];
+                arr[j]=arr[j+1]; 
                 arr[j+1]=temp;
             }
         }
@@ -34,27 +32,39 @@ public static void countSort(int arr[]){
     largest=Math.max(largest, arr[i]);
     }
     int count[]= new int[largest+1];
+    // it will count each element in array and increases its count 
+    // the number will be considered as index
     for(int i=0; i<n; i++){
         count[arr[i]]++;
-    }// it will count each element in array and increases its count 
-    // the number will be considered as index
+    }
+    // sorting
+    int j=0;
+        for(int i=0; i<count.length; i++){
+           while(count[i]>0){
+            arr[j]=i;
+            j++;
+            count[i]--;
+            
+           }
+        }
+    }
 
-}
-public static void printArray(Integer arr[]){
+public static void printArray(int arr[]){
     for(int i=0; i<arr.length; i++){
      System.out.print(arr[i]+" ");
     }
     System.out.println();
 }
     public static void main(String[] args) {
-    Integer array[]={5,4,1,3,2};
+    int array[]={5,4,1,3,2};
     //bubble(array);
     // seletion(array);
     // built in sort
     //Arrays.sort(array);
      //printArray(array);
     //  Arrays.sort(array,2,5);
-    Arrays.sort(array,0,2,Collections.reverseOrder());
+    // Arrays.sort(array,0,2,Collections.reverseOrder());
+countSort(array);
     printArray(array);
     }
 }
