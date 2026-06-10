@@ -27,6 +27,19 @@ public static void seletion(int arr[]){
         arr[i]=temp;
     }
 }
+public static void countSort(int arr[]){
+    int largest= Integer.MIN_VALUE;
+    int n=arr.length;
+    for(int i=0; i<n; i++){
+    largest=Math.max(largest, arr[i]);
+    }
+    int count[]= new int[largest+1];
+    for(int i=0; i<n; i++){
+        count[arr[i]]++;
+    }// it will count each element in array and increases its count 
+    // the number will be considered as index
+
+}
 public static void printArray(Integer arr[]){
     for(int i=0; i<arr.length; i++){
      System.out.print(arr[i]+" ");
