@@ -61,7 +61,7 @@ import java.util.Scanner;
      System.out.println("Enter the index's to swap the numbers in array: ");
      int  idx1= sc.nextInt();
      int idx2= sc.nextInt();
-    
+
 
      System.out.println("The Array list after swapping: "+list2);
 
