@@ -1,5 +1,6 @@
 //importing array list 
 import java.util.ArrayList;
+// importing scanner class 
 import java.util.Scanner;
  class ArrayListDemo {
     public static void swap(ArrayList<Integer> list2, int idx1, int idx2){
