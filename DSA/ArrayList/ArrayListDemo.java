@@ -1,3 +1,4 @@
+//importing array list 
 import java.util.ArrayList;
 import java.util.Scanner;
  class ArrayListDemo {
