@@ -1,4 +1,3 @@
-
 //importing array list 
 import java.util.ArrayList;
 // importing scanner class 
