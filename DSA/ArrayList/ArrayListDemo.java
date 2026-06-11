@@ -20,7 +20,6 @@ import java.util.Scanner;
       //  get operations time complexity is O(1)
     //    int element = list.get(2);
     //    System.out.println(element);
-
     // //    remove element 
     //    list.remove(2); // time complexity is O(n)
     //    System.out.println(list);
