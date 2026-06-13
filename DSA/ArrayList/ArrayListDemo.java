@@ -1,4 +1,6 @@
+//importing array list 
 import java.util.ArrayList;
+// importing scanner class 
 import java.util.Scanner;
  class ArrayListDemo {
     public static void swap(ArrayList<Integer> list2, int idx1, int idx2){
@@ -18,7 +20,6 @@ import java.util.Scanner;
       //  get operations time complexity is O(1)
     //    int element = list.get(2);
     //    System.out.println(element);
-
     // //    remove element 
     //    list.remove(2); // time complexity is O(n)
     //    System.out.println(list);
@@ -59,7 +60,7 @@ import java.util.Scanner;
      System.out.println("Enter the index's to swap the numbers in array: ");
      int  idx1= sc.nextInt();
      int idx2= sc.nextInt();
-    
+
 
      System.out.println("The Array list after swapping: "+list2);
 
