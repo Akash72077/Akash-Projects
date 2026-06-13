@@ -5,13 +5,9 @@ public class SpiralMatrix {
         int startRow=0;
         int endRow=matrix.length-1;
         int endCol=matrix[0].length-1;
-        for(int i=0; i<matrix.length; i++){
-            for(int j=0; j<matrix[0].length; j++){
-             
-               }
-            }
-        }
 
+        
+    }
     public static void main(String[] args) {
          Scanner sc=new Scanner(System.in);
          System.out.println("Enter the size of row: ");
@@ -26,7 +22,6 @@ public class SpiralMatrix {
                 matrix[i][j]=sc.nextInt();
             }
         }
-       
         sc.close();
     }
 }
