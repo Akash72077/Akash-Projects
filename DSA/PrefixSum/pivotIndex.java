@@ -8,6 +8,7 @@ public class PivotIndex {
             rightSum+=var;
         }
         // here removes each value from right sum and checks is it satisfies the condition
+        // if it satisfies condition it will return i other wise it will return -1
         for(int i=0; i<n; i++){
             int val=arr[i];
         rightSum-=val;
