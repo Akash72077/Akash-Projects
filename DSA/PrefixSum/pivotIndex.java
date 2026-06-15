@@ -2,10 +2,12 @@ public class PivotIndex {
     static int findPivot(int arr[]){
         int rightSum=0;
         int leftSum=0;
-        int n=arr.length;
+        int n=arr.length; //size of an array
+        // stores total array sum into rightsum
         for(int var:arr){
             rightSum+=var;
         }
+        // here removes each value from right sum and checks is it satisfies the condition
         for(int i=0; i<n; i++){
             int val=arr[i];
         rightSum-=val;
