@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class isPalindrome {
+public class IsPalindrome {
     public static boolean isPalindrome(String s){
         int left=0;
         int right=s.length()-1;
