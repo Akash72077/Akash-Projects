@@ -15,6 +15,7 @@ public class isPalindrome {
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a String to check isPalindrome: ");
         String s=sc.nextLine();
         if(isPalindrome(s)){
             System.out.println("Given string is Palindrome");
