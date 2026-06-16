@@ -23,7 +23,7 @@ Output: false
 */
 
 
-public class IsPalindrome2 {
+public class ValidPalindrome2 {
     public static void main(String[] args) {
         
     }
