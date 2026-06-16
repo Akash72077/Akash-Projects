@@ -26,5 +26,6 @@ public class isPalindrome {
         }else{
             System.out.println("Given string is not Palindrome");
         }
+        sc.close();
     }
 }
