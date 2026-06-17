@@ -26,7 +26,7 @@ import java.util.Scanner;
 public class ValidPalindrome2 {
 
     public static boolean isPalindrome(String s, int left, int right){
-
+            // function to validate isPalindrome
             while(left<right){
             if(s.charAt(left)==s.charAt(right)){
                 left++;
