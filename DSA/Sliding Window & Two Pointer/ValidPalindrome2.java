@@ -21,7 +21,7 @@ Input: s = "abc"
 Output: false
 
 */
-import java.util.Scanner;
+import java.util.Scanner;// scanner class imported
 public class ValidPalindrome2 {
 
     public static boolean isPalindrome(String s, int left, int right){
