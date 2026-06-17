@@ -48,6 +48,7 @@ public class ValidPalindrome2 {
                 left++;
                 right--;
             }else{
+                // here we use OR operator 
                 return isPalindrome(s, left+1, right)|| isPalindrome(s, left, right-1);
             }
         }
