@@ -65,6 +65,6 @@ public class ValidPalindrome2 {
         }else{
             System.out.println("Given string is not Palindrome.");
         }
-        sc.close();
+        sc.close();// scanner close
     }
 }
