@@ -21,7 +21,6 @@ Input: s = "abc"
 Output: false
 
 */
-
 import java.util.Scanner;
 public class ValidPalindrome2 {
 
