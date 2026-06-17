@@ -35,6 +35,7 @@ public class ValidPalindrome2 {
                 return false;
             }
         }
+        // after while loop it returns true
         return true;
 
     }
