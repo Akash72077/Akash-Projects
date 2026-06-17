@@ -56,7 +56,7 @@ public class ValidPalindrome2 {
         return true;
     }
     public static void main(String[] args) {
-        
+        // creating scanner class 
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a string to check is palindrome: ");
         String s= sc.nextLine();
