@@ -29,8 +29,18 @@ nums[i] is either 0, 1, or 2.
 Follow up: Could you come up with a one-pass algorithm using only constant extra space?
 */
 
+import java.util.Scanner;
+
 public class SortColour {
     public static void main(String[] args) {
-        
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the size of an array: ");
+        int n=sc.nextInt();
+        int nums[]= new int[n];
+        System.out.println("Enter "+ n+" elements to array: ");
+        for (int i : nums) {
+            nums[i]=sc.nextInt();
+        }
+
     }
 }
