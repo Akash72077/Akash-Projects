@@ -67,6 +67,6 @@ public class SortColour {
 
         sortColours(nums);
          
-
+sc.close();
     }
 }
