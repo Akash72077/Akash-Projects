@@ -32,15 +32,41 @@ Follow up: Could you come up with a one-pass algorithm using only constant extra
 import java.util.Scanner;
 
 public class SortColour {
+    public static void sortColours(int nums[]){
+        int low =0, mid=0;
+        int high= nums.length-1;
+        while(mid<=high){
+            if(nums[mid]==0){
+                nums[mid]=nums[low];
+                nums[low]=0;
+                low++;
+                mid++;
+            }else if(nums[mid]==1){
+                mid++;
+            }else{
+                nums[mid]=nums[high];
+                nums[high]=2;
+                high--;
+            }
+        
+        }
+         for (int num : nums) {
+            System.out.print(num+" ");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the size of an array: ");
         int n=sc.nextInt();
         int nums[]= new int[n];
         System.out.println("Enter "+ n+" elements to array: ");
-        for (int i : nums) {
+        for (int i=0; i<n; i++) {
             nums[i]=sc.nextInt();
         }
+        System.out.println("Sorted array is: ");
+
+        sortColours(nums);
+         
 
     }
 }
