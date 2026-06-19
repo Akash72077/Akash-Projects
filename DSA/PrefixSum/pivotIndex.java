@@ -2,6 +2,7 @@ public class PivotIndex {
     static int findPivot(int arr[]){
         int rightSum=0;
         int leftSum=0;
+        
         int n=arr.length; //size of an array
         // stores total array sum into rightsum
         for(int var:arr){
