@@ -7,6 +7,7 @@ public class PivotIndex {
         // stores total array sum into rightsum
         for(int var:arr){
             rightSum+=var;
+            
         }
         // here removes each value from right sum and checks is it satisfies the condition
         // if it satisfies condition it will return i other wise it will return -1
