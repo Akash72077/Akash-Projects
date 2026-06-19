@@ -5,7 +5,6 @@ void printArr(int arr[],int size){
     for(int i=0; i<size; i++){
         cout<<arr[i]<<" ";
     }
-
 }
 int partiton(int arr[],int si, int ei){
 int i=si-1;
