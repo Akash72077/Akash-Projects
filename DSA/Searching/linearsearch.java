@@ -36,7 +36,6 @@ return -1;
             System.out.println("The element is not found in the array.");
         }
         sc.close();
-
-        
+        // scanner class closed
     }
 }
