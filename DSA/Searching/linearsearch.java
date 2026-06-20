@@ -1,5 +1,6 @@
 import java.util.*;
 public class linearsearch {
+    // it traverse entire array
 public static int linear(int array[],  int target){
     if(array.length==0){
         return-1;
