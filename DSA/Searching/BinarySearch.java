@@ -1,4 +1,5 @@
 public class BinarySearch {
+  // in binary search it reduces each iterations to half array
     public static void main(String[] args) {
         int arr[]={-10,-8,-5,-3,-2,0,2, 4, 6, 9, 11, 12, 14, 20, 36, 48};
         int pos= binary(arr, -5);
