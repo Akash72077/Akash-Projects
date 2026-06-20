@@ -15,7 +15,7 @@ public class BinarySearch {
        
         while(start<=end){
             //find the middle elemenet 
-      //int mid= (start+end)/2; // but this mya exceed the int range 
+      //int mid= (start+end)/2; // but this may exceed the int range 
       // so use the formula int mid = start+ (end-start)/2;
 
       int mid = start+ (end-start)/2;
