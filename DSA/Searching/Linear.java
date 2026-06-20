@@ -10,7 +10,9 @@ for(int i=0; i<array.length; i++){
     }
 }
 
+    
 return -1;
+    
 }
     public static void main(String[] args) {
         Scanner  sc=new Scanner(System.in);
