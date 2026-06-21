@@ -25,8 +25,6 @@ public class BinarySearch {
       }
 }
 
-
-
     return -1;
    } // if we dont know is the array is sorted in ascending order or descending order compare any two element if first element is greater than second element it is in descending order (or) if first element is less than secondary element it is in ascending order 
    /*but there is a problem in this method because if two number are equal then i will result wrong  so we using order Agnostic binary search method it is nothing but compare first and last element in an array if all elements are equal in array then only it will result wrong  */
