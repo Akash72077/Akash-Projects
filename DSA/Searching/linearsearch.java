@@ -1,5 +1,7 @@
 import java.util.*;
 public class linearsearch {
+    // it traverse entire array
+    // time complexity is O(n)
 public static int linear(int array[],  int target){
     if(array.length==0){
         return-1;
@@ -34,7 +36,6 @@ return -1;
             System.out.println("The element is not found in the array.");
         }
         sc.close();
-
-        
+        // scanner class closed
     }
 }
