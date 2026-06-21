@@ -18,11 +18,6 @@ int c=15,d=30;
  p=p^q;
  q=p^q;
  p=p^q;
-
  printf("The values after swap %d %d",p,q);
-
-
-
-
     return 0;
 }
