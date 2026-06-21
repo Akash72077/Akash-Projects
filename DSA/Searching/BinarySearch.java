@@ -16,7 +16,7 @@ public class BinarySearch {
       //int mid= (start+end)/2; // but this may exceed the int range 
       // so use the formula int mid = start+ (end-start)/2;
       int mid = start+ (end-start)/2;
-      if(target<arr[mid]){
+      if(target<arr[mid]){// halfs array to leftside 
         end= mid-1;
       }else if(target>arr[mid]){// halfs array to rightside 
         start=mid+1;
