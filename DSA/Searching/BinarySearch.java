@@ -5,12 +5,9 @@ public class BinarySearch {
         int pos= binary(arr, -5);
         System.out.println(pos);
 
-    }
-        
+    }        
         // return -1 if does not found
-   static int binary(int arr[], int target){
-
-      
+   static int binary(int arr[], int target){     
         int start= 0;
         int end = arr.length-1;
        
@@ -18,17 +15,14 @@ public class BinarySearch {
             //find the middle elemenet 
       //int mid= (start+end)/2; // but this may exceed the int range 
       // so use the formula int mid = start+ (end-start)/2;
-
       int mid = start+ (end-start)/2;
       if(target<arr[mid]){
         end= mid-1;
-      }else if(target>arr[mid]){
+      }else if(target>arr[mid]){// halfs array to rightside 
         start=mid+1;
-
       }else{
         return mid;
       }
-      
 }
 
 
