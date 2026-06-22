@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-# Store student data
-students = {}
+# Store student data jn yhe form of directory 
+students = {} 
 
 
 # ------------------ Performance Analysis Function ------------------ #
