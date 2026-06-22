@@ -5,7 +5,6 @@ app = Flask(__name__)
 # Store student data in yhe form of directory 
 students = {} 
 
-
 # ------------------ Performance Analysis Function ------------------ #
 def analyse_performance(marks):
     if len(marks) == 0:
