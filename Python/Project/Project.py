@@ -30,7 +30,6 @@ def give_recommendation(avg):
     else:
         return "Good: Keep up the good work"
 
-
 # ------------------ Routes ------------------ #
 
 # Home / Login Page
