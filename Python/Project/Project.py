@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-# Store student data jn yhe form of directory 
+# Store student data in yhe form of directory 
 students = {} 
 
 
