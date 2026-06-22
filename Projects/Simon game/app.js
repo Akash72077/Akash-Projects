@@ -4,6 +4,7 @@ let btns= ["yellow", "red", "purple", "green"];
 let started= false;// intially game is not started 
 let level=0;// intial level is 0
 
+
 let h2= document.querySelector("h2");
 
 document.addEventListener("keypress", function(){
