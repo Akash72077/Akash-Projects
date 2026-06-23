@@ -10,6 +10,13 @@ public class Apna {
             this.right=null;
         }
     }
+
+    static class BinaryTree {
+        public static Node buildTree(int nodes[]){
+            
+        }
+        
+    }
     public static void main(String[] args) {
         // -1 indicates null
         // building tree in preorder traversal
