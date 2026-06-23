@@ -3,7 +3,6 @@ public class Apna {
         int data;
         Node left;
         Node right;
-
     }
     public static void main(String[] args) {
         // -1 indicates null
