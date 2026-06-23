@@ -1,5 +1,5 @@
 public class Apna {
-    static class Node{
+    static class Node{// Class for Node 
         int data;
         Node left;
         Node right;
