@@ -12,8 +12,12 @@ public class Apna {
     }
 
     static class BinaryTree {
+        static int index=-1;
         public static Node buildTree(int nodes[]){  // here data type Node means it will return root
-
+            index++;
+        if(nodes[index]==-1){
+            return null;
+        }
         }
         
     }
