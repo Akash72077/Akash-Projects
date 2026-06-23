@@ -1,4 +1,10 @@
 public class Apna {
+    static class Node{
+        int data;
+        Node left;
+        Node right;
+
+    }
     public static void main(String[] args) {
         // -1 indicates null
         // building tree in preorder traversal
