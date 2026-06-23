@@ -18,6 +18,10 @@ public class Apna {
         if(nodes[index]==-1){
             return null;
         }
+        Node newNode= new Node(nodes[index]);
+        newNode.left=buildTree(nodes);
+        newNode.right= buildTree(nodes);
+        return newNode;
         }
         
     }
