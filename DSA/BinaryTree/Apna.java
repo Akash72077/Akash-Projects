@@ -16,7 +16,7 @@ public class Apna {
         public static Node buildTree(int nodes[]){  // here data type Node means it will return root
             index++;
         if(nodes[index]==-1){
-            return null;// returns ie. stops running 
+            return null;// returns ie. stops running if it contains -1
         }
         Node newNode= new Node(nodes[index]);
         newNode.left=buildTree(nodes);
