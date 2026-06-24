@@ -1,6 +1,6 @@
 public class Apna {
     static class Node{// Class for Node 
-        int data;
+        int data; //it contains data pary
         Node left;
         Node right;
 
