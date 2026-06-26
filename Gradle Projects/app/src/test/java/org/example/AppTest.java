@@ -12,7 +12,6 @@ class AppTest {
     }
 
     private void assertNotNull(String greeting, String string) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'assertNotNull'");
     }
 }
