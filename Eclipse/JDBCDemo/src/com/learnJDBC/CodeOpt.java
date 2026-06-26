@@ -1,0 +1,65 @@
+package com.learnJDBC;
+
+import java.sql.*;
+
+public class CodeOpt {
+
+    public static void main(String[] args) {
+
+        String URL = "jdbc:mysql://localhost:3306/JDBCMySQL";
+        String Username = "root";
+        String Password = "Akash@12345";
+
+        String query = "select * from Students";
+
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+
+        try {
+
+            con = DriverManager.getConnection(URL, Username, Password);
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(query);
+
+            while (rs.next()) {
+
+                System.out.println("_____________________________");
+
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String dept = rs.getString("dept");
+
+                System.out.println("Student ID : " + id);
+                System.out.println("Student Name : " + name);
+                System.out.println("Student Department : " + dept);
+
+                System.out.println("_____________________________");
+            }
+
+        } catch (SQLException e) {
+            System.out.println("In catch " + e.getMessage());
+        }
+
+        finally {
+
+            try {
+
+                if (rs != null)
+                    rs.close();
+
+                if (stmt != null)
+                    stmt.close();
+
+                if (con != null)
+                    con.close();
+
+                System.out.println("Terminated Successfully");
+
+            } catch (Exception e) {
+
+                System.out.println("Oops ! some serious issue");
+            }
+        }
+    }
+}

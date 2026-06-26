@@ -1,0 +1,78 @@
+package com.akash.jdbcLearning;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class LaunchApp6 {
+
+	public static void main(String[] args) {
+		
+		Connection connect= null;
+		Statement statement=null;
+		PreparedStatement preparedstatement=null;
+		try {
+			connect=jdbcUtil.getConnection();
+		
+		
+			//creating statement 
+//		  statement = connect.createStatement();
+			
+			
+		//execute query
+			String query="INSERT INTO studentinfo(id, sname ,sage, scity)  VALUES (?,?,?,?)";
+			
+			 preparedstatement = connect.prepareStatement(query);
+			 
+			 
+			 System.out.println("Please enter the following details to be stored in DB :");
+			 
+			 
+			 Scanner sc = new Scanner(System.in);
+			 System.out.println("Enter your id: ");
+			 Integer id = sc.nextInt();
+			 
+			 System.out.println("Enter your name: ");
+			 String name = sc.next();
+			 
+			 System.out.println("Enter your age: ");
+			 Integer age = sc.nextInt();
+			 
+			 System.out.println("Enter your city: ");
+			 String city = sc.next();
+			 preparedstatement.setInt(1, id);
+			 preparedstatement.setString(2, name);
+			 preparedstatement.setInt(3, age);
+			 preparedstatement.setString(4, city);
+			 
+			int rowAffected=preparedstatement.executeUpdate();
+		//process the result 
+		if(rowAffected==0) 
+		{
+			System.out.println("Unable to insert data");
+		}
+		else 
+		{
+			System.out.println("Data Inserted Successfully");
+		}
+			
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		catch(Exception e) {
+		e.printStackTrace();
+		}
+		finally
+		{	
+			// close the result 
+			try {
+			jdbcUtil.closeConnection(connect, preparedstatement);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

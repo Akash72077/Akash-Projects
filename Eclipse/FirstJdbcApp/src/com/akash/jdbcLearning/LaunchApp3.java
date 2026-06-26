@@ -1,0 +1,44 @@
+package com.akash.jdbcLearning;
+import java.sql.*;
+public class LaunchApp3 {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		// load and register the driver 
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		// Establish the connection using connection object with get connection by driver manager class
+		String url="jdbc:mysql://localhost:3306/jdbclearning";
+		String user="root";
+		String password="Akash@12345";
+		Connection connect =DriverManager.getConnection(url, user , password);
+		
+		//creating statement 
+		Statement  statement = connect.createStatement();
+		
+		//execute query
+		
+		String sql="Select * from studentinfo";
+		ResultSet rs=statement.executeQuery(sql);
+		
+		//process result 
+		
+		while(rs.next())
+		{
+			
+//		int id	= rs.getInt(1);
+			// we can specify column name and column number inside of getString and getInt methods 
+//		System.out.println(rs.getInt(1)+" "+ rs.getString(2)+" "+rs.getInt(3) +" "+rs.getString(4));
+		System.out.println(rs.getInt("id")+" "+ rs.getString("sname")+" "+rs.getInt("sage") +" "+rs.getString("scity"));
+
+		}
+		
+		// close the result 
+		rs.close();
+		statement.close();
+		connect.close();
+		
+		
+	}
+
+}
