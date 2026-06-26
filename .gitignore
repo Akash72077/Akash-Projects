@@ -60,7 +60,10 @@ Thumbs.db
 *.ear
 .gradle/
 build/
-
+target/
+.settings/
+.project
+.classpath
 # ===============================
 # 🚫 Python
 # ===============================
