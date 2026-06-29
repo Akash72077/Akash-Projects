@@ -1,0 +1,16 @@
+1)identify if you can break down the problem into smaller problems
+2)write the recursion relation if needed
+3) draw the recursion tree
+4) about the tree:
+    *) see the flow of functions, how they are getting in stack
+    *) indentify & focus on left tree calls and right tree calls
+    *) draw the tree and position again and again using pen & paper
+    *) use a debugger to see the flow
+5) see how the values are returned at each step
+   see where the function call will come out, in the end you will come out of main function
+
+ Variables:
+            1)Arguments
+            2)Return type
+            3)Body of function
+            Example: Binary search with recursion
