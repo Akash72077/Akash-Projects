@@ -45,8 +45,6 @@ public class numberOfSteps1342LeetCode{
     }
         return 1+numberOfSteps(n-1);
 
-
-
     }
 
     public static void main(String[] args) {
