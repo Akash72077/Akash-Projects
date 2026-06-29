@@ -10,6 +10,29 @@ public class Learn
             this.val= val;
         }
     }
+
+    public static void display(Node root){
+
+
+        if(root==null){
+            return ;
+        }
+        System.out.print(root.val+" -> ");
+        if(root.left!=null)
+            System.out.print(root.left.val+" , ");
+        else
+            System.out.print("null ");
+
+
+        if(root.right!=null)
+            System.out.print(root.right.val);
+        else
+            System.out.print("null");
+        System.out.println();
+        display(root.left);
+        display(root.right);
+
+    }
     public static void main(String[] args) {
         Node root = new Node(1);
         Node a = new Node(2);
@@ -22,8 +45,6 @@ public class Learn
         a.left=c;
         a.right=d;
         b.right=e;
-
-
-        System.out.println(root.val);
+      display(root);
     }
 }
