@@ -1,3 +1,5 @@
+package com.Learn;
+
 public class sumofnumbers {
     public static int num(int n){
 
