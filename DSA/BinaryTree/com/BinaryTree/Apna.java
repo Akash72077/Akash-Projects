@@ -1,3 +1,5 @@
+package com.BinaryTree;
+
 public class Apna {
     static class Node{// Class for Node 
         int data; //it contains data part
