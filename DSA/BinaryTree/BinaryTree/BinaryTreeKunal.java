@@ -1,4 +1,4 @@
-package com.BinaryTree;
+package BinaryTree;
 
 import java.util.Scanner;
 public class BinaryTreeKunal {

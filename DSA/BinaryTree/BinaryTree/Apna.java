@@ -1,4 +1,4 @@
-package com.BinaryTree;
+package BinaryTree;
 
 public class Apna {
     static class Node{// Class for Node 
