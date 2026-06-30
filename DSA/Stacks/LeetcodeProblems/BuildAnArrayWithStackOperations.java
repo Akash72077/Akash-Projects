@@ -1,4 +1,4 @@
-/*
+package LeetcodeProblems;/*
 Problem statement :  Build an Array With Stack Operations
 
 You are given an integer array target and an integer n.
@@ -64,6 +64,20 @@ public class BuildAnArrayWithStackOperations {
 
     public  static List<String> BuildArray(int[] target, int n){
         List<String> ans= new ArrayList<>();
+        int count=1;
+        int i=0;
+        while(i<target.length && count<=n){
+
+            if(target[i]==count){
+                ans.add("Push");
+                i++;
+            }else{
+                ans.add("Push");
+                ans.add("Pop");
+
+            }
+            count++;
+        }
 
 
         return ans;
@@ -81,6 +95,7 @@ public class BuildAnArrayWithStackOperations {
         System.out.println("Enter value of n: ");
         int n=sc.nextInt();
        List<String> ans= BuildArray(arr,n);
+        System.out.println(ans);
 
     }
 }
