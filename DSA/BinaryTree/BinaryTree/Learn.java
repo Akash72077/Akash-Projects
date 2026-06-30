@@ -48,3 +48,4 @@ public class Learn
       display(root);
     }
 }
+// size: total number of elements  it can be counted by using a global variable and keep increasing until tree is visited
