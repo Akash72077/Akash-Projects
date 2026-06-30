@@ -52,6 +52,8 @@ Constraints:
 1 <= n <= 100
 1 <= target[i] <= n
 target is strictly increasing.
+
+
 */
 
 import java.util.ArrayList;
@@ -63,6 +65,8 @@ public class BuildAnArrayWithStackOperations {
     public  static List<String> BuildArray(int[] target, int n){
         List<String> ans= new ArrayList<>();
 
+
+        return ans;
     }
 
     public static void main(String[] args) {
@@ -76,6 +80,7 @@ public class BuildAnArrayWithStackOperations {
         }
         System.out.println("Enter value of n: ");
         int n=sc.nextInt();
+       List<String> ans= BuildArray(arr,n);
 
     }
 }
