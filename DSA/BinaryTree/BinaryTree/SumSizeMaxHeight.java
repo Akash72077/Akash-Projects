@@ -19,7 +19,7 @@ public class SumSizeMaxHeight
         Node e= new Node(5);
         Node f= new Node(6);
         Node g= new Node(7);
-        a.left=b;
+        a.left=b;// connecting nodes
         a.right=c;
         b.left=d;
         b.right=e;
