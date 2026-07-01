@@ -3,7 +3,7 @@ package BinaryTree;
 public class SumSizeMaxHeight
 {
     static class Node{
-        int val;
+        int val;// it contains value of node
         Node left;
         Node right;
         Node(int val){
@@ -25,7 +25,6 @@ public class SumSizeMaxHeight
         b.right=e;
         c.left=f;
         c.right=g;
-//
 
         }
 }
