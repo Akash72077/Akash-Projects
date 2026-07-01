@@ -7,7 +7,7 @@ public class SumSizeMaxHeight
         Node left;// it is left node
         Node right;
         Node(int val){
-            this.val=val;
+            this.val=val;// constructor
         }
 
     }
