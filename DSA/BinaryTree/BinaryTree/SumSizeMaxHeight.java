@@ -4,7 +4,7 @@ public class SumSizeMaxHeight
 {
     static class Node{
         int val;// it contains value of node
-        Node left;
+        Node left;// it is left node
         Node right;
         Node(int val){
             this.val=val;
