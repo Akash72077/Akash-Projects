@@ -29,7 +29,7 @@ for(let i=1; i<=100; i++){
 
 }
 console.log(data);//primtimg data 
-console.log(data.length);
+console.log(data.length);//printing lentgh 
 
 
 
