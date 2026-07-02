@@ -28,8 +28,8 @@ for(let i=1; i<=100; i++){
   data.push(getRandomUser());
 
 }
-console.log(data);//primtimg data 
-console.log(data.length);//printing lentgh 
+console.log(data);//printing data 
+console.log(data.length);//printing length 
 
 
 
