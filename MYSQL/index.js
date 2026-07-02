@@ -1,4 +1,4 @@
-const { faker, da } = require('@faker-js/faker');
+const { faker, da } = require('@faker-js/faker');// it is uaed to get fake data 
 const mysql = require('mysql2');
 
 // Create the connection to database
