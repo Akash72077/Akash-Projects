@@ -12,6 +12,13 @@ public class SumSizeMaxHeight
         }
 
     }
+    public static int height(Node root){
+        if(root==null || (root.left==null&& root.right==null)){// in edge wise
+            return 0;
+        }
+        return 1+Math.max(height(root.left),height(root.right));
+    }
+
 public static int min(Node root){
         if(root==null)
             return Integer.MAX_VALUE;
@@ -48,16 +55,19 @@ public static int min(Node root){
         Node e= new Node(5);
         Node f= new Node(6);
         Node g= new Node(7);
+        Node h= new Node(8);
         a.left=b;// connecting nodes
         a.right=c;
         b.left=d;
         b.right=e;
         c.left=f;
         c.right=g;
+        g.left=h;
         System.out.println("The size of Tree is: "+size(a));
         System.out.println("The size of all nodes is: "+sum(a));
         System.out.println("The maximum element is: "+max(a));
         System.out.println("The minimum element is: "+min(a));
+        System.out.println("The Height of tree is: "+height(a));
 
         }
 }
