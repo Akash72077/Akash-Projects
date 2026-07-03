@@ -12,10 +12,17 @@ public class SumSizeMaxHeight
         }
 
     }
-
+public static int min(Node root){
+        if(root==null)
+            return Integer.MAX_VALUE;
+        int a= root.val;
+        int b=min(root.left);
+        int c=min(root.right);
+        return Math.min(a,Math.min(b,c));
+}
     public static int max(Node root){
         if(root==null)
-            return 0;
+            return Integer.MIN_VALUE;
         int a=root.val;
         int b=max(root.left);
         int c=max(root.right);
@@ -50,6 +57,7 @@ public class SumSizeMaxHeight
         System.out.println("The size of Tree is: "+size(a));
         System.out.println("The size of all nodes is: "+sum(a));
         System.out.println("The maximum element is: "+max(a));
+        System.out.println("The minimum element is: "+min(a));
 
         }
 }
