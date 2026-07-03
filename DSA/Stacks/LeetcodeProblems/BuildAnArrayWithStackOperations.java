@@ -78,8 +78,6 @@ public class BuildAnArrayWithStackOperations {
             }
             count++;
         }
-
-
         return ans;
     }
 
