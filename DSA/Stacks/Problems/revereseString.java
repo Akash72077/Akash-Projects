@@ -1,4 +1,4 @@
-package Learn;
+package Problems;
 
 import java.util.Stack;
 public class revereseString {
