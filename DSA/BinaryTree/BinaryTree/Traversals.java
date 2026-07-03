@@ -10,6 +10,14 @@ public class Traversals
             this.val=val;
         }
     }
+    public static void nthLevel(Node root, int n){
+        if(root==null)
+            return ;
+        if(n==1)
+            System.out.print(root.val+" ");
+        nthLevel(root.left, n-1);
+        nthLevel(root.right, n-1);
+    }
     public static void postOrder(Node root){
         if(root==null)
             return ;
@@ -55,6 +63,8 @@ public class Traversals
         inOrder(a);
         System.out.println();
         postOrder(a);
+        System.out.println();
+        nthLevel(a,3);
 
 
 
