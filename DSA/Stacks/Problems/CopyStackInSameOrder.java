@@ -18,12 +18,10 @@ public class CopyStackInSameOrder {
             i++;
         }
         while(!st.isEmpty()){
-            st1.push(st.peek());
-            st.pop();
+            st1.push(st.pop());
         }
         while(!st1.isEmpty()){
-            st2.push(st1.peek());
-            st1.pop();
+            st2.push(st1.pop());
         }
         System.out.println(st2);
     }
