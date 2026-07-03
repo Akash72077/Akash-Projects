@@ -17,7 +17,7 @@ public class StackUsingCollectionFrameWork {
        st.push(43);
 //       while(!st.isEmpty()){
 //        System.out.println(st.peek());
-//        st.pop();
+//        st.pop();// printing with while loop
 //       }
         System.out.println(st);// prints the stack in the form of an array
 
