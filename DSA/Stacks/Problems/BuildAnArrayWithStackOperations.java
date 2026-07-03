@@ -1,4 +1,4 @@
-package LeetcodeProblems;/*
+package Problems;/*
 Problem statement :  Build an Array With Stack Operations
 
 You are given an integer array target and an integer n.
