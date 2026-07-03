@@ -12,6 +12,12 @@ public class SumSizeMaxHeight
         }
 
     }
+    public static  int size(Node root){
+        if(root==null)
+            return 0;
+       return 1+size(root.left)+size(root.right);
+    }
+
     public static void main(String[] args) {
         Node a= new Node(1);
         Node b= new Node(2);
@@ -26,6 +32,7 @@ public class SumSizeMaxHeight
         b.right=e;
         c.left=f;
         c.right=g;
+        System.out.println(size(a));
 
         }
 }
