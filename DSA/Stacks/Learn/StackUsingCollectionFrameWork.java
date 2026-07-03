@@ -12,9 +12,14 @@ public class StackUsingCollectionFrameWork {
        st.push(9);
        st.push(11);
        st.push(13);
-       while(!st.isEmpty()){
-        System.out.println(st.peek());
-        st.pop();
-       }
+       st.push(12);
+       st.push(99);
+       st.push(43);
+//       while(!st.isEmpty()){
+//        System.out.println(st.peek());
+//        st.pop();
+//       }
+        System.out.println(st);// prints the stack in the form of an array
+
     }
 }
