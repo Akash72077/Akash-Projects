@@ -1,4 +1,6 @@
-import java.util.*;
+package Learn;
+
+import java.util.Stack;
 public class StackUsingCollectionFrameWork {
     public static void main(String[] args) {
         Stack<Integer> s= new Stack<>();
