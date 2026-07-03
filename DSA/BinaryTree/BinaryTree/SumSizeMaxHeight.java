@@ -12,6 +12,16 @@ public class SumSizeMaxHeight
         }
 
     }
+
+    public static int max(Node root){
+        if(root==null)
+            return 0;
+        int a=root.val;
+        int b=max(root.left);
+        int c=max(root.right);
+        return Math.max(a,Math.max(b,c));
+    }
+
     public static  int sum(Node root){
         if(root==null)
             return 0;
@@ -39,7 +49,7 @@ public class SumSizeMaxHeight
         c.right=g;
         System.out.println("The size of Tree is: "+size(a));
         System.out.println("The size of all nodes is: "+sum(a));
-
+        System.out.println("The maximum element is: "+max(a));
 
         }
 }
