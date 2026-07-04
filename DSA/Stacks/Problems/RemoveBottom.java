@@ -3,7 +3,7 @@ package Problems;
 import java.util.*;
 public class RemoveBottom {
 
-    public static void removeIterative(Stack<Integer>s){
+    public static void removeButtomIterative(Stack<Integer>s){
        Stack<Integer> st= new Stack<>();
 
         while (s.size()>1){
@@ -15,6 +15,18 @@ public class RemoveBottom {
         }
         System.out.println(s);
 
+    }
+    public static void removeWithPosIterative(Stack<Integer>s,int pos ){
+        Stack<Integer> st= new Stack<>();
+
+        while (s.size()>pos){
+            st.push(s.pop());
+        }
+        s.pop();
+        while (!st.isEmpty()){
+            s.push(st.pop());
+        }
+        System.out.println(s);
 
     }
     public static void main(String[] args) {
@@ -24,7 +36,9 @@ public class RemoveBottom {
         s.push(3);
         s.push(4);
         s.push(5);
-        removeIterative(s);
+        removeButtomIterative(s);
+        removeWithPosIterative(s,3);
+
 
     }
 }
