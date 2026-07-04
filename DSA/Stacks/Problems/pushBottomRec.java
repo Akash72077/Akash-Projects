@@ -1,6 +1,7 @@
+package Problems;
 
 import java.util.*;
-public class pushBottom {
+public class pushBottomRec {
     public static void pushAtBottom(Stack<Integer>s, int data){
         if(s.isEmpty()){
             s.push(data);
@@ -19,7 +20,7 @@ public class pushBottom {
         s.push(5);
         pushAtBottom(s, 6);
         while(!s.isEmpty()){
-            System.out.println(s.pop());
+            System.out.print(s.pop()+" ");
         }
     }
 }
