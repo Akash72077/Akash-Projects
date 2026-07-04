@@ -23,7 +23,7 @@ public class StackUnderFlow {
         System.out.println(st);//
         st.pop(); //stack underflow
         // it will give stack underflow error when we try to use peek or pop when stack is empty
-
+        // and it will give empty stack expcetion
 
 
     }
