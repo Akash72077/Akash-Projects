@@ -58,8 +58,8 @@ package Learn;
 
 
 // trying
-class stackLinkedList{
-   public static  class Node{
+class StackLinkedList {
+   private static   class Node{
         int data;
         Node next;
         Node(int data){
@@ -67,43 +67,48 @@ class stackLinkedList{
         }
     }
     static class Stack{
-        Node head=null;
-        int size=0;
-        boolean isEmpty(){
+        private Node head;
+        private int size;
+
+        public boolean isEmpty(){
             return size==0;
         }
 
-        void push(int data){
+        public void push(int data){
            Node newNode= new Node(data);
-           if(head==null){
-               head=newNode;
-               size++;
-               return;
-
-           }
           newNode.next=head;
            head=newNode;
            size++;
 
         }
-        int peek(){
+        public int peek(){
             if(isEmpty()){
                 return -1;
             }
             return head.data;
         }
-        int pop(){
+        public  int pop(){
+            if(isEmpty()){
+                return -1;
+            }
             int top=head.data;
             head=head.next;
             size--;
             return top;
         }
-        void display(){
-            Node temp=head;
-            while(temp!=null){
-                System.out.print(temp.data+" ");
-                temp=temp.next;
+        public  int size(){
+            return size;
+        }
+
+        public void display(){
+            System.out.print("Top -> ");
+            Node temp = head;
+
+            while(temp != null){
+                System.out.print(temp.data + " ");
+                temp = temp.next;
             }
+
             System.out.println();
         }
     }
