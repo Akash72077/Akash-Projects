@@ -3,11 +3,11 @@ package Learn;
 public class StackUsingArray {
 public static  class Stack {
 
-    int[] arr = new int[10];
+    int[] arr = new int[5];
     int top = -1;
 
     void push(int element) {
-        if(top==arr.length){
+        if(top==arr.length-1){
             System.out.println("Stack overflow");
             return;
         }
@@ -20,7 +20,6 @@ public static  class Stack {
             return -1;
         }
         return arr[top--];
-
     }
 
     int peek() {
@@ -45,7 +44,6 @@ public static  class Stack {
         st.push(5);
         System.out.println(st.pop());
         System.out.println(st.peek());
-
         st.display();
     }
 }
