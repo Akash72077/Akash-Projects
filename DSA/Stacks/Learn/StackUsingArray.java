@@ -23,6 +23,10 @@ public static  class Stack {
     }
 
     int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
         return arr[top];
     }
 
@@ -32,6 +36,15 @@ public static  class Stack {
             System.out.print(arr[i] + " ");
             i++;
         }
+    }
+    boolean isEmpty(){
+        return top==-1;
+    }
+    boolean isFull(){
+        return top==arr.length-1;
+    }
+    int size() {
+        return top + 1;
     }
 }
 
