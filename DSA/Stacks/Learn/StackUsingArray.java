@@ -3,7 +3,7 @@ package Learn;
 public class StackUsingArray {
 public static  class Stack {
 
-    int[] arr = new int[5];
+    int[] arr = new int[10];
     int top = -1;
 
     void push(int element) {
@@ -58,8 +58,10 @@ public static  class Stack {
         st.push(3);
         st.push(4);
         st.push(5);
-        System.out.println(st.pop());
-        System.out.println(st.peek());
+
+        System.out.println(st.size());
+        System.out.println(st.isEmpty());
+        System.out.println(st.isFull());
         st.display();
     }
 }
