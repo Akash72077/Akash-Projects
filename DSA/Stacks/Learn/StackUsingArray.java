@@ -31,10 +31,13 @@ public static  class Stack {
     }
 
     void display() {
-        int i = 0;
-        while (i <= top) {
-            System.out.print(arr[i] + " ");
-            i++;
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        for (int i = top; i >= 0; i--) {
+            System.out.println(arr[i]);
         }
     }
     boolean isEmpty(){
