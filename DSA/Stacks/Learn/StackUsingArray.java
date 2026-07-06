@@ -4,7 +4,7 @@ public class StackUsingArray {
 public static  class Stack {
 
     int[] arr = new int[10];
-    int top = -1;
+    int top = -1;// indicates empty 
 
     void push(int element) {
         if(top==arr.length-1){
