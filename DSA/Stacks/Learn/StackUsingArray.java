@@ -19,7 +19,7 @@ public static  class Stack {
             System.out.println("Stack is empty");
             return -1;
         }
-        return arr[top--];
+        return arr[top--];//removes first element 
     }
 
     int peek() {
