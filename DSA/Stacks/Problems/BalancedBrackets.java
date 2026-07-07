@@ -1,5 +1,6 @@
 package Problems;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedBrackets
@@ -28,9 +29,16 @@ public class BalancedBrackets
 
     }
     public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str= sc.nextLine();
 
-        String str= "({}){[[]]()}";
-        System.out.println(Valid(str));
+        if(Valid(str)){
+            System.out.println("Valid");
+        }else{
+            System.out.println("Not Valid");
+        }
 
+        sc.close();
     }
 }
