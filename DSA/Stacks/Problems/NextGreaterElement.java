@@ -34,7 +34,6 @@ public class NextGreaterElement {
                     break;
                 }
             }
-
             // Search for the next greater element
             for (int j = index + 1; j < nums2.length; j++) {
                 if (nums2[j] > nums1[i]) {
@@ -43,7 +42,6 @@ public class NextGreaterElement {
                 }
             }
         }
-
         return res;
     }
     public static void main(String[] args) {
@@ -51,7 +49,6 @@ public class NextGreaterElement {
 //    int[] arr={1,3,2,1,8,6,3,4};
 //    int n= arr.length;
 //   int[] res= nextGreaterElement(arr);
-//
 //        for (int i = 0; i < n; i++) {
 //            System.out.print(res[i]+" ");
 //        }
