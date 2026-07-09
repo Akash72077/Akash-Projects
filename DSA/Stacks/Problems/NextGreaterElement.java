@@ -1,6 +1,6 @@
 package Problems;
 
-import java.util.Scanner;
+import java.util.Scanner;// importing Scanner class
 
 public class NextGreaterElement {
     public static  int[] nextGreaterElement(int[] arr){
