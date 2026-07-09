@@ -1,5 +1,4 @@
 package Problems;
-
 import java.util.Scanner;// importing Scanner class
 
 public class NextGreaterElement {
