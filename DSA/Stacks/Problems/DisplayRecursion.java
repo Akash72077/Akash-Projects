@@ -4,7 +4,7 @@ import java.util.*;
 public class DisplayRecursion {
     public static void displayRecReverse(Stack<Integer>st){
         if(st.isEmpty()){
-            return;
+            return;//base case
         }
         int top=st.pop();
         System.out.print(top+" ");
