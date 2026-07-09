@@ -23,7 +23,7 @@ public class DisplayRecursion {
         st.push(top);
     }
     public static void main(String[] args) {
-        Stack<Integer> st= new Stack<>();
+        Stack<Integer> st= new Stack<>();// stack creation
         st.push(1);
         st.push(2);
         st.push(3);
