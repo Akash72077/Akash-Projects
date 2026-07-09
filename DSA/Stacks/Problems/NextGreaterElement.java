@@ -71,6 +71,6 @@ public class NextGreaterElement {
             System.out.print(ans[i]+" ");
         }
 
-
+        sc.close();
     }
 }
