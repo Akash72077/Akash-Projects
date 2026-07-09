@@ -31,7 +31,7 @@ public class DisplayRecursion {
         st.push(5);
         displayRecReverse(st);
         System.out.println();
-        displayRec(st);
+        displayRec(st);//calling function
 
     }
 }
