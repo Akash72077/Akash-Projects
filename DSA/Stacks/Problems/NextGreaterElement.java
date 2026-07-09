@@ -49,7 +49,7 @@ public class NextGreaterElement {
 //    int[] arr={1,3,2,1,8,6,3,4};
 //    int n= arr.length;
 //   int[] res= nextGreaterElement(arr);
-//        for (int i = 0; i < n; i++) {
+//        for (int i= 0; i< n; i++) {
 //            System.out.print(res[i]+" ");
 //        }
         System.out.println("Enter size of nums1: ");
