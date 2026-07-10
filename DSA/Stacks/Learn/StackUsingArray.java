@@ -11,7 +11,7 @@ public static  class Stack {
             System.out.println("Stack overflow");
             return;
         }
-        arr[++top] = element;
+        arr[++top] = element;// increases size 
     }
 
     int pop() {
