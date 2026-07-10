@@ -22,7 +22,7 @@ public static  class Stack {
         return arr[top--];//removes first element 
     }
 
-    int peek() {
+    int peek() {// return top element 
         if (isEmpty()) {
             System.out.println("Stack is empty");
             return -1;
