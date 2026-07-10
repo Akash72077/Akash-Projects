@@ -14,7 +14,7 @@ public static  class Stack {
         arr[++top] = element;// increases size 
     }
 
-    int pop() {
+    int pop() {// function to remove element 
         if(top==-1){
             System.out.println("Stack is empty");
             return -1;
