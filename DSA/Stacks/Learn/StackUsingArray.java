@@ -46,6 +46,7 @@ public static  class Stack {
     boolean isFull(){
         return top==arr.length-1;
     }
+    // funftion to return size
     int size() {
         return top + 1;
     }
