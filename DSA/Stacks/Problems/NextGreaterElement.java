@@ -16,7 +16,7 @@ public class NextGreaterElement {
                 st.pop();
             }
             if(st.isEmpty()){
-                res[i]=-1;
+                res[i]=-1;// if stack is empty then there is no next greater element in stack
             }else{
                 res[i]=st.peek();
             }
