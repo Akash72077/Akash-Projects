@@ -18,7 +18,7 @@ public class NextGreaterElement {
             if(st.isEmpty()){
                 res[i]=-1;// if stack is empty then there is no next greater element in stack
             }else{
-                res[i]=st.peek();
+                res[i]=st.peek();//if not empty the peek element is the next greater element which remained from while loop
             }
             st.push(arr[i]);//pushes element
         }
