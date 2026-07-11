@@ -20,7 +20,7 @@ public class NextGreaterElement {
             }else{
                 res[i]=st.peek();
             }
-            st.push(arr[i]);
+            st.push(arr[i]);//pushes element
         }
 
         return  res;
