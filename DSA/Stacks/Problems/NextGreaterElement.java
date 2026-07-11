@@ -9,7 +9,7 @@ public class NextGreaterElement {
         int n= arr.length;
         int[] res= new int[n];
 
-            st.push(arr[n-1]);
+            st.push(arr[n-1]);// pushes last element
         res[n-1]=-1;// last elememt is filled with -1
         for(int i=n-2; i>=0; i--){
             while( !st.isEmpty() && st.peek()<arr[i] ){
