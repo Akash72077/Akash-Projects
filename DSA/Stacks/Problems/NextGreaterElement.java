@@ -12,7 +12,7 @@ public class NextGreaterElement {
             st.push(arr[n-1]);// pushes last element
         res[n-1]=-1;// last elememt is filled with -1
         for(int i=n-2; i>=0; i--){
-            while( !st.isEmpty() && st.peek()<arr[i] ){
+            while( !st.isEmpty() && st.peek()<arr[i] ){// we have write isEmpty condition first otherwise it will give StackUnderFlow exception
                 st.pop();
             }
             if(st.isEmpty()){
