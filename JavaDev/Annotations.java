@@ -19,18 +19,25 @@
 
     }
 
-*/  
+*/
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
 @interface CricketPlayer{
-    int age();
-    String country();
+    int age() default 34;
+    String country() default "India";
 }
 
 
-
+@CricketPlayer
 class Rohit
 {
-    int runs;
+    in runs;
     int innings;
 
     public void setRuns(int runs){
