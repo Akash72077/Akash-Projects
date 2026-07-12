@@ -10,15 +10,20 @@
 
     Syntax:
         Annotations starts with '@'
+        '@'->This symbol indicates compiler that this is not an interface an annotation type is being created
 
     Example:
-    
+
     @Override
     public void display() {
 
     }
 
 */  
+
+@interface CricketPlayer{
+
+}
 public class annotations {
     public static void main(String[] args) {
 
