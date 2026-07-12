@@ -22,7 +22,31 @@
 */  
 
 @interface CricketPlayer{
+    int age();
+    String country();
+}
 
+class Rohit
+{
+    int runs;
+    int innings;
+
+    public void setRuns(int runs){
+        this.runs=runs;
+        
+    }
+    public void setInnings(int innings){
+        this.innings=innings;
+    }
+
+
+    public int getRuns(){
+        return runs;
+    }
+
+     public int getInnings(){
+        return innings;
+    }
 }
 public class annotations {
     public static void main(String[] args) {
