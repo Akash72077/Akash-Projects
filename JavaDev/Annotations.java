@@ -26,6 +26,8 @@
     String country();
 }
 
+
+
 class Rohit
 {
     int runs;
@@ -47,11 +49,17 @@ class Rohit
      public int getInnings(){
         return innings;
     }
+
 }
-public class annotations {
+public class Annotations {
     public static void main(String[] args) {
 
 
-        
+        Rohit r= new Rohit();
+        r.setRuns(342);
+        r.setInnings(35);
+
+        System.out.println(r.getRuns());
+        System.out.println(r.getInnings());
     }
 }
