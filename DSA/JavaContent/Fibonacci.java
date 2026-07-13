@@ -1,6 +1,6 @@
 public class Fibonacci {
   public static int printFib(int n){
-        if(n==1|| n==0){
+        if(n==1|| n==0){//base condition
             return 1;
 
         }
