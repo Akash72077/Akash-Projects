@@ -9,7 +9,7 @@ class LearnException{
 	int d[]= new int[5];// new array
 	d[6]=10;	
 	}
-	catch(ArithmeticException e){
+	catch(ArithmeticException e){// catches expection
 	
 	System.out.println("Sorry for the incovienence");
 		
