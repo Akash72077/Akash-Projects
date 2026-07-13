@@ -6,7 +6,7 @@ class LearnException{
 	try{
 		
 		int c= a/b;
-	int d[]= new int[5];
+	int d[]= new int[5];// new array
 	d[6]=10;	
 	}
 	catch(ArithmeticException e){
