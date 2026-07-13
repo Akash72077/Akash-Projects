@@ -5,7 +5,7 @@ public class Fibonacci {
 
         }
         int fbn=printFib(n-1)+printFib(n-2); // recursion 
-        return fbn;
+        return fbn;// returns fib number
     }
     public static void main(String[] args) {
         int n=10;
