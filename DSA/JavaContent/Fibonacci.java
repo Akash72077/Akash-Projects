@@ -4,7 +4,7 @@ public class Fibonacci {
             return 1;
 
         }
-        int fbn=printFib(n-1)+printFib(n-2);
+        int fbn=printFib(n-1)+printFib(n-2); // recursion 
         return fbn;
     }
     public static void main(String[] args) {
