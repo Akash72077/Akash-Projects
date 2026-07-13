@@ -56,6 +56,6 @@ for(int i=0; i<arr.length; i++){
             count++;
         }
 
-        return count;
+        return count;//returns count
     }
 }
