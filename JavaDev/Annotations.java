@@ -71,6 +71,6 @@ public class Annotations {
         r.setInnings(35);//assign
 
         System.out.println(r.getRuns());
-        System.out.println(r.getInnings());
+        System.out.println(r.getInnings());//output
     }
 }
