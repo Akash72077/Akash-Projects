@@ -68,7 +68,7 @@ public class Annotations {
 
         Rohit r= new Rohit();//object
         r.setRuns(342);//assign
-        r.setInnings(35);
+        r.setInnings(35);//assign
 
         System.out.println(r.getRuns());
         System.out.println(r.getInnings());
