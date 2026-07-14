@@ -16,7 +16,6 @@
 
     @Override
     public void display() {
-
     }
 
 */
@@ -26,7 +25,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
+import javax.lang.model.element.ElementKind;
+
+// @Target(ElementType.TYPE)// Type includes Class, interface (including annotation interface), enum, or record declaration
+// what if we want to use all annotations for all such as fields class and constructors  the solution is the
+// instead of using () outside of Element. use({}) braces inside og () and write all as below example.
+@Target({ElementType.TYPE,ElementType.FIELD,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @interface CricketPlayer{
     int age() default 34;
@@ -37,9 +41,9 @@ import java.lang.annotation.Target;
 @CricketPlayer
 class Rohit
 {
-    in runs;
+    int runs;
     int innings;
-
+@CricketPlayer
     public void setRuns(int runs){
         this.runs=runs;
         
