@@ -66,7 +66,7 @@ public class Annotations {
     public static void main(String[] args) {
 
 
-        Rohit r= new Rohit();
+        Rohit r= new Rohit();//object
         r.setRuns(342);
         r.setInnings(35);
 
