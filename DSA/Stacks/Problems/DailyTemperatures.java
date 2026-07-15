@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class DailyTemperatures {
     public static int[] Optimal(int[] arr) {
-        int res[]=new int[arr.length];
+        int[] res=new int[arr.length];
         Stack<Integer> st=new Stack<>();
 
 
