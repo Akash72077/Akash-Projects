@@ -1,5 +1,15 @@
 package Problems;
+
+import java.util.Stack;
+
 public class DailyTemperatures {
+    public static int[] Optimal(int[] arr) {
+        int res[]=new int[arr.length];
+        Stack<Integer> st=new Stack<>();
+
+
+        return res;
+    }
     public  static  int [] BruteForce(int[] arr){
         //this code is brute force approach ,but it will give time limit error while running in Leetcode with large amount of test cases
             int n=arr.length;
