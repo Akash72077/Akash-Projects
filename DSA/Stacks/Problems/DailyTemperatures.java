@@ -1,6 +1,7 @@
 package Problems;
 public class DailyTemperatures {
     public  static  int [] BruteForce(int[] arr){
+        //this code is brute force approach ,but it will give time limit error while running in Leetcode with large amount of test cases
             int n=arr.length;
         int[] res =new int[arr.length];
         for(int i=0;i<n-1;i++){
