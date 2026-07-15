@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class DailyTemperatures {
     public static int[] Optimal(int[] arr) {
+        // this approach reduces time complexity into O(n)
         int[] res=new int[arr.length];
         Stack<Integer> st=new Stack<>();
 
@@ -12,6 +13,7 @@ public class DailyTemperatures {
     }
     public  static  int [] BruteForce(int[] arr){
         //this code is brute force approach ,but it will give time limit error while running in Leetcode with large amount of test cases
+        // time complexity is O(n^2)
             int n=arr.length;
         int[] res =new int[arr.length];
         for(int i=0;i<n-1;i++){
