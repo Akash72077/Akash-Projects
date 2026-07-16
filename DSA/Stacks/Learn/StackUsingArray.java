@@ -1,6 +1,7 @@
 package Learn;
 
-public class StackUsingArray {
+public class
+StackUsingArray {
 public static  class Stack {
 
     int[] arr = new int[10];// array has fixed size
