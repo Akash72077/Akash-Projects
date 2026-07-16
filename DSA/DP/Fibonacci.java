@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Fibonacci {
 
    static int fib(int n) {
@@ -9,8 +12,27 @@ public class Fibonacci {
         else
             return fib(n - 1) + fib(n - 2);
     }
+    static int fibDp(int n, ArrayList<Integer> list){
+        if (n <=1)
+            return n;
+        if(list.get(n)!=-1){
+                return list.get(n);
+        }
+        int ans=(fibDp(n - 1,list) + fibDp(n - 2,list));
+        list.set(n,ans);
+
+
+        return ans;
+    }
 
     public static void main(String[] args) {
-        System.out.println(fib(4));
+//        System.out.println(fib(100));
+        int n=100;
+        ArrayList<Integer> list = new ArrayList<>(Collections.nCopies(n+1,-1));
+        list.set(0, 0);
+        list.set(1, 1);
+        System.out.println(fibDp(n, list));
+        System.out.println(list);
+
     }
 }
