@@ -24,15 +24,34 @@ public class Fibonacci {
 
         return ans;
     }
+    static int FiboTab(int n){
+        // this is also called as tabulation
+        // here loops and storage is used
+        // this is also called BottomDown approach
+        // it involves 3 steps they are:
+        // 1) define data structure and meaning ex: dp[i]=fib(i)
+        // 2) initialize with the smallest ans.
+        // 3) solve: small -> big
+        int[] dp= new int[n+1];
+        dp[0]=0;
+        dp[1]=1;
+        for (int i=2; i<=n; i++){
+            dp[i]=dp[i-1]+dp[i-2];
+        }
+
+        return dp[n];
+    }
 
     public static void main(String[] args) {
 //        System.out.println(fib(100));
-        int n=100;
+        int n=20;
         ArrayList<Integer> list = new ArrayList<>(Collections.nCopies(n+1,-1));
         list.set(0, 0);
         list.set(1, 1);
         System.out.println(fibDp(n, list));
         System.out.println(list);
+        System.out.println("Fibonacci number of "+n+" is: "+FiboTab(n));
+
 
     }
 }
