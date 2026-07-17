@@ -17,7 +17,7 @@ public class Factorial {
     static int Fact(int n, ArrayList<Integer> list){
 // this code is implemented using Dp technique
         // this is memorization
-        // here recursion is used
+        // here recursion is used and storage used to store function call values
         // this is also called as Topdown approach
         if(n==0){
             return 1;
