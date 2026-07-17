@@ -47,10 +47,7 @@ public class Factorial {
         lst.set(1,1);
         int ans=Fact(n, lst);
 
-            System.out.println("Factorial of "+n+" is: "+ans);
-
-            System.out.println("Enter element greater than 0");
-
+        System.out.println("Factorial of "+n+" is: "+ans);
 
 
 
