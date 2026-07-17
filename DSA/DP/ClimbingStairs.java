@@ -17,12 +17,32 @@ public class ClimbingStairs {
             return dp[n];
         }
 
+        static  int climbStairsMemorization(int n, ArrayList<Integer> list){
+            if(n==1|| n==2){
+                return n;
+            }
+            if(list.get(n)!=-1){
+                return list.get(n);
+            }
+            int ans= climbStairsMemorization(n-1,list)+climbStairsMemorization(n-2,list);
+            list.set(n,ans);
+            return ans;
+
+        }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of stairs: ");
         int n=sc.nextInt();
         System.out.println(climbStairsTabulation(n));
+        ArrayList<Integer> list= new ArrayList<>(Collections.nCopies(n+1,-1));
+        list.set(0, 0);
+        list.set(1, 1);
+        list.set(2, 2);
+
+        System.out.println(climbStairsMemorization(n,list));
+        System.out.println(list);
 
 
     }
