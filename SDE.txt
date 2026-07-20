@@ -42,5 +42,180 @@ Defination:
                         RAM : 128 GB
                         Storage : 4 TB SSD
 
-            here server is same but power is improvee
+            here server is same but power is improved
+
+Advantages
+
+✅ Very simple
+
+No code changes.
+
+No load balancer.
+
+No distributed system.
+
+✅ Easy database management
+
+One database
+
+One server
+
+Everything stays together.
+
+✅ Less networking
+
+Everything happens inside one machine.
+
+
+
+
+
+Disadvantages
+1. Limited Capacity
+
+A server cannot become infinitely powerful.
+
+Example
+
+Maximum RAM available
+
+2 TB
+
+After that
+
+No more upgrade.
+
+2. Expensive
+
+Small upgrades are okay.
+
+Huge servers become very expensive.
+
+Example
+
+8 GB RAM
+
+↓
+
+16 GB
+
+↓
+
+32 GB
+
+↓
+
+128 GB
+
+↓
+
+512 GB
+
+The cost increases dramatically.
+
+3. Single Point of Failure
+
+If the server crashes
+
+Everything stops.
+
+Server
+
+↓
+
+Crash
+
+↓
+
+Website Down
+Horizontal Scaling (Scale Out)
+
+Instead of making one server bigger,
+
+Add more servers.
+
+Example
+
+Initially
+
+One Server
+
+100 Requests/sec
+
+Need
+
+500 Requests/sec
+
+Instead of buying a giant server
+
+Buy 5 servers.
+
+Server 1
+
+Server 2
+
+Server 3
+
+Server 4
+
+Server 5
+Diagram
+              Load Balancer
+
+                  |
+      ----------------------------
+      |      |      |      |
+    Server  Server Server Server
+      1       2      3      4
+
+Each server handles part of the traffic.
+
+Real Life Example
+
+Think about a supermarket.
+
+Option 1
+
+One cashier
+
+Works faster
+
+Vertical scaling.
+
+Option 2
+
+Five cashiers
+
+Horizontal scaling.
+
+Customers are divided.
+
+This is horizontal scaling.
+
+Example with Users
+
+Initially
+
+1 Server
+
+↓
+
+100 Users
+
+Later
+
+10,000 Users
+
+Instead of
+
+One Super Server
+
+Do
+
+100 Servers
+
+Each handles
+
+100 Users
+
 
