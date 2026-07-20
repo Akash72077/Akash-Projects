@@ -1,1 +1,19 @@
 SDE: System design engineerning
+
+Scaling:
+Scaling means increasing the capacity of a system so it can handle more users, more requests, or more data.
+
+Imagine you own a restaurnt.
+
+initially you have 10 customers/day
+
+later you have 10,000 customers/data
+
+then your old setup won't be enough.
+
+Now you have two choices:
+
+1)make your restaurnt bigger.(vertical Scaling)
+2) Open more restaurnts.(Horizontal Scaling)
+
+These are exactly the two types of Scaling
