@@ -17,3 +17,30 @@ Now you have two choices:
 2) Open more restaurnts.(Horizontal Scaling)
 
 These are exactly the two types of Scaling
+
+1)vertical Scaling(Scale Up)
+
+Defination:
+
+            vertical scaling means increasing the power of one server.
+            Instead of adding more servers, you improve the existing one.
+
+            Example:
+
+                Before:
+
+                    server
+                        CPU : 4 Cores
+                        RAM : 8 GB
+                        Storage : 250 GB
+            
+                Upgrade it to: 
+
+                    server
+
+                        CPU : 32 Cores
+                        RAM : 128 GB
+                        Storage : 4 TB SSD
+
+            here server is same but power is improvee
+
