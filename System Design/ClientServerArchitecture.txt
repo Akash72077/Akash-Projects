@@ -1,0 +1,5 @@
+Client server Architecture:
+
+It is the foundation of System Design. Almost every application we use-- Whatsapp, Instagram ,Youtube , Amazon , Nextflix ..... so on follows this model
+
+What is Client-server-Architecture?
