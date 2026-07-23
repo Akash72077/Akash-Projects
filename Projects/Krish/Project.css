@@ -98,3 +98,62 @@ position: relative;
     background-color: #f0903c;
     color:#fff;
 }
+
+
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(Img/KrishStore.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0,100px;
+    color:#fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.Home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.text{
+    position: relative;
+    z-index: 2;
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: .5px;
+    line-height: 1.2;
+    color: #f0803c;
+}
+.text span{
+    color: #fff;
+}
+.text p{
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+.app-stores{
+    display: flex;
+    gap: 1rem;
+    margin-top: 20ox;
+}
+.app-stores img{
+    width: 120px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+    cursor: pointer;
+    transition: 0.3s;
+}
+.app-stores img:hover{
+    transform: scale(1.1);
+}
