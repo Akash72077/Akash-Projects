@@ -30,7 +30,7 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 .navbar{
 
     display:flex;
-    gap:20px;
+    gap: 20px;
 }
 
 .navbar a{
@@ -44,8 +44,11 @@ position: relative;
 
 }
 
-.navbar li{
+.navbar h2{
+    color: green;
+}
 
+.navbar li{
     position: relative;
 }
 
@@ -80,35 +83,18 @@ position: relative;
     font-weight: 500;
     margin-left: 10px;
     transition: all 0.3s;
-
-
 }
 
-.header-btn .sign-in{
+.header-btn .sign-in, .sign-up{
 
     background-color: #ffd1a3;
     color:#f0803c;
-    border-radius: 0.5 rem;
+    border-radius: 0.5rem;
     border: 2px solid #ffd1a3;
     text-wrap: nowrap;
 }
 
-.header-btn .sign-in:hover{
-
-    background-color: #f0903c;
-    color: #fff;
-}
-
-.header-btn .sign-up{
-
-    background-color: #ffd1a3;
-    color:#f0803c;
-    border-radius: 0.5 rem;
-    border: 2px solid #ffd1a3;
-    text-wrap: nowrap;
-}
-
-.header-btn .sign-up:hover{
+.header-btn .sign-up:hover,.sign-in:hover{
     background-color: #f0903c;
     color:#fff;
 }
