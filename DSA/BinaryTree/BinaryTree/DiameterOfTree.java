@@ -5,13 +5,10 @@ public class DiameterOfTree{
     int val;
     Node left;
     Node right;
-
         Node(int val){
             this.val=val;
         }
-
     }
-
     static int count =0;
 
     static  int Diameter(Node root){
@@ -33,8 +30,6 @@ public class DiameterOfTree{
 
 
     }
-
-
 
     public static void main(String[] args) {
         Node a= new Node(1);
