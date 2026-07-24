@@ -21,7 +21,7 @@ public class LevelOrderTraversal {
        }
 
         Queue<Node> q= new LinkedList<>();
-       q.add(root);
+       q.add(root);// first we have insert root value and null value
        q.add(null);
 
        while(!q.isEmpty()){
