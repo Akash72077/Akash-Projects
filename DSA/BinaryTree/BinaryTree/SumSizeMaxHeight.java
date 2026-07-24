@@ -3,7 +3,7 @@ package BinaryTree;
 
 public class SumSizeMaxHeight
 {
-    static class Node{
+    public  static class Node{
         int val;// it contains value of node
         Node left;// it is left node
         Node right;
