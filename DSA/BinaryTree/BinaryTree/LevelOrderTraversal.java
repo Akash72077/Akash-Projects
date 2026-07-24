@@ -24,14 +24,14 @@ public class LevelOrderTraversal {
        q.add(root);// first we have insert root value and null value
        q.add(null);
 
-       while(!q.isEmpty()){
-            Node currNode= q.remove();
-           if(currNode==null){
-               System.out.println();
-               if(q.isEmpty()){
+       while(!q.isEmpty()){// the while loop will run until the queue is empty
+            Node currNode= q.remove();// we have to store the front node value to a variable and remove it
+           if(currNode==null){// if the current node is null it will enter to this statement
+               System.out.println();// new line will be printed for new level
+               if(q.isEmpty()){// curr node is null and after removing it,  if queue is empty and then we have to stop the while loop which will indicate complete tree is traversed
                    break;
                }else {
-                   q.add(null);
+                   q.add(null); //if queue is not empty and if we find null it is the condition of one level is completed and we need to add another null which is end of current level
                }
            }else {
                System.out.print(currNode.val+" ");
