@@ -157,3 +157,12 @@ position: relative;
 .app-stores img:hover{
     transform: scale(1.1);
 }
+
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 350px;
+    
+    
+}
