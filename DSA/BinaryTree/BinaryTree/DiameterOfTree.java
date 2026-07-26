@@ -9,7 +9,7 @@ public class DiameterOfTree{
             this.val=val;
         }//constructor 
     }
-    static int count =0;
+    static int count =0;// variable to count 
 
     static  int Diameter(Node root){
         Target(root);
