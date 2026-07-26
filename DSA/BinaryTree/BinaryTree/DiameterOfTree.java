@@ -25,7 +25,7 @@ public class DiameterOfTree{
         int left = Target(root.left);
         int right = Target(root.right);
 
-        count=Math.max(count, left+right);// adds left and right and compaers 
+        count=Math.max(count, left+right);// adds left and right and compare
         return 1+Math.max(left, right);
 
 
