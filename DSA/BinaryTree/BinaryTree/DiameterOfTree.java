@@ -7,7 +7,7 @@ public class DiameterOfTree{
     Node right;
         Node(int val){
             this.val=val;
-        }
+        }//constructor 
     }
     static int count =0;
 
