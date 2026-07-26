@@ -7,7 +7,7 @@ public class oddOrEven {
             System.out.println("Even");
         }
     }
-    public static void byModulo(int a){
+    public static void byModulo(int a){//using modulo
         if(a%2==0){
             System.out.println("Even");
         }else{
