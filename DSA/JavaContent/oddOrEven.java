@@ -1,6 +1,6 @@
 public class oddOrEven {
     public static void byBits(int a){
-        int result=a&1;
+        int result=a&1;// bit wise 
         if(result==1){
             System.out.println("odd");
         }else{
