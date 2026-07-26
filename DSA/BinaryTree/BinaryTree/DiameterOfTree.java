@@ -19,7 +19,7 @@ public class DiameterOfTree{
     static int Target(Node root){
 
         if (root == null) {
-            return 0;
+            return 0;// base condition 
         }
 
         int left = Target(root.left);
