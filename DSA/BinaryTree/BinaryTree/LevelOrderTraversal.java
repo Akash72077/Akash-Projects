@@ -55,7 +55,6 @@ public class LevelOrderTraversal {
         Node f = new Node(6);
         Node g = new Node(7);
         Node h = new Node(8);
-
         a.left=b;
         a.right=c;
         b.left=d;
@@ -63,10 +62,6 @@ public class LevelOrderTraversal {
         c.left=f;
         c.right=g;
         g.left=h;
-
         LevelOrder(a);
-
-
-
     }
 }
