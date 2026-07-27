@@ -37,7 +37,7 @@ public class Product
         c.right=g;
         g.left=h;
 
-        System.out.println("The size of all nodes is: "+product(a));
+        System.out.println("The Product of all nodes is: "+product(a));
 
 
     }
