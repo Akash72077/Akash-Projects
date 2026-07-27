@@ -16,7 +16,7 @@ public class SumSizeMaxHeight
         if(root==null || (root.left==null&& root.right==null)){// in edge wise
             return 0;
         }
-        return 1+Math.max(height(root.left),height(root.right));
+        return 1+Math.max(height(root.left),height(root.right));// for every Node it returns 1
     }
 
 public static int min(Node root){
