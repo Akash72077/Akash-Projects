@@ -1,6 +1,5 @@
 package BinaryTree;
 //program to calculate the sum size max height
-
 public class SumSizeMaxHeight
 {
     public  static class Node{
@@ -10,7 +9,6 @@ public class SumSizeMaxHeight
         Node(int val){
             this.val=val;// constructor
         }
-
     }
     public static int height(Node root){
         if(root==null || (root.left==null&& root.right==null)){// in edge wise
@@ -18,7 +16,6 @@ public class SumSizeMaxHeight
         }
         return 1+Math.max(height(root.left),height(root.right));// for every Node it returns 1
     }
-
 public static int min(Node root){
         if(root==null)
             return Integer.MAX_VALUE;
@@ -35,7 +32,6 @@ public static int min(Node root){
         int c=max(root.right);
         return Math.max(a,Math.max(b,c));
     }
-
     public static  int sum(Node root){
         if(root==null)
             return 0;
@@ -46,7 +42,6 @@ public static int min(Node root){
             return 0;
        return 1+size(root.left)+size(root.right);
     }
-
     public static void main(String[] args) {
         Node a= new Node(1);
         Node b= new Node(2);
@@ -68,6 +63,5 @@ public static int min(Node root){
         System.out.println("The maximum element is: "+max(a));
         System.out.println("The minimum element is: "+min(a));
         System.out.println("The Height of tree is: "+height(a));
-
         }
 }
