@@ -1,10 +1,6 @@
 package BinaryTree;
-
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 public class LevelOrderTraversal {
-
    static class Node{
         int val;
         Node left;
@@ -13,13 +9,10 @@ public class LevelOrderTraversal {
             this.val=val;
         }
     }
-
     static void LevelOrder(Node root){
-
        if(root==null){
            return;
        }
-
         Queue<Node> q= new LinkedList<>();
        q.add(root);// first we have insert root value and null value
        q.add(null);
@@ -44,8 +37,6 @@ public class LevelOrderTraversal {
            }
        }
     }
-
-
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
