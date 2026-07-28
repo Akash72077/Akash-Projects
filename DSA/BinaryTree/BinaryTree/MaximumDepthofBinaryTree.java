@@ -1,5 +1,4 @@
 package BinaryTree;
-
 public class MaximumDepthofBinaryTree
 {
     public static  int MaxDepth(Node root){
@@ -16,7 +15,6 @@ public class MaximumDepthofBinaryTree
         this.val=val;
     }
     }
-
 
     public static void main(String[] args) {
         Node a= new Node(1);
