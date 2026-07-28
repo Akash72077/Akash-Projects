@@ -15,22 +15,17 @@ public class DiameterOfTree{
         Target(root);
         return count;
     }
-
     static int Target(Node root){
 
         if (root == null) {
             return 0;// base condition 
         }
-
         int left = Target(root.left);
         int right = Target(root.right);
 
         count=Math.max(count, left+right);// adds left and right and compare
         return 1+Math.max(left, right);
-
-
     }
-
     public static void main(String[] args) {
         Node a= new Node(1);
         Node b= new Node(2);
@@ -42,7 +37,5 @@ public class DiameterOfTree{
        b.left=d;
        b.right=e;
         System.out.print( Diameter(a));
-
-
     }
 }
