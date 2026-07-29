@@ -1,4 +1,4 @@
-/* Problem statament:
+/* Problem statement:
 
 50. Pow(x, n)
 Solved
