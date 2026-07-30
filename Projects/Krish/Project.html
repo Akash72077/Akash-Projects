@@ -2,28 +2,26 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish's Handicraft Store</title>
 
- <meta charset="UTF-8"><!--meta tag is used to store information about the website, UTF-8 supports emojies and other languages  -->
-<meta name="viewport" content="width=device-width, initial-scale=10"> <!--  this meta tag is used to make website responsive(The website will adjust the height and width based on the size of screen) -->
-<title>Krish's Handicraft store</title>
-<link rel="stylesheet" href="Project.css">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-
+    <link rel="stylesheet" href="Project.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
 
         <a href="#" class="logo">
-
             <img src="Img/Logo.png" alt="Business Logo">
         </a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-
             <li><a href="#Home">Home</a></li>
             <li><a href="#Service">Service</a></li>
             <li><a href="#Products">Products</a></li>
@@ -32,34 +30,89 @@
         </ul>
 
         <div class="header-btn">
-
-            <a href="#" class="sign-up">Sign up</a>
+            <a href="#" class="sign-up">Sign Up</a>
             <a href="#" class="sign-in">Sign In</a>
         </div>
 
     </header>
+
+    <!-- Home Section -->
     <section class="Home" id="Home">
+
+        <!-- Left Side -->
         <div class="text">
-            <h1><span>Looking</span> to<br>own a piece of Rajasthan</h1>
-            <p>We are here to help you explore the best of Handicraft's from Rajasthan.</p>
-            <p>Explore our collection,place an order and get ready to receive the Rajasthan touch at your home.</p>
+
+            <h1>
+                <span>Looking</span> to <br>
+                own a piece of Rajasthan
+            </h1>
+
+            <p>
+                We are here to help you explore the best handicrafts from Rajasthan.
+            </p>
+
+            <p>
+                Explore our collection, place an order, and get ready to receive the Rajasthan touch at your home.
+            </p>
+
             <div class="app-stores">
-                <img src="Img/AppStore.png" alt="AppStore">
-                <img src="Img/PlayStore.png" alt="PlayStore">
+                <img src="Img/AppStore.png" alt="App Store">
+                <img src="Img/PlayStore.png" alt="Play Store">
             </div>
+
         </div>
 
-        <div class="order">
-             <h3>Place an Order</h3>
-             <label for="orders">Select Product</label>
-             </select>
-             <input type="text" placeholder="Quantity">
-             <input type="text" placeholder="Quantity">
-             <input type="text" placeholder="Quantity">
-             <input type="text" placeholder="Quantity">
-             <textarea name="message" id="message" placeholder="Your Message"></textarea>
+        <!-- Right Side Order Form -->
+        <div class="form-container">
+
+            <h2>Place an Order</h2>
+
+            <form action="#" method="POST">
+
+                <select name="product" required>
+                    <option value="" disabled selected>Select Product</option>
+                    <option value="Textile">Traditional Textile</option>
+                    <option value="Pottery">Hand-painted Pottery</option>
+                    <option value="Jewellery">Rajasthani Jewellery</option>
+                    <option value="Furniture">Handicraft Furniture</option>
+                    <option value="Carving">Wooden Carving</option>
+                    <option value="Crockery">Rajasthani Crockery</option>
+                </select>
+
+                <input
+                    type="number"
+                    name="quantity"
+                    placeholder="Quantity"
+                    min="1"
+                    required>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                    required>
+
+                <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+            </form>
+
         </div>
 
+    </section>
 
 </body>
 
