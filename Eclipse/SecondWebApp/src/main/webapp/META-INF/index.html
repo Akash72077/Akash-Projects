@@ -2,36 +2,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User Registration</title>
 </head>
 <body>
-	<h1>Welcome to our second WebApp</h1>
-	<h2>Kindly Register to proceed further!</h2>
-	<form action="./firstServlet">
-		
-		<table>
-		
-		<tr>
-		
-		<td>User Name </td>
-		<td> <input type="text" name="uname"> </td>
-		</tr>
-		<tr>
-		
-		<td>User city </td>
-		<td> <input type="text" name="ucity"> </td>
-		</tr>
-		<tr>
-		
-		
-		<td> <input type="submit" value="SignUp"> </td>
-		
-		</tr>
-		
-		</table>
-		
-		</form>
 
+<h1>Welcome to our Second Web Application</h1>
+<h2>Please Register to Continue</h2>
+
+<form action="./firstServlet" method="post">
+
+<table>
+<tr>
+    <td>User Name</td>
+    <td><input type="text" name="uname" required></td>
+</tr>
+
+<tr>
+    <td>User City</td>
+    <td><input type="text" name="ucity" required></td>
+</tr>
+
+<tr>
+    <td colspan="2">
+        <input type="submit" value="Sign Up">
+    </td>
+</tr>
+</table>
+
+</form>
 
 </body>
 </html>
