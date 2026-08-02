@@ -17,8 +17,11 @@ import java.io.IOException;
 public class FirstServletApp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	//request object is used when ever we want take something from client
+	//respond object is used when ever we want to respond to client
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		
 		
 	}
 
