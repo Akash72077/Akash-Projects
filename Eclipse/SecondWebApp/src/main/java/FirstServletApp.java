@@ -19,7 +19,7 @@ public class FirstServletApp extends HttpServlet {
 	
 	public FirstServletApp()
 	{
-		System.out.println("Servlet obj is created Internally by  container");
+		System.out.println("Servlet obj is created Internally by a container");
 	}
 	
 	
