@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="FirstWebApp" path="/FirstWebApp" reloadable="true" source="org.eclipse.jst.jee.server:FirstWebApp"/><Context docBase="SecondWebApp" path="/SecondWebApp" reloadable="true" source="org.eclipse.jst.jee.server:SecondWebApp"/><Context docBase="ServletLifeCycle" path="/ServletLifeCycle" reloadable="true" source="org.eclipse.jst.jee.server:ServletLifeCycle"/><Context docBase="ServletGetPost" path="/ServletGetPost" reloadable="true" source="org.eclipse.jst.jee.server:ServletGetPost"/></Host>
+      <Context docBase="FirstWebApp" path="/FirstWebApp" reloadable="true" source="org.eclipse.jst.jee.server:FirstWebApp"/><Context docBase="SecondWebApp" path="/SecondWebApp" reloadable="true" source="org.eclipse.jst.jee.server:SecondWebApp"/><Context docBase="ServletLifeCycle" path="/ServletLifeCycle" reloadable="true" source="org.eclipse.jst.jee.server:ServletLifeCycle"/><Context docBase="ServletGetPost" path="/ServletGetPost" reloadable="true" source="org.eclipse.jst.jee.server:ServletGetPost"/><Context docBase="FourthServletApp" path="/FourthServletApp" reloadable="true" source="org.eclipse.jst.jee.server:FourthServletApp"/></Host>
     </Engine>
   </Service>
 </Server>
