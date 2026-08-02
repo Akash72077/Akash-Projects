@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.lang.reflect.Constructor;
 
 @WebServlet("/ServletLife")
 public class ServletLife extends HttpServlet {
@@ -26,6 +25,7 @@ public class ServletLife extends HttpServlet {
 	
 	public void init(ServletConfig config) throws ServletException 
 	{
+		// init method calls only once
 		System.out.println("Servlet initialized");
 	}
 
@@ -36,6 +36,7 @@ public class ServletLife extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+		// service method called based on the number of requests
 		System.out.println("Service method to handle request and to response back");
 	}
 
