@@ -13,7 +13,7 @@ public class ServletApp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	System.out.println("Control in servlet/controller");	
 			
