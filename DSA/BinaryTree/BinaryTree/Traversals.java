@@ -1,5 +1,8 @@
 package BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Traversals
 {
     public  static  class Node{
@@ -10,6 +13,25 @@ public class Traversals
             this.val=val;
         }
     }
+
+    public static void bfs( Node root){
+        Queue<Node> q= new LinkedList<>();
+        if(root!=null)
+            q.add(root);
+
+        while(!q.isEmpty()){
+            Node temp=q.peek();
+            if(temp.left!=null){
+                q.add(temp.left);
+            }
+            if(temp.right!=null){
+                q.add(temp.right);
+            }
+            System.out.print(temp.val+" ");
+            q.remove();
+        }
+    }
+
     public static void nthLevel(Node root, int n){
         if(root==null)
             return ;
@@ -58,14 +80,15 @@ public class Traversals
         c.left=f;
         c.right=g;
         g.left=h;
-        preOrder(a);
-        System.out.println();
-        inOrder(a);
-        System.out.println();
-        postOrder(a);
-        System.out.println();
-        nthLevel(a,3);
+      //  preOrder(a);
+//        System.out.println();
+//        inOrder(a);
+//        System.out.println();
+//        postOrder(a);
+    //    System.out.println();
+//        nthLevel(a,3);
 
+        bfs(a);
 
 
     }
