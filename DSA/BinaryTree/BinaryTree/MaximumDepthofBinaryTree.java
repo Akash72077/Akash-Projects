@@ -3,7 +3,7 @@ public class MaximumDepthofBinaryTree
     public static  int MaxDepth(Node root){
         if(root==null)
             return 0;
-        return 1+Math.max(MaxDepth(root.left),MaxDepth(root.right));// DFS
+        return 1+Math.max(MaxDepth(root.left),MaxDepth(root.right));// DFS: Depth for search
     }
 
     public static class Node{
