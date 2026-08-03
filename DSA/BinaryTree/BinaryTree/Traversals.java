@@ -14,7 +14,7 @@ public class Traversals
         }
     }
 
-    public static void bfs( Node root){
+    public static void bfs( Node root){// iterative
         Queue<Node> q= new LinkedList<>();
         if(root!=null)
             q.add(root);
