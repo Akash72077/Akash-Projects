@@ -13,11 +13,11 @@ public class generic {
     }
 
     public static void main(String[] args) {
-        generic obj=new generic();
-        obj.print(10);
-        obj.print(null);
-        obj.print("sai akash");
+       print(10);
+        print(null);
+        print("sai akash");
         int[] arr={1,2,3,4,5,6};
-        obj.print(Arrays.toString(arr));
+        print(Arrays.toString(arr));
+        
     }
 }
