@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class generic {
 
    static <T> void print(T t){
-        System.out.println(t);
+        System.out.println(t.getClass().getName()+":"+t);
     }
 
     public static void main(String[] args) {
@@ -18,6 +18,6 @@ public class generic {
         print("sai akash");
         int[] arr={1,2,3,4,5,6};
         print(Arrays.toString(arr));
-        
+
     }
 }
