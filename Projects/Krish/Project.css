@@ -330,3 +330,23 @@ position: relative;
     font-weight: 500;
     font-size: 1rem;
 }
+
+.products-container .box h3{
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0.2rem 0 0.5rem;
+    color: #f0803c;
+}
+
+.products-container .box .btn{
+    display: flex;
+    justify-content: center;
+    background-color: #474fa0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.products-container .box .btn:hover{
+    background-color: #f0803c;
+}
