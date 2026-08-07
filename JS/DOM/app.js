@@ -3,3 +3,6 @@
 //     console.dir(smallImages[i].src);
 //     console.log(`Value of the image no. ${i} is changed`)
 // }
+
+let ele=document.querySelectorAll(".heading");
+console.dir(ele);
