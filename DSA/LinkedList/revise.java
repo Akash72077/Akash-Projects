@@ -47,11 +47,11 @@ public class revise {
     static Node middleNode(Node head){
         Node slow=head;
         Node fast= head;
-        while(fast != null && fast.next != null){
+        while(fast != null && fast.next != null){// base case 
             slow=slow.next;
              fast=fast.next.next;
         }
-        return slow;
+        return slow;// slow will stop at middle at the end
     }
     public static void main(String[] args) {
         Node a= new Node(0);
