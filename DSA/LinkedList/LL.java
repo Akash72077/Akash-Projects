@@ -60,11 +60,11 @@ public class LL {
             Node temp =head;
             while (temp!=null) {
                 if(temp.data==n){
-                    return true;
+                    return true;// returns true if found 
                 }
                 temp=temp.next;
             }
-            return false;
+            return false;// returns false if not found at end 
     }
         public static int Findindex(Node head, int n){
             Node temp=head;
