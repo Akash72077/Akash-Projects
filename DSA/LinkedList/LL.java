@@ -168,9 +168,7 @@ public class LL {
         if(pos==-1){
              System.out.println("Element Not found");
         }else{
-             System.out.println("The Element found at: "+pos);
-        
+             System.out.println("The Element found at: "+pos);   
     }
-
 }
 }
