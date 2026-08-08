@@ -7,7 +7,6 @@ public class LL {
             t=t.next;
         }
           t.next=temp;
-          
     }
 
 // function to display list with temp variable
