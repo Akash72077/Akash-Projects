@@ -10,7 +10,7 @@ public class RowWithMaxSum {
             return new int[0];
         }
 
-        int max=0;
+        int max=Integer.MIN_VALUE;
         int row=0;
         for(int i=0; i<n; i++){
             int sum=0;
