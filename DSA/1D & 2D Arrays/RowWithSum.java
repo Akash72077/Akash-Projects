@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class rowWithSum {
+public class RowWithSum {
 
     static void display(int []arr){
         for (int ints : arr) {
