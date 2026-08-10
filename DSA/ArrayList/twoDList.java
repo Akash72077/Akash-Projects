@@ -7,13 +7,27 @@ public class twoDList {
         arr.add(new ArrayList<>());
         arr.add(new ArrayList<>());
         arr.get(0).add(10);
-        arr.get(1).add(20);
-        arr.get(2).add(30);
-        System.out.println(arr);
-        System.out.println(arr.get(0));
-        System.out.println(arr.get(1));
-        System.out.println(arr.get(2));
+        arr.get(0).add(20);
+        arr.get(0).add(3);
+        arr.get(0).add(40);
+        arr.get(1).add(53);
+        arr.get(1).add(43);
+        arr.get(1).add(45);
+        arr.get(1).add(67);
+        arr.get(2).add(36);
+        arr.get(2).add(675);
+        arr.get(2).add(465);
+        arr.get(2).add(45);
+        arr.get(2).add(346);
 
+//        System.out.println(arr);
+
+        for(int i=0; i<arr.size(); i++){
+            for(int j=0; j<arr.get(i).size(); j++){
+                System.out.print(arr.get(i).get(j)+" ");
+            }
+            System.out.println();
+        }
 
     }
 }
