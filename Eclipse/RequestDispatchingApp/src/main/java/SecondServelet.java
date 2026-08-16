@@ -17,6 +17,8 @@ public class SecondServelet extends HttpServlet {
 		
 		System.out.println("Control in Second servlet");
 		
+		request.getSession()
+		
 		PrintWriter  writer=response.getWriter();
 		
 		writer.println("<h1> Response from second servlet </h1>");

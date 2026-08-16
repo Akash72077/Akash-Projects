@@ -9,6 +9,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/FirstServlet")
 public class FirstServlet extends HttpServlet 
@@ -26,6 +27,11 @@ public class FirstServlet extends HttpServlet
 		  RequestDispatcher reqDispatch = request.getRequestDispatcher("/SecondServelet");
 		  // 1:06:37:06
 		  //reqDispatch.forward(request, response);
+		  
+		HttpSession session = request.getSession();
+		
+		session.setAttribute("name", name);
+		
 		  	reqDispatch.include(request, response);
 		  
 		 PrintWriter writer = response.getWriter();
