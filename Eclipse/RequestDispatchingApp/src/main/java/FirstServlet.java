@@ -24,15 +24,21 @@ public class FirstServlet extends HttpServlet
 		String name =request.getParameter("uname");
 		String city =request.getParameter("ucity");
 		
-		  RequestDispatcher reqDispatch = request.getRequestDispatcher("/SecondServelet");
-		  // 1:06:37:06
-		  //reqDispatch.forward(request, response);
+		 RequestDispatcher reqDispatch = request.getRequestDispatcher("/SecondServelet");
+		  
+		 
 		  
 		HttpSession session = request.getSession();
 		
 		session.setAttribute("name", name);
 		
-		  	reqDispatch.include(request, response);
+		session.setMaxInactiveInterval(20000);
+		
+		 reqDispatch.forward(request, response);
+//		  reqDispatch.include(request, response);
+		 
+		 
+		 
 		  
 		 PrintWriter writer = response.getWriter();
 		 
