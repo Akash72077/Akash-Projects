@@ -1,0 +1,1 @@
+import { Router } from 'express'; import { accept, assigned } from '../controllers/contractorController.js'; import { requireAuth, requireRole } from '../middleware/authMiddleware.js'; const r=Router(); r.use(requireAuth, requireRole('contractor','authority')); r.get('/assigned',assigned); r.post('/:id/accept',accept); export default r;

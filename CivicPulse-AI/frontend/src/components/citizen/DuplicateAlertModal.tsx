@@ -1,0 +1,2 @@
+import type { DuplicateMatch } from '@/types';
+export default function DuplicateAlertModal({ matches }: { matches: DuplicateMatch[] }) { if(!matches.length)return null; return <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 p-4 text-amber-100"><strong>This issue may already be reported.</strong><div className="text-sm mt-1">{matches.length} nearby matching complaint{matches.length===1?'':'s'} found.</div></div>; }

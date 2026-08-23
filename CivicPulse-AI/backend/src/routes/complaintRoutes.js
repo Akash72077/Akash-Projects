@@ -1,0 +1,20 @@
+import { Router } from 'express';
+import { analyze, areas, byUser, create, detail, duplicates, feed, grouped, list, support, supportInfo, updateStatus, uploadPhoto } from '../controllers/complaintController.js';
+import { optionalAuth, requireAuth, requireRole } from '../middleware/authMiddleware.js';
+import { upload } from '../middleware/uploadMiddleware.js';
+
+const r = Router();
+r.get('/', list);
+r.get('/feed', feed);
+r.get('/areas', areas);
+r.get('/groups', requireAuth, requireRole('authority'), grouped);
+r.get('/duplicates', duplicates);
+r.get('/user/:userId', requireAuth, byUser);
+r.post('/analyze', upload.single('photo'), analyze);
+r.post('/upload', requireAuth, upload.single('photo'), uploadPhoto);
+r.get('/:id/support', optionalAuth, supportInfo);
+r.post('/:id/support', requireAuth, support);
+r.patch('/:id/status', requireAuth, requireRole('authority','contractor'), updateStatus);
+r.get('/:id', detail);
+r.post('/', requireAuth, create);
+export default r;

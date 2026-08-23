@@ -1,0 +1,1 @@
+import { api } from './api'; import type { Complaint } from '@/types'; export const fetchAssignedWork = () => api<Complaint[]>('/contractors/assigned'); export const acceptWork = (id:string) => api<Complaint>(`/contractors/${id}/accept`, { method:'POST' });

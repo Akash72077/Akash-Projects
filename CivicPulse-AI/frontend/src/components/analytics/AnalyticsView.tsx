@@ -1,0 +1,2 @@
+import { useEffect,useState } from 'react'; import { fetchAnalytics } from '@/services/analyticsService';
+export default function AnalyticsView(){const [data,setData]=useState<any>(null);useEffect(()=>{fetchAnalytics().then(setData).catch(()=>{})},[]);if(!data)return <div>Loading analytics...</div>;return <div className="grid grid-cols-3 gap-3"><div>Total: {data.total}</div><div>Critical: {data.critical}</div><div>Resolved: {data.resolved}</div></div>}

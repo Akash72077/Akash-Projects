@@ -1,0 +1,2 @@
+/* App-level styles are intentionally small; Tailwind and index.css provide the main design system. */
+#root { min-height: 100vh; }

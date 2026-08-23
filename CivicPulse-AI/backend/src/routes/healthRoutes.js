@@ -1,0 +1,1 @@
+import { Router } from 'express'; import { isMongoConnected } from '../config/database.js'; const r=Router(); r.get('/',(_req,res)=>res.json({ ok:true, app:'CivicPulse AI API', database:isMongoConnected()?'mongodb':'memory', time:new Date().toISOString() })); export default r;
