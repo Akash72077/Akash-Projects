@@ -4,11 +4,11 @@ export const API_BASE_URL = (
 
 export const API_ORIGIN = API_BASE_URL.replace(/\/api\/?$/, '');
 
-export function getToken() {
+export function getToken(): string | null {
   return localStorage.getItem('civicpulse_token');
 }
 
-export function setToken(token: string | null) {
+export function setToken(token: string | null): void {
   if (token) {
     localStorage.setItem('civicpulse_token', token);
   } else {
@@ -29,22 +29,25 @@ export async function api<T>(
   }
 
   if (
-    !(options.body instanceof FormData) &&
     options.body &&
+    !(options.body instanceof FormData) &&
     !headers.has('Content-Type')
   ) {
     headers.set('Content-Type', 'application/json');
   }
 
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  // Prevent double slashes between API URL and endpoint
+  const cleanBaseUrl = API_BASE_URL.replace(/\/+$/, '');
+  const cleanPath = `/${path.replace(/^\/+/, '')}`;
 
-  const response = await fetch(
-    `${API_BASE_URL}${cleanPath}`,
-    {
-      ...options,
-      headers
-    }
-  );
+  const url = `${cleanBaseUrl}${cleanPath}`;
+
+  console.log('API Request:', options.method || 'GET', url);
+
+  const response = await fetch(url, {
+    ...options,
+    headers,
+  });
 
   const data = await response.json().catch(() => ({}));
 
