@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.akash</groupId>
+    <artifactId>restdemo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>restdemo Jersey Webapp</name>
+
+    <properties>
+        <!-- Java -->
+        <maven.compiler.release>17</maven.compiler.release>
+
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Jersey -->
+        <jersey.version>3.1.12</jersey.version>
+
+        <!-- JAXB -->
+        <jaxb.version>4.0.5</jaxb.version>
+    </properties>
+
+
+    <dependencies>
+
+        <!-- ========================= -->
+        <!-- Jersey Servlet Container -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- Jersey Dependency Injection -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>org.glassfish.jersey.inject</groupId>
+            <artifactId>jersey-hk2</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- JSON Support -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- XML Support -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-jaxb</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- JAXB API -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- JAXB Runtime -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- Jakarta Servlet API -->
+        <!-- Tomcat 10.1 provides this -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!-- ========================= -->
+        <!-- JUnit -->
+        <!-- ========================= -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+
+        <finalName>restdemo</finalName>
+
+        <plugins>
+
+            <!-- ========================= -->
+            <!-- Maven Compiler -->
+            <!-- ========================= -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.1</version>
+
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+
+
+            <!-- ========================= -->
+            <!-- WAR Plugin -->
+            <!-- ========================= -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
