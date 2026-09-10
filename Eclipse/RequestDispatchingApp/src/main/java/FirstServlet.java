@@ -22,7 +22,7 @@ public class FirstServlet extends HttpServlet
 		
 		System.out.println("Control in first servlet");
 		String name =request.getParameter("uname");
-		String city =request.getParameter("ucity");
+		//String city =request.getParameter("ucity");
 		
 		 RequestDispatcher reqDispatch = request.getRequestDispatcher("/SecondServelet");
 		  

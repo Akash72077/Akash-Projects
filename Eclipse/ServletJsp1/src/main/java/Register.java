@@ -20,7 +20,7 @@ public class Register extends HttpServlet {
 		
 		PrintWriter writer = response.getWriter();
 		
-		writer.println("Registration success");
+		writer.println("Registration Success");
 	}
 
 }
