@@ -1,50 +1,173 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>FoodResto</title>
 </head>
+
 <body>
+
     <div class="main">
-       <div class="navbar">
-       <div class="nav-1">
-         <div class="logo">FoodResto</div>
-        <ul class="links">
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Location</li>
-            <li>Contact</li>
 
+        <div class="navbar">
 
-        </ul>
-       </div>
+            <div class="nav-1">
 
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars"></i>
+                <div class="logo">FoodResto</div>
+
+                <ul class="links">
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>About</li>
+                    <li>Location</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
         </div>
-       </div>
-       <div class="hero">
-        <div class="left">
-            <span class="left1">Are You Hungry?</span>
-            <span class="left2">Don't Wait</span>
-            <span class="left3">Lets start order food now</span>
-            <span class="left4">Check out menu</span>
+
+        <div class="hero">
+
+            <div class="left">
+                <span class="left1">Are You Hungry?</span>
+                <span class="left2">Don't Wait</span>
+                <span class="left3">Let's start ordering food now</span>
+                <span class="left4">Check out menu</span>
+            </div>
+
+            <div class="food" id="food"></div>
+
         </div>
-        <div class="food" id="food"></div>
-       </div>
-       <div class="items">
-        <div id="food1"></div>
-        <div id="food2"></div>
-        <div id="food3"></div>
-        <div id="food4"></div>
-       </div>
+
+        <div class="items">
+            <div id="food1"></div>
+            <div id="food2"></div>
+            <div id="food3"></div>
+            <div id="food4"></div>
+        </div>
+
+        <section class="popular">
+
+            <h2>Popular Dishes</h2>
+            <p class="section-text">Discover our most loved dishes</p>
+
+            <div class="food-cards">
+
+                <div class="food-card">
+                    <img src="./images/food1.png" alt="Chicken Burger">
+                    <div class="food-info">
+                        <h3>Chicken Burger</h3>
+                        <p>Juicy chicken burger with fresh vegetables and special sauce.</p>
+
+                        <div class="food-bottom">
+                            <span>₹199</span>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="./images/food2.png" alt="Cheese Pizza">
+                    <div class="food-info">
+                        <h3>Cheese Pizza</h3>
+                        <p>Hot and delicious pizza topped with fresh cheese and herbs.</p>
+
+                        <div class="food-bottom">
+                            <span>₹299</span>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="./images/food3.png" alt="Chicken Biryani">
+                    <div class="food-info">
+                        <h3>Chicken Biryani</h3>
+                        <p>Aromatic basmati rice cooked with delicious chicken and spices.</p>
+
+                        <div class="food-bottom">
+                            <span>₹249</span>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="./images/food4.png" alt="Italian Pasta">
+                    <div class="food-info">
+                        <h3>Italian Pasta</h3>
+                        <p>Creamy Italian pasta prepared with fresh and quality ingredients.</p>
+
+                        <div class="food-bottom">
+                            <span>₹219</span>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="menu-btn">View Full Menu</button>
+
+        </section>
+
+        <section class="why-us">
+
+            <h2>Why Choose FoodResto?</h2>
+            <p class="section-text">We make your food experience better</p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your favourite food delivered quickly and safely to your doorstep.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use fresh and high-quality ingredients to prepare every dish.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>Quality Food</h3>
+                    <p>Our experienced chefs prepare delicious meals with great care.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is always ready to help you whenever you need us.</p>
+                </div>
+
+            </div>
+
+        </section>
+
     </div>
+
     <script src="server.js"></script>
+
 </body>
 </html>
+```
