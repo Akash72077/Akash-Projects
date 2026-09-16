@@ -5,6 +5,7 @@ const g= 9.8;
 const PI= 3.14;
 let obj={
     sum: sum,
+    
     mul: mul,
     sub:sub,
     g:g,
